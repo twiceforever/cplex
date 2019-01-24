@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="reference" />
+<meta name="DC.Title" content="CPXCALLBACKINFO" />
+<meta name="abstract" content="" />
+<meta name="Description" content="" />
+<meta name="DC.subject" content="CPXCALLBACKINFO, C API Reference Manual" />
+<meta name="keywords" content="CPXCALLBACKINFO, C API Reference Manual" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/enumerations/homepageenumerations.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="CPXCALLBACKINFO" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../refcallablelibrary/enumerations/homepageenumerations.html" />
+<title>CPXCALLBACKINFO</title>
+</head>
+<body id="CPXCALLBACKINFO"><div role="main">
+<h1 class="title topictitle1"><samp class="ph codeph">CPXCALLBACKINFO</samp></h1>
+<div class="body refbody"><p class="shortdesc"></p>
+<div class="section refsyn"><pre class="pre codeblock"><code>typedef enum {
+   CPXCALLBACKINFO_THREADID,
+   CPXCALLBACKINFO_NODECOUNT,
+   CPXCALLBACKINFO_ITCOUNT,
+   CPXCALLBACKINFO_BEST_SOL,
+   CPXCALLBACKINFO_BEST_BND,
+   CPXCALLBACKINFO_THREADS,
+   CPXCALLBACKINFO_FEASIBLE,
+   CPXCALLBACKINFO_TIME,
+   CPXCALLBACKINFO_DETTIME
+} CPXCALLBACKINFO;
+            </code></pre>
+
+    </div>
+<div class="section"><h2 class="title sectiontitle">Description</h2>      
+
+      <div class="p">The <samp class="ph codeph">CPXCALLBACKINFO</samp> enumeration specifies the information
+      that can be queried from an invocation of the generic callback by means of these 
+      routines:
+      <ul class="ul"><li class="li"><a class="xref" href="../cpxapi/callbackgetinfoint.html" title="Accesses information of type integer from a generic callback.">CPXXcallbackgetinfoint and CPXcallbackgetinfoint</a>, </li>
+<li class="li"><a class="xref" href="../cpxapi/callbackgetinfolong.html" title="Accesses information of type long from a generic callback.">CPXXcallbackgetinfolong and CPXcallbackgetinfolong</a>,  </li>
+<li class="li"><a class="xref" href="../cpxapi/callbackgetinfodbl.html" title="Accesses information of type double from a generic callback.">CPXXcallbackgetinfodbl and CPXcallbackgetinfodbl</a>. </li>
+</ul>
+
+     </div>
+
+      <div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="" class="table" rules="all" frame="border" border="1"><tbody class="tbody"><tr class="row"><td class="entry" valign="top">value</td>
+<td class="entry" valign="top">type</td>
+<td class="entry" valign="top">description</td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_THREADID</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">CPXINT</samp> or <samp class="ph codeph">CPXLONG</samp></td>
+<td class="entry" valign="top">            A unique identifier for the calling thread. The identifiers range from 0 (zero) through N-1, 
+            where N is the maximum number of threads CPLEX is allowed to
+            allocate for the solve. The thread on which the user started the
+            solve always has identifier 0 (zero).
+          </td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_NODECOUNT</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">CPXINT</samp> or <samp class="ph codeph">CPXLONG</samp></td>
+<td class="entry" valign="top">Number of nodes processed so far</td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_ITCOUNT</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">CPXINT</samp> or <samp class="ph codeph">CPXLONG</samp></td>
+<td class="entry" valign="top">Simplex iterations executed so far</td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_BEST_SOL</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">double</samp></td>
+<td class="entry" valign="top">Objective value of the best known feasible solution.
+                 May be infinite if no feasible solution is known.
+            <div class="note warning"><span class="warningtitle">Warning:</span>               This best known solution is global  only if the
+              callback is invoked in context
+              <a class="xref" href="../macros/CPX_CALLBACKCONTEXT_GLOBAL_PROGRESS.html" title="Generic callback at global progress">CPX_CALLBACKCONTEXT_GLOBAL_PROGRESS</a>.
+              In all other cases, this is a thread-local value which may be
+              different from the best known globally valid value.
+            </div>
+
+          </td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_BEST_BND</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">double</samp></td>
+<td class="entry" valign="top">The best known bound on the optimal objective function value.
+                 For MIP, this bound is usually the objective value
+                 of the best open node. The value may be infinite if no better information
+                 is currently available.
+            <div class="note important"><span class="importanttitle">Important:</span>               This bound may be infinite (<samp class="ph codeph">-CPX_INFBOUND</samp> or
+              <samp class="ph codeph">CPX_INFBOUND</samp>, depending on the objective sense)
+              if no bound has been computed yet, or if no bound is available for the
+              calling thread.
+            </div>
+
+            <div class="note warning"><span class="warningtitle">Warning:</span>               Note that the best bound may exceed the value of the best feasible
+              solution when optimality is proven.
+              
+            </div>
+
+          </td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_FEASIBLE</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">CPXINT</samp> or <samp class="ph codeph">CPXLONG</samp></td>
+<td class="entry" valign="top">Returns a true value (nonzero)if a feasible solution is known,
+                 false (zero) otherwise.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_THREADS</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">CPXINT</samp> or <samp class="ph codeph">CPXLONG</samp></td>
+<td class="entry" valign="top">Number of threads allocated by CPLEX for the current solve.</td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_TIME</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">double</samp></td>
+<td class="entry" valign="top">Returns a timestamp. Depending on
+                 <a class="xref" href="../../CPLEX/Parameters/topics/ClockType.html" title="Decides how computation times are measured for both reporting performance and terminating optimization when a time limit has been set.">clock type for computation time</a>,
+                 this timeis either wallclock or CPU time.
+                 This value is the equivalent of
+                 <a class="xref" href="../cpxapi/gettime.html" title="This routine returns a time stamp.">CPXXgettime and CPXgettime</a>.
+                 </td>
+</tr>
+<tr class="row"><td class="entry" valign="top"><samp class="ph codeph">CPXCALLBACKINFO_DETTIME</samp></td>
+<td class="entry" valign="top"><samp class="ph codeph">double</samp></td>
+<td class="entry" valign="top">Returns a deterministic timestamp. This value is equivalent to 
+                 <a class="xref" href="../cpxapi/getdettime.html" title="This routine returns a deterministic time stamp.">CPXXgetdettime and CPXgetdettime</a>.
+            <div class="note warning"><span class="warningtitle">Warning:</span>               In threads that execute speculative code, this function may
+              return infinity (a number for which <samp class="ph codeph">isinf()</samp>
+              returns true and <samp class="ph codeph">fpclassify()</samp> returns
+              <samp class="ph codeph">FP_INFINITE</samp>) when invoked in the 
+              context <a class="xref" href="../macros/CPX_CALLBACKCONTEXT_THREAD_DOWN.html" title="Generic callback at thread end">CPX_CALLBACKCONTEXT_THREAD_DOWN</a>.
+            </div>
+
+                 </td>
+</tr>
+</tbody>
+</table>
+</div>
+
+    </div>
+<div class="section"><h2 class="title sectiontitle">See also</h2>      
+      <p class="p"><a class="xref" href="../cpxapi/callbacksetfunc.html" title="Sets the generic callback function and specifies in which contexts it will be invoked.">CPXXcallbacksetfunc and CPXcallbacksetfunc</a></p>
+
+      <p class="p"><a class="xref" href="../cpxapi/callbackgetinfodbl.html" title="Accesses information of type double from a generic callback.">CPXXcallbackgetinfodbl and CPXcallbackgetinfodbl</a></p>
+
+      <p class="p"><a class="xref" href="../cpxapi/callbackgetinfoint.html" title="Accesses information of type integer from a generic callback.">CPXXcallbackgetinfoint and CPXcallbackgetinfoint</a></p>
+
+      <p class="p"><a class="xref" href="../cpxapi/callbackgetinfolong.html" title="Accesses information of type long from a generic callback.">CPXXcallbackgetinfolong and CPXcallbackgetinfolong</a></p>
+ 
+      </div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../refcallablelibrary/enumerations/homepageenumerations.html">Enumerations in the CPLEX Callable Library (C API) Reference Manual</a></div>
+</div>
+</div></div></body>
+</html>

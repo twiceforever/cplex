@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Remote Object (master) in the CPLEX Callable Library (C API)" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/groups/homepagegroups.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETchgarcnodes_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETchgbds_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETchgobj_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETchgobjsen_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETchgsupply_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETdelarcs_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETdelnodes_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETprimopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETprimopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETprimopt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETreadcopybase_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/NETreadcopyprob_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/asynchandledel.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/asynchandleload.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/asynchandlesave.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/asynckill.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/asynctest.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/baropt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/baropt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/baropt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/basicpresolve_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/basicpresolve_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgbds_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgcoef_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgcoeflist_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgctype_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgmipstarts_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgobj_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgobjsen_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgprobtype_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgprobtypesolnpool_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgqpcoef_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgrhs_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgrngval_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/chgsense_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/cleanup_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/closeCPLEXdisconnect.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/completelp_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/copydnorms_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/copylp_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/copynettolp_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/copyorder_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/copypartialbase_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/copyprotected_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/createenvgroup.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delcols_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delindconstrs_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delmipstarts_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delnames_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delqconstrs_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delrows_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delsolnpoolfilters_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delsolnpoolsolns_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/delsos_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/dualopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/dualopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/dualopt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/embwrite_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/embwrite_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/feasopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/feasopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/feasoptext_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/feasoptext_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/feasoptext_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/freeenvgroup.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/freelazyconstraints_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/freepresolve_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/freeusercuts_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/getasynchandlesize.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/getenvgroupenv.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/getenvgroupsize.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/getinfohandler.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/getlps.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/getreconnectinfolen.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/hybbaropt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/hybbaropt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/hybbaropt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/hybnetopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/hybnetopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/hybnetopt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/killdnorms_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/killpnorms_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/lpopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/lpopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/lpopt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/mipopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/mipopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/mipopt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/openCPLEXreconnect.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/openCPLEXremote.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/pivot_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/pivotin_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/pivotin_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/pivotin_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/pivotout_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/pivotout_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/pivotout_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/populate_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/populate_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/populate_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/prechgobj_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/preslvwrite_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/preslvwrite_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/presolve_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/presolve_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/presolve_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/primopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/primopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/primopt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/qpindefcertificate_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/qpindefcertificate_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/qpopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/qpopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/qpopt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/readcopybase_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/readcopymipstarts_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/readcopyorder_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/readcopyparam_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/readcopyprob_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/readcopysol_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/readcopysolnpoolfilters_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refineconflict_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refineconflict_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refineconflictext_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refineconflictext_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refineconflictext_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refinemipstartconflict_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refinemipstartconflict_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refinemipstartconflictext_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refinemipstartconflictext_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/refinemipstartconflictext_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/setdblparam_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/setdefaults_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/setinfohandler.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/setintparam_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/setlongparam_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/siftopt_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/siftopt_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/siftopt_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/strongbranch_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/strongbranch_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/tightenbds_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/tuneparam_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/tuneparam_join.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/unscaleprob_multicast.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/userfunction.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/userfunction_async.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxremoteapi/userfunction_join.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="homepageremotemaster" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../refcallablelibrary/groups/homepagegroups.html" />
+<title>Remote Object (master) in the CPLEX Callable Library (C API)</title>
+</head>
+<body id="homepageremotemaster"><div role="main">
+<h1 class="title topictitle1">Remote Object (master) in the CPLEX Callable Library (C API) </h1>
+<div class="body"><p class="p">These master routines enable your application to create and optimize 
+a CPLEX object on a remote platform. </p>
+<p class="p">For routines specific to the worker in an application of the remote object, see 
+<a class="xref" href="homepageremote.worker.html">Remote Object (worker) in the CPLEX Callable Library (C API)</a>.</p>
+</div>
+<div class="related-links">
+<ul class="ullinks">
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETchgarcnodes_multicast.html">CPXXNETchgarcnodes_multicast and CPXNETchgarcnodes_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETchgarcnodes.html" title="The routine CPXXNETchgarcnodes/CPXNETchgarcnodes changes the nodes associated with a set of arcs in the network stored in a network problem object."><span class="keyword apiname">CPXXNETchgarcnodes</span>/<span class="keyword apiname">CPXNETchgarcnodes</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETchgbds_multicast.html">CPXXNETchgbds_multicast and CPXNETchgbds_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETchgbds.html" title="The routine CPXXNETchgbds/CPXNETchgbds is used to change the upper, lower, or both bounds on the flow for a set of arcs in the network stored in a network problem object."><span class="keyword apiname">CPXXNETchgbds</span>/<span class="keyword apiname">CPXNETchgbds</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETchgobj_multicast.html">CPXXNETchgobj_multicast and CPXNETchgobj_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETchgobj.html" title="The routine CPXXNETchgobj/CPXNETchgobj is used to change the objective values for a set of arcs in the network stored in a network problem object."><span class="keyword apiname">CPXXNETchgobj</span>/<span class="keyword apiname">CPXNETchgobj</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETchgobjsen_multicast.html">CPXXNETchgobjsen_multicast and CPXNETchgobjsen_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETchgobjsen.html" title="The routine CPXXNETchgobjsen/CPXNETchgobjsen is used to change the sense of the network problem to a minimization or maximization problem."><span class="keyword apiname">CPXXNETchgobjsen</span>/<span class="keyword apiname">CPXNETchgobjsen</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETchgsupply_multicast.html">CPXXNETchgsupply_multicast and CPXNETchgsupply_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETchgsupply.html" title="The routine CPXXNETchgsupply/CPXNETchgsupply is used to change supply values for a set of nodes in the network stored in a network problem object."><span class="keyword apiname">CPXXNETchgsupply</span>/<span class="keyword apiname">CPXNETchgsupply</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETdelarcs_multicast.html">CPXXNETdelarcs_multicast and CPXNETdelarcs_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETdelarcs.html" title="The routine CPXXNETdelarcs/CPXNETdelarcs is used to remove a range of arcs from the network stored in a network problem object."><span class="keyword apiname">CPXXNETdelarcs</span>/<span class="keyword apiname">CPXNETdelarcs</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETdelnodes_multicast.html">CPXXNETdelnodes_multicast and CPXNETdelnodes_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETdelnodes.html" title="The routine CPXXNETdelnodes/CPXNETdelnodes is used to remove a range of nodes from the network stored in a network problem object."><span class="keyword apiname">CPXXNETdelnodes</span>/<span class="keyword apiname">CPXNETdelnodes</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETprimopt_async.html">CPXXNETprimopt_async and CPXNETprimopt_async</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETprimopt.html" title="The routine CPXXNETprimopt/CPXNETprimopt can be called after a network problem has been copied to a network problem object, to find a solution to that problem using the primal network simplex method."><span class="keyword apiname">CPXXNETprimopt</span>/<span class="keyword apiname">CPXNETprimopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETprimopt_join.html">CPXXNETprimopt_join and CPXNETprimopt_join</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETprimopt.html" title="The routine CPXXNETprimopt/CPXNETprimopt can be called after a network problem has been copied to a network problem object, to find a solution to that problem using the primal network simplex method."><span class="keyword apiname">CPXXNETprimopt</span>/<span class="keyword apiname">CPXNETprimopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETprimopt_multicast.html">CPXXNETprimopt_multicast and CPXNETprimopt_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETprimopt.html" title="The routine CPXXNETprimopt/CPXNETprimopt can be called after a network problem has been copied to a network problem object, to find a solution to that problem using the primal network simplex method."><span class="keyword apiname">CPXXNETprimopt</span>/<span class="keyword apiname">CPXNETprimopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETreadcopybase_multicast.html">CPXXNETreadcopybase_multicast and CPXNETreadcopybase_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETreadcopybase.html" title="The routine CPXXNETreadcopybase/CPXNETreadcopybase reads a basis file in BAS format and copies the basis to a network problem object."><span class="keyword apiname">CPXXNETreadcopybase</span>/<span class="keyword apiname">CPXNETreadcopybase</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/NETreadcopyprob_multicast.html">CPXXNETreadcopyprob_multicast and CPXNETreadcopyprob_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/netapi/NETreadcopyprob.html" title="The routine CPXXNETreadcopyprob/CPXNETreadcopyprob reads a network, in the CPLEX .net or DIMACS .min format, from a file and copies it to a network problem object."><span class="keyword apiname">CPXXNETreadcopyprob</span>/<span class="keyword apiname">CPXNETreadcopyprob</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/asynchandledel.html">CPXXasynchandledel and CPXasynchandledel</a></span><br />
+     
+
+ This routine deletes an asynchronous handle that was created by an
+ _async function or by
+ <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxremoteapi/asynchandleload.html" title="This routine loads an asynchronous handle."><span class="keyword apiname">CPXXasynchandleload</span>/<span class="keyword apiname">CPXasynchandleload</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/asynchandleload.html">CPXXasynchandleload and CPXasynchandleload</a></span><br />
+     
+
+ This routine loads an asynchronous handle.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/asynchandlesave.html">CPXXasynchandlesave and CPXasynchandlesave</a></span><br />
+     
+
+ This routine saves an asynchronous handle into a buffer.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/asynckill.html">CPXXasynckill and CPXasynckill</a></span><br />
+     
+
+ This routine kills an asynchronous function.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/asynctest.html">CPXXasynctest and CPXasynctest</a></span><br />
+     
+
+ This routine tests whether the asynchronous function declared by
+ <samp class="ph codeph"><span class="keyword parmname">asynchandle</span></samp> is still running.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/baropt_async.html">CPXXbaropt_async and CPXbaropt_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/barapi/baropt.html" title="The routine CPXXbaropt/CPXbaropt may be used to find a solution to a linear program (LP), quadratic program (QP), or quadratically constrained program (QCP) by means of the barrier algorithm at any time after the problem is created by a call to CPXXcreateprob/CPXcreateprob."><span class="keyword apiname">CPXXbaropt</span>/<span class="keyword apiname">CPXbaropt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/baropt_join.html">CPXXbaropt_join and CPXbaropt_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/barapi/baropt.html" title="The routine CPXXbaropt/CPXbaropt may be used to find a solution to a linear program (LP), quadratic program (QP), or quadratically constrained program (QCP) by means of the barrier algorithm at any time after the problem is created by a call to CPXXcreateprob/CPXcreateprob."><span class="keyword apiname">CPXXbaropt</span>/<span class="keyword apiname">CPXbaropt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/baropt_multicast.html">CPXXbaropt_multicast and CPXbaropt_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/barapi/baropt.html" title="The routine CPXXbaropt/CPXbaropt may be used to find a solution to a linear program (LP), quadratic program (QP), or quadratically constrained program (QCP) by means of the barrier algorithm at any time after the problem is created by a call to CPXXcreateprob/CPXcreateprob."><span class="keyword apiname">CPXXbaropt</span>/<span class="keyword apiname">CPXbaropt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/basicpresolve_async.html">CPXXbasicpresolve_async and CPXbasicpresolve_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/basicpresolve.html" title="The routine CPXXbasicpresolve/CPXbasicpresolve performs bound strengthening and detects redundant rows."><span class="keyword apiname">CPXXbasicpresolve</span>/<span class="keyword apiname">CPXbasicpresolve</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/basicpresolve_join.html">CPXXbasicpresolve_join and CPXbasicpresolve_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/basicpresolve.html" title="The routine CPXXbasicpresolve/CPXbasicpresolve performs bound strengthening and detects redundant rows."><span class="keyword apiname">CPXXbasicpresolve</span>/<span class="keyword apiname">CPXbasicpresolve</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgbds_multicast.html">CPXXchgbds_multicast and CPXchgbds_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgbds.html" title="The routine CPXXchgbds/CPXchgbds changes the lower or upper bounds on a set of variables of a problem."><span class="keyword apiname">CPXXchgbds</span>/<span class="keyword apiname">CPXchgbds</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgcoef_multicast.html">CPXXchgcoef_multicast and CPXchgcoef_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgcoef.html" title="The routine CPXXchgcoef/CPXchgcoef changes a single coefficient in the constraint matrix, linear objective coefficients, righthand side, or ranges of a CPLEX problem object."><span class="keyword apiname">CPXXchgcoef</span>/<span class="keyword apiname">CPXchgcoef</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgcoeflist_multicast.html">CPXXchgcoeflist_multicast and CPXchgcoeflist_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgcoeflist.html" title="The routine CPXXchgcoeflist/CPXchgcoeflist changes a list of matrix coefficients of a CPLEX problem object."><span class="keyword apiname">CPXXchgcoeflist</span>/<span class="keyword apiname">CPXchgcoeflist</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgctype_multicast.html">CPXXchgctype_multicast and CPXchgctype_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/chgctype.html" title="The routine CPXXchgctype/CPXchgctype changes the types of a set of variables of a CPLEX problem object."><span class="keyword apiname">CPXXchgctype</span>/<span class="keyword apiname">CPXchgctype</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgmipstarts_multicast.html">CPXXchgmipstarts_multicast and CPXchgmipstarts_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/chgmipstarts.html" title="The routine CPXXchgmipstarts/CPXchgmipstarts modifies or extends multiple MIP starts."><span class="keyword apiname">CPXXchgmipstarts</span>/<span class="keyword apiname">CPXchgmipstarts</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgobj_multicast.html">CPXXchgobj_multicast and CPXchgobj_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgobj.html" title="The routine CPXXchgobj/CPXchgobj changes the linear objective coefficients of a set of variables in a CPLEX problem object."><span class="keyword apiname">CPXXchgobj</span>/<span class="keyword apiname">CPXchgobj</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgobjsen_multicast.html">CPXXchgobjsen_multicast and CPXchgobjsen_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgobjsen.html" title="The routine CPXXchgobjsen/CPXchgobjsen changes the sense of the optimization for a problem, to maximization or minimization."><span class="keyword apiname">CPXXchgobjsen</span>/<span class="keyword apiname">CPXchgobjsen</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgprobtype_multicast.html">CPXXchgprobtype_multicast and CPXchgprobtype_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgprobtype.html" title="The routine CPXXchgprobtype/CPXchgprobtype changes the current problem to a related problem."><span class="keyword apiname">CPXXchgprobtype</span>/<span class="keyword apiname">CPXchgprobtype</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgprobtypesolnpool_multicast.html">CPXXchgprobtypesolnpool_multicast and CPXchgprobtypesolnpool_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgprobtypesolnpool.html" title="The routine CPXXchgprobtypesolnpool/CPXchgprobtypesolnpool changes the current problem, if it is a mixed integer problem, to a related fixed problem using a solution from the solution pool."><span class="keyword apiname">CPXXchgprobtypesolnpool</span>/<span class="keyword apiname">CPXchgprobtypesolnpool</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgqpcoef_multicast.html">CPXXchgqpcoef_multicast and CPXchgqpcoef_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/qpapi/chgqpcoef.html" title="The routine CPXXchgqpcoef/CPXchgqpcoef changes the coefficient in the quadratic objective of a quadratic problem (QP) corresponding to the variable pair (i,j) to the value newvalue."><span class="keyword apiname">CPXXchgqpcoef</span>/<span class="keyword apiname">CPXchgqpcoef</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgrhs_multicast.html">CPXXchgrhs_multicast and CPXchgrhs_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgrhs.html" title="The routine CPXXchgrhs/CPXchgrhs changes the righthand side coefficients of a set of linear constraints in the CPLEX problem object."><span class="keyword apiname">CPXXchgrhs</span>/<span class="keyword apiname">CPXchgrhs</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgrngval_multicast.html">CPXXchgrngval_multicast and CPXchgrngval_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgrngval.html" title="The routine CPXXchgrngval/CPXchgrngval changes the range coefficients of a set of linear constraints in the CPLEX problem object."><span class="keyword apiname">CPXXchgrngval</span>/<span class="keyword apiname">CPXchgrngval</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/chgsense_multicast.html">CPXXchgsense_multicast and CPXchgsense_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/chgsense.html" title="The routine CPXXchgsense/CPXchgsense changes the sense of a set of linear constraints of a CPLEX problem object."><span class="keyword apiname">CPXXchgsense</span>/<span class="keyword apiname">CPXchgsense</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/cleanup_multicast.html">CPXXcleanup_multicast and CPXcleanup_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/cleanup.html" title="The routine CPXXcleanup/CPXcleanup changes to zero any problem coefficients that are smaller in magnitude than the tolerance specified in the argument eps."><span class="keyword apiname">CPXXcleanup</span>/<span class="keyword apiname">CPXcleanup</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/closeCPLEXdisconnect.html">CPXXcloseCPLEXdisconnect and CPXcloseCPLEXdisconnect</a></span><br />
+     
+
+ Disconnect from a worker but do not shut it down.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/completelp_multicast.html">CPXXcompletelp_multicast and CPXcompletelp_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/completelp.html" title="The routine CPXXcompletelp/CPXcompletelp instructs CPLEX to flush its modification cache."><span class="keyword apiname">CPXXcompletelp</span>/<span class="keyword apiname">CPXcompletelp</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/copydnorms_multicast.html">CPXXcopydnorms_multicast and CPXcopydnorms_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/copydnorms.html" title="The routine CPXXcopydnorms/CPXcopydnorms copies the dual steepest-edge norms to the specified LP problem object."><span class="keyword apiname">CPXXcopydnorms</span>/<span class="keyword apiname">CPXcopydnorms</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/copylp_multicast.html">CPXXcopylp_multicast and CPXcopylp_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/copylp.html" title="The routine CPXXcopylp/CPXcopylp copies data that define an LP problem to a CPLEX problem object."><span class="keyword apiname">CPXXcopylp</span>/<span class="keyword apiname">CPXcopylp</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/copynettolp_multicast.html">CPXXcopynettolp_multicast and CPXcopynettolp_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/copynettolp.html" title="The routine CPXXcopynettolp/CPXcopynettolp copies a network problem stored in a network problem object to a CPLEX problem object (as an LP)."><span class="keyword apiname">CPXXcopynettolp</span>/<span class="keyword apiname">CPXcopynettolp</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/copyorder_multicast.html">CPXXcopyorder_multicast and CPXcopyorder_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/copyorder.html" title="The routine CPXXcopyorder/CPXcopyorder copies a priority order to a CPLEX problem object of type CPXPROB_MILP, CPXPROB_MIQP, or CPXPROB_MIQCP."><span class="keyword apiname">CPXXcopyorder</span>/<span class="keyword apiname">CPXcopyorder</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/copypartialbase_multicast.html">CPXXcopypartialbase_multicast and CPXcopypartialbase_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/copypartialbase.html" title="The routine CPXXcopypartialbase/CPXcopypartialbase copies a partial basis into an LP problem object."><span class="keyword apiname">CPXXcopypartialbase</span>/<span class="keyword apiname">CPXcopypartialbase</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/copyprotected_multicast.html">CPXXcopyprotected_multicast and CPXcopyprotected_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/copyprotected.html" title="The routine CPXXcopyprotected/CPXcopyprotected specifies a set of variables that should not be substituted out of the problem."><span class="keyword apiname">CPXXcopyprotected</span>/<span class="keyword apiname">CPXcopyprotected</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/createenvgroup.html">CPXXcreateenvgroup and CPXcreateenvgroup</a></span><br />
+     
+
+ This routine create a group of environments.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delcols_multicast.html">CPXXdelcols_multicast and CPXdelcols_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/delcols.html" title="The routine CPXXdelcols/CPXdelcols deletes all the columns in a specified range."><span class="keyword apiname">CPXXdelcols</span>/<span class="keyword apiname">CPXdelcols</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delindconstrs_multicast.html">CPXXdelindconstrs_multicast and CPXdelindconstrs_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/delindconstrs.html" title="The routine CPXXdelindconstrs/CPXdelindconstrs deletes a range of indicator constraints."><span class="keyword apiname">CPXXdelindconstrs</span>/<span class="keyword apiname">CPXdelindconstrs</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delmipstarts_multicast.html">CPXXdelmipstarts_multicast and CPXdelmipstarts_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/delmipstarts.html" title="The routine CPXXdelmipstarts/CPXdelmipstarts deletes a range MIP starts."><span class="keyword apiname">CPXXdelmipstarts</span>/<span class="keyword apiname">CPXdelmipstarts</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delnames_multicast.html">CPXXdelnames_multicast and CPXdelnames_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/delnames.html" title="The routine CPXXdelnames/CPXdelnames removes all names that have been previously assigned to model entities, such as rows, columns, quadratic constraints, special ordered sets (SOSs), or indicator constraints."><span class="keyword apiname">CPXXdelnames</span>/<span class="keyword apiname">CPXdelnames</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delqconstrs_multicast.html">CPXXdelqconstrs_multicast and CPXdelqconstrs_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/socpapi/delqconstrs.html" title="The routine CPXXdelqconstrs/CPXdelqconstrs deletes a range of quadratic constraints."><span class="keyword apiname">CPXXdelqconstrs</span>/<span class="keyword apiname">CPXdelqconstrs</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delrows_multicast.html">CPXXdelrows_multicast and CPXdelrows_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/delrows.html" title="The routine CPXXdelrows/CPXdelrows deletes a range of rows."><span class="keyword apiname">CPXXdelrows</span>/<span class="keyword apiname">CPXdelrows</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delsolnpoolfilters_multicast.html">CPXXdelsolnpoolfilters_multicast and CPXdelsolnpoolfilters_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/delsolnpoolfilters.html" title="The routine CPXXdelsolnpoolfilters/CPXdelsolnpoolfilters deletes filters from the the problem object specified by the argument lp."><span class="keyword apiname">CPXXdelsolnpoolfilters</span>/<span class="keyword apiname">CPXdelsolnpoolfilters</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delsolnpoolsolns_multicast.html">CPXXdelsolnpoolsolns_multicast and CPXdelsolnpoolsolns_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/delsolnpoolsolns.html" title="The routine CPXXdelsolnpoolsolns/CPXdelsolnpoolsolns deletes a range of solutions from the solution pool."><span class="keyword apiname">CPXXdelsolnpoolsolns</span>/<span class="keyword apiname">CPXdelsolnpoolsolns</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/delsos_multicast.html">CPXXdelsos_multicast and CPXdelsos_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/delsos.html" title="The routine CPXXdelsos/CPXdelsos deletes a group of special ordered sets (SOSs) from a CPLEX problem object."><span class="keyword apiname">CPXXdelsos</span>/<span class="keyword apiname">CPXdelsos</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/dualopt_async.html">CPXXdualopt_async and CPXdualopt_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/dualopt.html" title="The routine CPXXdualopt/CPXdualopt may be used at any time after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob to find a solution to that problem using the dual simplex algorithm."><span class="keyword apiname">CPXXdualopt</span>/<span class="keyword apiname">CPXdualopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/dualopt_join.html">CPXXdualopt_join and CPXdualopt_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/dualopt.html" title="The routine CPXXdualopt/CPXdualopt may be used at any time after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob to find a solution to that problem using the dual simplex algorithm."><span class="keyword apiname">CPXXdualopt</span>/<span class="keyword apiname">CPXdualopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/dualopt_multicast.html">CPXXdualopt_multicast and CPXdualopt_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/dualopt.html" title="The routine CPXXdualopt/CPXdualopt may be used at any time after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob to find a solution to that problem using the dual simplex algorithm."><span class="keyword apiname">CPXXdualopt</span>/<span class="keyword apiname">CPXdualopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/embwrite_async.html">CPXXembwrite_async and CPXembwrite_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/embwrite.html" title="The routine CPXXembwrite/CPXembwrite writes out the network embedded in the selected problem object."><span class="keyword apiname">CPXXembwrite</span>/<span class="keyword apiname">CPXembwrite</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/embwrite_join.html">CPXXembwrite_join and CPXembwrite_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/embwrite.html" title="The routine CPXXembwrite/CPXembwrite writes out the network embedded in the selected problem object."><span class="keyword apiname">CPXXembwrite</span>/<span class="keyword apiname">CPXembwrite</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/feasopt_async.html">CPXXfeasopt_async and CPXfeasopt_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/feasopt.html" title="The routine CPXXfeasopt/CPXfeasopt computes a minimum-cost relaxation of the righthand side values of constraints or bounds on variables in order to make an infeasible problem feasible."><span class="keyword apiname">CPXXfeasopt</span>/<span class="keyword apiname">CPXfeasopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/feasopt_join.html">CPXXfeasopt_join and CPXfeasopt_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/feasopt.html" title="The routine CPXXfeasopt/CPXfeasopt computes a minimum-cost relaxation of the righthand side values of constraints or bounds on variables in order to make an infeasible problem feasible."><span class="keyword apiname">CPXXfeasopt</span>/<span class="keyword apiname">CPXfeasopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/feasoptext_async.html">CPXXfeasoptext_async and CPXfeasoptext_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/feasoptext.html" title="The routine CPXXfeasoptext/CPXfeasoptext extends CPXXfeasopt/CPXfeasopt in several ways."><span class="keyword apiname">CPXXfeasoptext</span>/<span class="keyword apiname">CPXfeasoptext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/feasoptext_join.html">CPXXfeasoptext_join and CPXfeasoptext_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/feasoptext.html" title="The routine CPXXfeasoptext/CPXfeasoptext extends CPXXfeasopt/CPXfeasopt in several ways."><span class="keyword apiname">CPXXfeasoptext</span>/<span class="keyword apiname">CPXfeasoptext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/feasoptext_multicast.html">CPXXfeasoptext_multicast and CPXfeasoptext_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/feasoptext.html" title="The routine CPXXfeasoptext/CPXfeasoptext extends CPXXfeasopt/CPXfeasopt in several ways."><span class="keyword apiname">CPXXfeasoptext</span>/<span class="keyword apiname">CPXfeasoptext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/freeenvgroup.html">CPXXfreeenvgroup and CPXfreeenvgroup</a></span><br />
+     
+
+ This routine deletes a remote environment group that was created by
+ <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxremoteapi/createenvgroup.html" title="This routine create a group of environments."><span class="keyword apiname">CPXXcreateenvgroup</span>/<span class="keyword apiname">CPXcreateenvgroup</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/freelazyconstraints_multicast.html">CPXXfreelazyconstraints_multicast and CPXfreelazyconstraints_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/freelazyconstraints.html" title="The routine CPXXfreelazyconstraints/CPXfreelazyconstraints clears the list of lazy constraints that have been previously specified through calls to CPXXaddlazyconstraints/CPXaddlazyconstraints."><span class="keyword apiname">CPXXfreelazyconstraints</span>/<span class="keyword apiname">CPXfreelazyconstraints</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/freepresolve_multicast.html">CPXXfreepresolve_multicast and CPXfreepresolve_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/freepresolve.html" title="The routine CPXXfreepresolve/CPXfreepresolve frees the presolved problem from the LP problem object."><span class="keyword apiname">CPXXfreepresolve</span>/<span class="keyword apiname">CPXfreepresolve</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/freeusercuts_multicast.html">CPXXfreeusercuts_multicast and CPXfreeusercuts_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/freeusercuts.html" title="The routine CPXXfreeusercuts/CPXfreeusercuts clears the list of user cuts that have been previously specified through calls to CPXXaddusercuts/CPXaddusercuts."><span class="keyword apiname">CPXXfreeusercuts</span>/<span class="keyword apiname">CPXfreeusercuts</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/getasynchandlesize.html">CPXXgetasynchandlesize and CPXgetasynchandlesize</a></span><br />
+     
+
+ This routine accesses the size of an asynchronous handle.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/getenvgroupenv.html">CPXXgetenvgroupenv and CPXgetenvgroupenv</a></span><br />
+     
+
+ This routine accesses an environment from a group of environments.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/getenvgroupsize.html">CPXXgetenvgroupsize and CPXgetenvgroupsize</a></span><br />
+     
+
+ This routine accesses the number of environments in a given group
+ of environments.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/getinfohandler.html">CPXXgetinfohandler and CPXgetinfohandler</a></span><br />
+     
+
+ This routine queries the currently installed information handler.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/getlps.html">CPXXgetlps and CPXgetlps</a></span><br />
+     
+
+ Get the problem objects in a remote environment.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/getreconnectinfolen.html">CPXXgetreconnectinfolen and CPXgetreconnectinfolen</a></span><br />
+     
+
+ This routine queries the length of reconnection information.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/hybbaropt_async.html">CPXXhybbaropt_async and CPXhybbaropt_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/barapi/hybbaropt.html" title="The routine CPXXhybbaropt/CPXhybbaropt may be used, at any time after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob, to find a solution to that problem."><span class="keyword apiname">CPXXhybbaropt</span>/<span class="keyword apiname">CPXhybbaropt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/hybbaropt_join.html">CPXXhybbaropt_join and CPXhybbaropt_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/barapi/hybbaropt.html" title="The routine CPXXhybbaropt/CPXhybbaropt may be used, at any time after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob, to find a solution to that problem."><span class="keyword apiname">CPXXhybbaropt</span>/<span class="keyword apiname">CPXhybbaropt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/hybbaropt_multicast.html">CPXXhybbaropt_multicast and CPXhybbaropt_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/barapi/hybbaropt.html" title="The routine CPXXhybbaropt/CPXhybbaropt may be used, at any time after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob, to find a solution to that problem."><span class="keyword apiname">CPXXhybbaropt</span>/<span class="keyword apiname">CPXhybbaropt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/hybnetopt_async.html">CPXXhybnetopt_async and CPXhybnetopt_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/hybnetopt.html" title="The routine CPXXhybnetopt/CPXhybnetopt, given a linear program that has been created via a call to CPXXcreateprob/CPXcreateprob, extracts an embedded network, uses the CPLEX Network Optimizer to attempt to obtain an optimal basis to the network, and optimizes the entire linear program using one of the CPLEX simplex methods."><span class="keyword apiname">CPXXhybnetopt</span>/<span class="keyword apiname">CPXhybnetopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/hybnetopt_join.html">CPXXhybnetopt_join and CPXhybnetopt_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/hybnetopt.html" title="The routine CPXXhybnetopt/CPXhybnetopt, given a linear program that has been created via a call to CPXXcreateprob/CPXcreateprob, extracts an embedded network, uses the CPLEX Network Optimizer to attempt to obtain an optimal basis to the network, and optimizes the entire linear program using one of the CPLEX simplex methods."><span class="keyword apiname">CPXXhybnetopt</span>/<span class="keyword apiname">CPXhybnetopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/hybnetopt_multicast.html">CPXXhybnetopt_multicast and CPXhybnetopt_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/hybnetopt.html" title="The routine CPXXhybnetopt/CPXhybnetopt, given a linear program that has been created via a call to CPXXcreateprob/CPXcreateprob, extracts an embedded network, uses the CPLEX Network Optimizer to attempt to obtain an optimal basis to the network, and optimizes the entire linear program using one of the CPLEX simplex methods."><span class="keyword apiname">CPXXhybnetopt</span>/<span class="keyword apiname">CPXhybnetopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/killdnorms_multicast.html">CPXXkilldnorms_multicast and CPXkilldnorms_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/killdnorms.html" title="The routine CPXXkilldnorms/CPXkilldnorms deletes any dual steepest-edge norms that have been retained relative to an active basis."><span class="keyword apiname">CPXXkilldnorms</span>/<span class="keyword apiname">CPXkilldnorms</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/killpnorms_multicast.html">CPXXkillpnorms_multicast and CPXkillpnorms_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/killpnorms.html" title="The routine CPXXkillpnorms/CPXkillpnorms deletes any primal steepest-edge norms that have been retained relative to an active basis."><span class="keyword apiname">CPXXkillpnorms</span>/<span class="keyword apiname">CPXkillpnorms</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/lpopt_async.html">CPXXlpopt_async and CPXlpopt_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/lpopt.html" title="At any time after a linear program has been created by a call to CPXXcreateprob/CPXcreateprob, the routine CPXXlpopt/CPXlpopt finds a solution to that problem using one of the CPLEX linear optimizers."><span class="keyword apiname">CPXXlpopt</span>/<span class="keyword apiname">CPXlpopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/lpopt_join.html">CPXXlpopt_join and CPXlpopt_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/lpopt.html" title="At any time after a linear program has been created by a call to CPXXcreateprob/CPXcreateprob, the routine CPXXlpopt/CPXlpopt finds a solution to that problem using one of the CPLEX linear optimizers."><span class="keyword apiname">CPXXlpopt</span>/<span class="keyword apiname">CPXlpopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/lpopt_multicast.html">CPXXlpopt_multicast and CPXlpopt_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/lpopt.html" title="At any time after a linear program has been created by a call to CPXXcreateprob/CPXcreateprob, the routine CPXXlpopt/CPXlpopt finds a solution to that problem using one of the CPLEX linear optimizers."><span class="keyword apiname">CPXXlpopt</span>/<span class="keyword apiname">CPXlpopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/mipopt_async.html">CPXXmipopt_async and CPXmipopt_async</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/mipopt.html" title="At any time after a mixed integer program has been created by a call to CPXXcreateprob/CPXcreateprob, the routine CPXXmipopt/CPXmipopt may be used to find a solution to that problem."><span class="keyword apiname">CPXXmipopt</span>/<span class="keyword apiname">CPXmipopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/mipopt_join.html">CPXXmipopt_join and CPXmipopt_join</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/mipopt.html" title="At any time after a mixed integer program has been created by a call to CPXXcreateprob/CPXcreateprob, the routine CPXXmipopt/CPXmipopt may be used to find a solution to that problem."><span class="keyword apiname">CPXXmipopt</span>/<span class="keyword apiname">CPXmipopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/mipopt_multicast.html">CPXXmipopt_multicast and CPXmipopt_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/mipopt.html" title="At any time after a mixed integer program has been created by a call to CPXXcreateprob/CPXcreateprob, the routine CPXXmipopt/CPXmipopt may be used to find a solution to that problem."><span class="keyword apiname">CPXXmipopt</span>/<span class="keyword apiname">CPXmipopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/openCPLEXreconnect.html">CPXXopenCPLEXreconnect and CPXopenCPLEXreconnect</a></span><br />
+     
+
+ This routine reconnects to a worker.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/openCPLEXremote.html">CPXXopenCPLEXremote and CPXopenCPLEXremote</a></span><br />
+     
+
+ This routine opens a handle to a remote object.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/pivot_multicast.html">CPXXpivot_multicast and CPXpivot_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/pivot.html" title="The routine CPXXpivot/CPXpivot performs a basis change where variable jenter replaces variable jleave in the basis."><span class="keyword apiname">CPXXpivot</span>/<span class="keyword apiname">CPXpivot</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/pivotin_async.html">CPXXpivotin_async and CPXpivotin_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/pivotin.html" title="The routine CPXXpivotin/CPXpivotin forcibly pivots slacks that appear on a list of inequality rows into the basis."><span class="keyword apiname">CPXXpivotin</span>/<span class="keyword apiname">CPXpivotin</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/pivotin_join.html">CPXXpivotin_join and CPXpivotin_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/pivotin.html" title="The routine CPXXpivotin/CPXpivotin forcibly pivots slacks that appear on a list of inequality rows into the basis."><span class="keyword apiname">CPXXpivotin</span>/<span class="keyword apiname">CPXpivotin</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/pivotin_multicast.html">CPXXpivotin_multicast and CPXpivotin_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/pivotin.html" title="The routine CPXXpivotin/CPXpivotin forcibly pivots slacks that appear on a list of inequality rows into the basis."><span class="keyword apiname">CPXXpivotin</span>/<span class="keyword apiname">CPXpivotin</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/pivotout_async.html">CPXXpivotout_async and CPXpivotout_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/pivotout.html" title="The routine CPXXpivotout/CPXpivotout pivots a list of fixed variables out of the resident basis."><span class="keyword apiname">CPXXpivotout</span>/<span class="keyword apiname">CPXpivotout</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/pivotout_join.html">CPXXpivotout_join and CPXpivotout_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/pivotout.html" title="The routine CPXXpivotout/CPXpivotout pivots a list of fixed variables out of the resident basis."><span class="keyword apiname">CPXXpivotout</span>/<span class="keyword apiname">CPXpivotout</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/pivotout_multicast.html">CPXXpivotout_multicast and CPXpivotout_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/pivotout.html" title="The routine CPXXpivotout/CPXpivotout pivots a list of fixed variables out of the resident basis."><span class="keyword apiname">CPXXpivotout</span>/<span class="keyword apiname">CPXpivotout</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/populate_async.html">CPXXpopulate_async and CPXpopulate_async</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/populate.html" title="The routine CPXXpopulate/CPXpopulate generates multiple solutions to a mixed integer programming (MIP) problem."><span class="keyword apiname">CPXXpopulate</span>/<span class="keyword apiname">CPXpopulate</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/populate_join.html">CPXXpopulate_join and CPXpopulate_join</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/populate.html" title="The routine CPXXpopulate/CPXpopulate generates multiple solutions to a mixed integer programming (MIP) problem."><span class="keyword apiname">CPXXpopulate</span>/<span class="keyword apiname">CPXpopulate</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/populate_multicast.html">CPXXpopulate_multicast and CPXpopulate_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/populate.html" title="The routine CPXXpopulate/CPXpopulate generates multiple solutions to a mixed integer programming (MIP) problem."><span class="keyword apiname">CPXXpopulate</span>/<span class="keyword apiname">CPXpopulate</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/prechgobj_multicast.html">CPXXprechgobj_multicast and CPXprechgobj_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/prechgobj.html" title="The routine CPXXprechgobj/CPXprechgobj changes the objective function coefficients of an LP problem object and its associated presolved LP problem object."><span class="keyword apiname">CPXXprechgobj</span>/<span class="keyword apiname">CPXprechgobj</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/preslvwrite_async.html">CPXXpreslvwrite_async and CPXpreslvwrite_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/preslvwrite.html" title="The routine CPXXpreslvwrite/CPXpreslvwrite writes a presolved version of the problem to a file."><span class="keyword apiname">CPXXpreslvwrite</span>/<span class="keyword apiname">CPXpreslvwrite</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/preslvwrite_join.html">CPXXpreslvwrite_join and CPXpreslvwrite_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/preslvwrite.html" title="The routine CPXXpreslvwrite/CPXpreslvwrite writes a presolved version of the problem to a file."><span class="keyword apiname">CPXXpreslvwrite</span>/<span class="keyword apiname">CPXpreslvwrite</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/presolve_async.html">CPXXpresolve_async and CPXpresolve_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/presolve.html" title="The routine CPXXpresolve/CPXpresolve performs LP or MIP presolve depending whether a problem object is an LP or a MIP."><span class="keyword apiname">CPXXpresolve</span>/<span class="keyword apiname">CPXpresolve</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/presolve_join.html">CPXXpresolve_join and CPXpresolve_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/presolve.html" title="The routine CPXXpresolve/CPXpresolve performs LP or MIP presolve depending whether a problem object is an LP or a MIP."><span class="keyword apiname">CPXXpresolve</span>/<span class="keyword apiname">CPXpresolve</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/presolve_multicast.html">CPXXpresolve_multicast and CPXpresolve_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/presolve.html" title="The routine CPXXpresolve/CPXpresolve performs LP or MIP presolve depending whether a problem object is an LP or a MIP."><span class="keyword apiname">CPXXpresolve</span>/<span class="keyword apiname">CPXpresolve</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/primopt_async.html">CPXXprimopt_async and CPXprimopt_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/primopt.html" title="The routine CPXXprimopt/CPXprimopt may be used after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob, to find a solution to that problem using the primal simplex method."><span class="keyword apiname">CPXXprimopt</span>/<span class="keyword apiname">CPXprimopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/primopt_join.html">CPXXprimopt_join and CPXprimopt_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/primopt.html" title="The routine CPXXprimopt/CPXprimopt may be used after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob, to find a solution to that problem using the primal simplex method."><span class="keyword apiname">CPXXprimopt</span>/<span class="keyword apiname">CPXprimopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/primopt_multicast.html">CPXXprimopt_multicast and CPXprimopt_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/primopt.html" title="The routine CPXXprimopt/CPXprimopt may be used after a linear program has been created via a call to CPXXcreateprob/CPXcreateprob, to find a solution to that problem using the primal simplex method."><span class="keyword apiname">CPXXprimopt</span>/<span class="keyword apiname">CPXprimopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/qpindefcertificate_async.html">CPXXqpindefcertificate_async and CPXqpindefcertificate_async</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/qpapi/qpindefcertificate.html" title="The routine CPXXqpindefcertificate/CPXqpindefcertificate computes a vector x that satisfies the inequality x'Qx &lt; 0."><span class="keyword apiname">CPXXqpindefcertificate</span>/<span class="keyword apiname">CPXqpindefcertificate</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/qpindefcertificate_join.html">CPXXqpindefcertificate_join and CPXqpindefcertificate_join</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/qpapi/qpindefcertificate.html" title="The routine CPXXqpindefcertificate/CPXqpindefcertificate computes a vector x that satisfies the inequality x'Qx &lt; 0."><span class="keyword apiname">CPXXqpindefcertificate</span>/<span class="keyword apiname">CPXqpindefcertificate</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/qpopt_async.html">CPXXqpopt_async and CPXqpopt_async</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/qpapi/qpopt.html" title="The routineCPXXqpopt/CPXqpopt may be used, at any time after a continuous quadratic program has been created, to find a solution to that problem using one of the CPLEX quadratic optimizers."><span class="keyword apiname">CPXXqpopt</span>/<span class="keyword apiname">CPXqpopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/qpopt_join.html">CPXXqpopt_join and CPXqpopt_join</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/qpapi/qpopt.html" title="The routineCPXXqpopt/CPXqpopt may be used, at any time after a continuous quadratic program has been created, to find a solution to that problem using one of the CPLEX quadratic optimizers."><span class="keyword apiname">CPXXqpopt</span>/<span class="keyword apiname">CPXqpopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/qpopt_multicast.html">CPXXqpopt_multicast and CPXqpopt_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/qpapi/qpopt.html" title="The routineCPXXqpopt/CPXqpopt may be used, at any time after a continuous quadratic program has been created, to find a solution to that problem using one of the CPLEX quadratic optimizers."><span class="keyword apiname">CPXXqpopt</span>/<span class="keyword apiname">CPXqpopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/readcopybase_multicast.html">CPXXreadcopybase_multicast and CPXreadcopybase_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/readcopybase.html" title="The routine CPXXreadcopybase/CPXreadcopybase reads a basis from a BAS file, and copies that basis into a CPLEX problem object."><span class="keyword apiname">CPXXreadcopybase</span>/<span class="keyword apiname">CPXreadcopybase</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/readcopymipstarts_multicast.html">CPXXreadcopymipstarts_multicast and CPXreadcopymipstarts_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/readcopymipstarts.html" title="The routine CPXXreadcopymipstarts/CPXreadcopymipstarts reads a file in the format MST and copies the information of all the MIP starts contained in that file into a CPLEX problem object."><span class="keyword apiname">CPXXreadcopymipstarts</span>/<span class="keyword apiname">CPXreadcopymipstarts</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/readcopyorder_multicast.html">CPXXreadcopyorder_multicast and CPXreadcopyorder_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/readcopyorder.html" title="The routine CPXXreadcopyorder/CPXreadcopyorder reads an ORD file and copies the priority order information into a CPLEX problem object."><span class="keyword apiname">CPXXreadcopyorder</span>/<span class="keyword apiname">CPXreadcopyorder</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/readcopyparam_multicast.html">CPXXreadcopyparam_multicast and CPXreadcopyparam_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/readcopyparam.html" title="The routine CPXXreadcopyparam/CPXreadcopyparam reads parameter names and settings from the file specified by filename_str and copies them into CPLEX."><span class="keyword apiname">CPXXreadcopyparam</span>/<span class="keyword apiname">CPXreadcopyparam</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/readcopyprob_multicast.html">CPXXreadcopyprob_multicast and CPXreadcopyprob_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/readcopyprob.html" title="The routine CPXXreadcopyprob/CPXreadcopyprob reads an MPS, LP, or SAV file into an existing CPLEX problem object."><span class="keyword apiname">CPXXreadcopyprob</span>/<span class="keyword apiname">CPXreadcopyprob</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/readcopysol_multicast.html">CPXXreadcopysol_multicast and CPXreadcopysol_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/readcopysol.html" title="The routine CPXXreadcopysol/CPXreadcopysol reads a solution from a SOL format file, and copies that basis or solution into a CPLEX problem object."><span class="keyword apiname">CPXXreadcopysol</span>/<span class="keyword apiname">CPXreadcopysol</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/readcopysolnpoolfilters_multicast.html">CPXXreadcopysolnpoolfilters_multicast and CPXreadcopysolnpoolfilters_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/readcopysolnpoolfilters.html" title="The routine CPXXreadcopysolnpoolfilters/CPXreadcopysolnpoolfilters reads solution pool filters from an FLT format file and copies the filters into a CPLEX problem object."><span class="keyword apiname">CPXXreadcopysolnpoolfilters</span>/<span class="keyword apiname">CPXreadcopysolnpoolfilters</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refineconflict_async.html">CPXXrefineconflict_async and CPXrefineconflict_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/refineconflict.html" title="The routine CPXXrefineconflict/CPXrefineconflict identifies a minimal conflict for the infeasibility of the linear constraints and the variable bounds in the current problem."><span class="keyword apiname">CPXXrefineconflict</span>/<span class="keyword apiname">CPXrefineconflict</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refineconflict_join.html">CPXXrefineconflict_join and CPXrefineconflict_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/refineconflict.html" title="The routine CPXXrefineconflict/CPXrefineconflict identifies a minimal conflict for the infeasibility of the linear constraints and the variable bounds in the current problem."><span class="keyword apiname">CPXXrefineconflict</span>/<span class="keyword apiname">CPXrefineconflict</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refineconflictext_async.html">CPXXrefineconflictext_async and CPXrefineconflictext_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/refineconflictext.html" title="The routine CPXXrefineconflictext/CPXrefineconflictext extends CPXXrefineconflict/CPXrefineconflict to problems with indicator constraints, quadratic constraints (except for explicit second order cone constraints), or special ordered sets (SOSs) and to situations where groups of constraints should be considered as a single constraint."><span class="keyword apiname">CPXXrefineconflictext</span>/<span class="keyword apiname">CPXrefineconflictext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refineconflictext_join.html">CPXXrefineconflictext_join and CPXrefineconflictext_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/refineconflictext.html" title="The routine CPXXrefineconflictext/CPXrefineconflictext extends CPXXrefineconflict/CPXrefineconflict to problems with indicator constraints, quadratic constraints (except for explicit second order cone constraints), or special ordered sets (SOSs) and to situations where groups of constraints should be considered as a single constraint."><span class="keyword apiname">CPXXrefineconflictext</span>/<span class="keyword apiname">CPXrefineconflictext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refineconflictext_multicast.html">CPXXrefineconflictext_multicast and CPXrefineconflictext_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/refineconflictext.html" title="The routine CPXXrefineconflictext/CPXrefineconflictext extends CPXXrefineconflict/CPXrefineconflict to problems with indicator constraints, quadratic constraints (except for explicit second order cone constraints), or special ordered sets (SOSs) and to situations where groups of constraints should be considered as a single constraint."><span class="keyword apiname">CPXXrefineconflictext</span>/<span class="keyword apiname">CPXrefineconflictext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refinemipstartconflict_async.html">CPXXrefinemipstartconflict_async and CPXrefinemipstartconflict_async</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/refinemipstartconflict.html" title="The routine CPXXrefinemipstartconflict/CPXrefinemipstartconflict refines a conflict in order to determine why a given MIP start is not feasible."><span class="keyword apiname">CPXXrefinemipstartconflict</span>/<span class="keyword apiname">CPXrefinemipstartconflict</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refinemipstartconflict_join.html">CPXXrefinemipstartconflict_join and CPXrefinemipstartconflict_join</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/refinemipstartconflict.html" title="The routine CPXXrefinemipstartconflict/CPXrefinemipstartconflict refines a conflict in order to determine why a given MIP start is not feasible."><span class="keyword apiname">CPXXrefinemipstartconflict</span>/<span class="keyword apiname">CPXrefinemipstartconflict</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refinemipstartconflictext_async.html">CPXXrefinemipstartconflictext_async and CPXrefinemipstartconflictext_async</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/refinemipstartconflictext.html" title="The routine CPXXrefinemipstartconflictext/CPXrefinemipstartconflictext refines a conflict of a model inferred from a MIP start, where a MIP start consists of pairs of variables and values and where the model may include quadratic constraints, indicator constraints, or special ordered sets, as well as linear constraints and bounds."><span class="keyword apiname">CPXXrefinemipstartconflictext</span>/<span class="keyword apiname">CPXrefinemipstartconflictext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refinemipstartconflictext_join.html">CPXXrefinemipstartconflictext_join and CPXrefinemipstartconflictext_join</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/refinemipstartconflictext.html" title="The routine CPXXrefinemipstartconflictext/CPXrefinemipstartconflictext refines a conflict of a model inferred from a MIP start, where a MIP start consists of pairs of variables and values and where the model may include quadratic constraints, indicator constraints, or special ordered sets, as well as linear constraints and bounds."><span class="keyword apiname">CPXXrefinemipstartconflictext</span>/<span class="keyword apiname">CPXrefinemipstartconflictext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/refinemipstartconflictext_multicast.html">CPXXrefinemipstartconflictext_multicast and CPXrefinemipstartconflictext_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/mipapi/refinemipstartconflictext.html" title="The routine CPXXrefinemipstartconflictext/CPXrefinemipstartconflictext refines a conflict of a model inferred from a MIP start, where a MIP start consists of pairs of variables and values and where the model may include quadratic constraints, indicator constraints, or special ordered sets, as well as linear constraints and bounds."><span class="keyword apiname">CPXXrefinemipstartconflictext</span>/<span class="keyword apiname">CPXrefinemipstartconflictext</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/setdblparam_multicast.html">CPXXsetdblparam_multicast and CPXsetdblparam_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/setdblparam.html" title="The routine CPXXsetdblparam/CPXsetdblparam sets the value of a CPLEX parameter of type double."><span class="keyword apiname">CPXXsetdblparam</span>/<span class="keyword apiname">CPXsetdblparam</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/setdefaults_multicast.html">CPXXsetdefaults_multicast and CPXsetdefaults_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/setdefaults.html" title="The routine CPXXsetdefaults/CPXsetdefaults resets all CPLEX parameters and settings to default values (with the exception of the log file)."><span class="keyword apiname">CPXXsetdefaults</span>/<span class="keyword apiname">CPXsetdefaults</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/setinfohandler.html">CPXXsetinfohandler and CPXsetinfohandler</a></span><br />
+     
+
+ This routine installs a handler for informational messages
+ from a remote object.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/setintparam_multicast.html">CPXXsetintparam_multicast and CPXsetintparam_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/setintparam.html" title="The routine CPXXsetintparam/CPXsetintparam sets the value of a CPLEX parameter of type CPXINT."><span class="keyword apiname">CPXXsetintparam</span>/<span class="keyword apiname">CPXsetintparam</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/setlongparam_multicast.html">CPXXsetlongparam_multicast and CPXsetlongparam_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/setlongparam.html" title="The routine CPXXsetlongparam/CPXsetlongparam sets the value of a CPLEX parameter of type CPXLONG."><span class="keyword apiname">CPXXsetlongparam</span>/<span class="keyword apiname">CPXsetlongparam</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/siftopt_async.html">CPXXsiftopt_async and CPXsiftopt_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/siftopt.html" title="This routine looks at a subset of the columns of a problem and uses either the barrier or simplex optimizer to solve this reduced model."><span class="keyword apiname">CPXXsiftopt</span>/<span class="keyword apiname">CPXsiftopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/siftopt_join.html">CPXXsiftopt_join and CPXsiftopt_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/siftopt.html" title="This routine looks at a subset of the columns of a problem and uses either the barrier or simplex optimizer to solve this reduced model."><span class="keyword apiname">CPXXsiftopt</span>/<span class="keyword apiname">CPXsiftopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/siftopt_multicast.html">CPXXsiftopt_multicast and CPXsiftopt_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/siftopt.html" title="This routine looks at a subset of the columns of a problem and uses either the barrier or simplex optimizer to solve this reduced model."><span class="keyword apiname">CPXXsiftopt</span>/<span class="keyword apiname">CPXsiftopt</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/strongbranch_async.html">CPXXstrongbranch_async and CPXstrongbranch_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/strongbranch.html" title="The routine CPXXstrongbranch/CPXstrongbranch computes information for selecting a branching variable in an integer-programming branch-and-cut search."><span class="keyword apiname">CPXXstrongbranch</span>/<span class="keyword apiname">CPXstrongbranch</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/strongbranch_join.html">CPXXstrongbranch_join and CPXstrongbranch_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/strongbranch.html" title="The routine CPXXstrongbranch/CPXstrongbranch computes information for selecting a branching variable in an integer-programming branch-and-cut search."><span class="keyword apiname">CPXXstrongbranch</span>/<span class="keyword apiname">CPXstrongbranch</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/tightenbds_multicast.html">CPXXtightenbds_multicast and CPXtightenbds_multicast</a></span><br />
+     
+
+ Multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/tightenbds.html" title="The routine CPXXtightenbds/CPXtightenbds changes the upper or lower bounds on a set of variables in a problem."><span class="keyword apiname">CPXXtightenbds</span>/<span class="keyword apiname">CPXtightenbds</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/tuneparam_async.html">CPXXtuneparam_async and CPXtuneparam_async</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/tuneparam.html" title="The routine CPXXtuneparam/CPXtuneparam tunes the parameters of the environment for improved optimizer performance on the specified problem object."><span class="keyword apiname">CPXXtuneparam</span>/<span class="keyword apiname">CPXtuneparam</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/tuneparam_join.html">CPXXtuneparam_join and CPXtuneparam_join</a></span><br />
+     
+
+ This routine is the
+ asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/tuneparam.html" title="The routine CPXXtuneparam/CPXtuneparam tunes the parameters of the environment for improved optimizer performance on the specified problem object."><span class="keyword apiname">CPXXtuneparam</span>/<span class="keyword apiname">CPXtuneparam</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/unscaleprob_multicast.html">CPXXunscaleprob_multicast and CPXunscaleprob_multicast</a></span><br />
+     
+
+ This routine is the
+ multicast version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxapi/unscaleprob.html" title="The routine CPXXunscaleprob/CPXunscaleprob removes any scaling that CPLEX has applied to the resident problem and its associated data."><span class="keyword apiname">CPXXunscaleprob</span>/<span class="keyword apiname">CPXunscaleprob</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/userfunction.html">CPXXuserfunction and CPXuserfunction</a></span><br />
+     
+
+ This routine invokes a user-defined function on a remote object.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/userfunction_async.html">CPXXuserfunction_async and CPXuserfunction_async</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxremoteapi/userfunction.html" title="This routine invokes a user-defined function on a remote object."><span class="keyword apiname">CPXXuserfunction</span>/<span class="keyword apiname">CPXuserfunction</span></a></samp>.
+  </li>
+<li class="link ulchildlink"><span class="ulchildlinktext"><a href="../../refcallablelibrary/cpxremoteapi/userfunction_join.html">CPXXuserfunction_join and CPXuserfunction_join</a></span><br />
+     
+
+ Asynchronous version of <samp class="ph codeph"><a class="xref" href="../../refcallablelibrary/cpxremoteapi/userfunction.html" title="This routine invokes a user-defined function on a remote object."><span class="keyword apiname">CPXXuserfunction</span>/<span class="keyword apiname">CPXuserfunction</span></a></samp>.
+  </li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../refcallablelibrary/groups/homepagegroups.html">Browsing by tasks in the CPLEX Callable Library (C API) Reference Manual</a></div>
+</div>
+</div></div></body>
+</html>

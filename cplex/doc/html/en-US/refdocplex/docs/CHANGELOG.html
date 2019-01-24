@@ -1,0 +1,261 @@
+
+
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    
+    <title>Changelog &#8212; IBM&reg; Decision Optimization CPLEX&reg; Modeling for Python (DOcplex) V2.4 documentation</title>
+    
+    <link rel="stylesheet" href="_static/bizstyle.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     'V2.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  false,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/bizstyle.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="_static/css3-mediaqueries.js"></script>
+    <![endif]-->
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">IBM&reg; Decision Optimization CPLEX&reg; Modeling for Python (DOcplex) V2.4 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Changelog</a><ul>
+<li><a class="reference internal" href="#changed-in-2-4-61">Changed in 2.4.61:</a></li>
+<li><a class="reference internal" href="#changed-in-2-3-44-2017-09">Changed in 2.3.44 (2017.09):</a></li>
+<li><a class="reference internal" href="#changed-in-2-2-34-2017-07">Changed in 2.2.34 (2017.07):</a></li>
+<li><a class="reference internal" href="#changed-in-2-1-28">Changed in 2.1.28:</a></li>
+<li><a class="reference internal" href="#changed-in-2-0-15">Changed in 2.0.15:</a></li>
+<li><a class="reference internal" href="#changed-in-1-0-630">Changed in 1.0.630:</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="changelog">
+<h1>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline">&para;</a></h1>
+<div class="section" id="changed-in-2-4-61">
+<h2>Changed in 2.4.61:<a class="headerlink" href="#changed-in-2-4-61" title="Permalink to this headline">&para;</a></h2>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Both <code class="docutils literal"><span class="pre">docplex.mp</span></code> &amp; <code class="docutils literal"><span class="pre">docplex.cp</span></code>:</dt>
+<dd><ul class="first last">
+<li>Support for CPLEX engines 12.8. Some features of docplex2.4 are available only with engines &gt;= 12.8.</li>
+<li>Adding new ports (AIX, plinux).</li>
+<li>Examples are now available as Zeppelin notebooks.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>In <code class="docutils literal"><span class="pre">docplex.mp</span></code>:</dt>
+<dd><ul class="first last">
+<li>Express a linear problem as a scikit-learn tranformer by providing a numpy, a pandas or scipy matrix.</li>
+<li>Logical constraints: constratins equivalence, if-then &amp; rshift operator.</li>
+<li>Solve hook to add a method to be called at each intermediate solution.</li>
+<li>KPIS automatically published at each intermediate solution if running on docplexcloud python worker.</li>
+<li>Support for scipy coo &amp; csr matrixes.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>In <code class="docutils literal"><span class="pre">docplex.cp</span></code>:</dt>
+<dd><ul class="first last">
+<li>add new method run_seeds() to execute a model multiple times, available with local solver 12.8.</li>
+<li>add support of new solver infos &#8216;SearchStatus&#8217; eand &#8216;SearchStopCause&#8217;.</li>
+<li>In method <code class="docutils literal"><span class="pre">docplex.cp.model.CpoModel.propagate()</span></code>, add possibility to add an optional constraint to the model.</li>
+<li>add domain iterator in integer variables and integer variables solutions, allowing to get domain
+as a list of individual integers.</li>
+<li>add possibility to identify some model variables as KPIs of the model.</li>
+<li>add abort_search() method on solver (not supported everywhere)</li>
+<li>Rework code generation to enhance performances and remove unused variables that was pointed by removed expressions.</li>
+<li>add possibility to add one or more CpoSolverListener to put some callback functions
+when solve is started, ended, or when a solution is found.
+Implementation is provided in new python module <code class="docutils literal"><span class="pre">docplex.cp.solver.solver_listener</span></code> that also contains sample
+listeners SolverProgressPanelListener and AutoStopListener.</li>
+<li>Using parameter <em>context.solver.solve_with_start_next</em>, enable solve() method to execute a start/next loop instead
+of standard solve. This enables, for optimization problems, usage of SolveListeners with a greater progress accuracy.</li>
+<li>Completely remove deprecated &#8216;angel&#8217; to identify local solver.</li>
+<li>Deprecate usage of methods <code class="docutils literal"><span class="pre">minimize()</span></code> and <code class="docutils literal"><span class="pre">maximize()</span></code> on <code class="docutils literal"><span class="pre">docplex.cp.CpoModel</span></code>.</li>
+<li>Add methods <code class="docutils literal"><span class="pre">get_objective_bounds()</span></code> and <code class="docutils literal"><span class="pre">get_objective_gaps()</span></code> in solution objects.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="section" id="changed-in-2-3-44-2017-09">
+<h2>Changed in 2.3.44 (2017.09):<a class="headerlink" href="#changed-in-2-3-44-2017-09" title="Permalink to this headline">&para;</a></h2>
+<ul class="simple">
+<li>Module <code class="docutils literal"><span class="pre">docplex.cp.model.solver_angel.py</span></code> has been renamed <code class="docutils literal"><span class="pre">solver_local.py</span></code>.
+A shadow copy with previous name still exist to preserve ascending compatibility.
+Module <code class="docutils literal"><span class="pre">docplex.cp.model.config.py</span></code> is modified to refer this new module.</li>
+<li>Class <code class="docutils literal"><span class="pre">docplex.cp.model.solver_local.SolverAngel</span></code> has been renamed <code class="docutils literal"><span class="pre">SolverLocal</span></code>.
+A shadow copy with previous name still exist to preserve ascending compatibility.</li>
+<li>Class <code class="docutils literal"><span class="pre">docplex.cp.model.solver_local.AngelException</span></code> has been renamed <code class="docutils literal"><span class="pre">LocalSolverException</span></code>.
+A shadow copy with previous name still exist to preserve ascending compatibility.</li>
+<li>Functions logical_and() and logical_or() are able to accept a list of model boolean expressions.</li>
+<li>Fix defect on allowed_assignments() and forbiden_assignments() that was wrongly converting
+list of tupes into tuple_set.</li>
+<li>Update all examples to add comments and split them in sections data / prepare / model / solve</li>
+<li>Add new sched_RCPSPMM_json.py example that reads data from JSON file instead of raw data file.</li>
+<li>Rename all visu examples with more explicit names.</li>
+<li>Remove the object class CpoTupleSet. Tuple sets can be constructed only by calling tuple_set() method, or more
+simply by passing directly a Python iterable of iterables when a tupleset is required
+(in expressions allowed_assignments() and forbidden_assignments)</li>
+<li>Allow logical_and() and logical_or() to accept a list of boolean expressions.</li>
+<li>Add overloading of builtin functions all() and any() as other form of logical_and() and logical_or().</li>
+<li>In no_overlap() and state_function(), transition matrix can be passed directly as a Python iterable of iterables of integers,</li>
+<li>Editable transition matrix, created with a size only, is deprecated. However it is still available for ascending compatibility.</li>
+<li>Add conditional() modeling function</li>
+<li>Parameter &#8216;AutomaticReplay&#8217; is deprecated.</li>
+<li>Add get_search_status() and get_stop_cause() on object CpoSolveResult, available for solver COS12.8</li>
+<li>Improved performance of <code class="docutils literal"><span class="pre">Var.reduced_cost()</span></code> in <code class="docutils literal"><span class="pre">docplex.mp</span></code>.</li>
+</ul>
+</div>
+<div class="section" id="changed-in-2-2-34-2017-07">
+<h2>Changed in 2.2.34 (2017.07):<a class="headerlink" href="#changed-in-2-2-34-2017-07" title="Permalink to this headline">&para;</a></h2>
+<ul class="simple">
+<li>Methods <code class="docutils literal"><span class="pre">docplex.cp.model.export_model()</span></code> and <code class="docutils literal"><span class="pre">docplex.cp.model.import_model()</span></code>
+have been added to respectively generate or parse a model in CPO format.</li>
+<li>Methods <code class="docutils literal"><span class="pre">docplex.cp.model.minimize()</span></code> and <code class="docutils literal"><span class="pre">docplex.cp.model.maximize()</span></code>
+have been added to directly indicate an objective at model level.</li>
+<li>Notebook example <code class="docutils literal"><span class="pre">scheduling_tuto.ipynb</span></code> contains an extensive tutorial
+to solve scheduling problems with CP.</li>
+<li>Modeling methof sum() now supports sum of cumul expressions.</li>
+<li>Methods <code class="docutils literal"><span class="pre">docplex.cp.model.start_search()</span></code> allows to start a new
+search sequence directly from the model object.</li>
+<li>When setting <code class="docutils literal"><span class="pre">context.solver.auto_publish</span></code> is set, and using the CPLEX
+engine, KPIs and current objective are automatically published when the
+script is run on DOcplexcloud Python worker.</li>
+<li>When setting <code class="docutils literal"><span class="pre">context.solver.auto_publish</span></code> is set, and using the CP
+engine, current objective is automatically published when the
+script is run on DOcplexcloud Python worker.</li>
+<li><code class="docutils literal"><span class="pre">docplex.util.environment.Environment.set_stop_callback</span></code> and
+<code class="docutils literal"><span class="pre">docplex.util.environment.Environment.get_stop_callback</span></code> are added so that
+you can add a callback when the DOcplexcloud job is aborted.</li>
+</ul>
+</div>
+<div class="section" id="changed-in-2-1-28">
+<h2>Changed in 2.1.28:<a class="headerlink" href="#changed-in-2-1-28" title="Permalink to this headline">&para;</a></h2>
+<ul class="simple">
+<li>New methods <code class="docutils literal"><span class="pre">Model.logical_or()</span></code> and <code class="docutils literal"><span class="pre">Model.logical_and()</span></code> handle
+logical operations on binary variables.</li>
+<li>DOcplex now supports CPLEX 12.7.1 and Benders decomposition. Set annotations
+on constraints and variables using the <code class="docutils literal"><span class="pre">benders_annotation</span></code> property and use
+the proper CPLEX parameters governing Benders decomposition.</li>
+<li>CPLEX tutorials: in the documentation and as notebooks in the examples.</li>
+<li>Fixed a bug in <code class="docutils literal"><span class="pre">docplex.mp.solution.SolveSolution.display()</span></code> and in
+<code class="docutils literal"><span class="pre">docplex.mp.solution.Model.report_kpi()</span></code> when using unicode variable names.</li>
+<li>There&#8217;s now a simple command line interface for DOcplexcloud. It can be run
+in a terminal. <code class="docutils literal"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">docplex.cli</span> <span class="pre">help</span></code> for more info. That command
+line reads your DOcplexcloud credentials in your cplex_config.py file. It
+allows you to submit, list, delete jobs on DOcplexcloud. The cli is available
+in notebooks too, using the <code class="docutils literal"><span class="pre">%docplex_cli</span></code> magics. <code class="docutils literal"><span class="pre">%docplex_cli</span> <span class="pre">help</span></code> for
+some help. In a notebook, credentials can be passed using <cite>%docplex_url</cite> and
+<cite>%docplex_key</cite> magics.</li>
+<li>Removing constraints in 1 call</li>
+<li>Bug fixes when editing an existing model.</li>
+<li>Bug fix in the relaxation mechanism when using docplexcloud.</li>
+</ul>
+</div>
+<div class="section" id="changed-in-2-0-15">
+<h2>Changed in 2.0.15:<a class="headerlink" href="#changed-in-2-0-15" title="Permalink to this headline">&para;</a></h2>
+<ul class="simple">
+<li>Piecewise linear (PWL) functions are now supported. An API is now available
+on <code class="docutils literal"><span class="pre">docplex.mp.model</span></code> to create PWL functions and to create constraints using these PWL functions.
+PWL functions may be defined with breakpoints (default API) or by using slopes. Some simple arithmetic is
+also available to build new PWL functions by adding, subtracting, or scaling existing PWL functions.</li>
+<li>DOcplex has undergone a significant overhaul effort that has resulted in an average of 30-50% improvement
+of modeling run-time performance. All parts of the API benefit from the performance improvements: creation of variables and constraints, removal of constraints, computation of sums of variables, and so on.</li>
+<li>Constraints are now fully editable:
+the expressions of a constraint can be modified.
+Similarly, the objective expression can also be modified. This allows for complex workflows in which the model is modified after a solve and then solved again.</li>
+<li>docplex is now available on Anaconda cloud and can be installed via the conda installation packager.
+See the <a class="reference external" href="https://anaconda.org/IBMDecisionOptimization">IBM Anaconda home</a>
+CPLEX Community Edition for Python is also provided on Anaconda Cloud to get free local solving capabilities with limitations.</li>
+<li>Support of <code class="docutils literal"><span class="pre">~/.docplexrc</span></code> configuration files for <code class="docutils literal"><span class="pre">docplex.mp.context.Context</span></code> is now dropped.
+This feature has been deprecated since 1.0.0.</li>
+<li>Known incompatibility: class <code class="docutils literal"><span class="pre">docplex.mp.model.AbstractModel</span></code> moved to <code class="docutils literal"><span class="pre">docplex.mp.absmodel.AbstractModel</span></code>.
+Samples using this class have been updated.</li>
+</ul>
+</div>
+<div class="section" id="changed-in-1-0-630">
+<h2>Changed in 1.0.630:<a class="headerlink" href="#changed-in-1-0-630" title="Permalink to this headline">&para;</a></h2>
+<ul class="simple">
+<li>Added support for CPLEX 12.7 and Python 3.5.</li>
+<li>Upgraded the DOcplexcloud client to version 1.0.202.</li>
+<li>Module <code class="docutils literal"><span class="pre">docplex.mp.advmodel</span></code> is now officially supported. This module
+provides support for efficient, specialized aggregator methods for large
+models.</li>
+<li>When solving on DOcplexcloud, proxies can now be specified with the
+<code class="docutils literal"><span class="pre">context.solver.docloud.proxies</span></code> property.</li>
+<li>When two constraints are defined with the same name, issue a warning instead of
+a fatal exception. The last constraint defined will take over the first one in the name directory.</li>
+<li>Fix ValueError when passing a pandas DataFrame as variable keys (using
+DataFrame indexes).</li>
+<li>Solution.get_values() returns a collection of variable values in one call.</li>
+<li><code class="docutils literal"><span class="pre">docplex.mp.model</span></code> no longer imports <code class="docutils literal"><span class="pre">docloud.status</span></code>. Any status
+previously initialized as <code class="docutils literal"><span class="pre">JobSolveStatus.UNKNOWN</span></code> is now initialized as
+<code class="docutils literal"><span class="pre">None</span></code>.</li>
+<li>Minor improvements to notebooks and examples.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="index.html">IBM&reg; Decision Optimization CPLEX&reg; Modeling for Python (DOcplex) V2.4 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2016, IBM&reg;.
+    </div>
+  </body>
+</html>

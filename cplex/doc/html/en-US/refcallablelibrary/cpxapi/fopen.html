@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="reference" />
+<meta name="DC.Title" content="CPXXfopen and CPXfopen" />
+<meta name="abstract" content="The routine CPXXfopen/CPXfopen opens files to be used in conjunction with the routines CPXaddfpdest, CPXXdelfpdest/CPXdelfpdest and CPXXsetlogfile/CPXsetlogfile." />
+<meta name="Description" content="The routine CPXXfopen/CPXfopen opens files to be used in conjunction with the routines CPXaddfpdest, CPXXdelfpdest/CPXdelfpdest and CPXXsetlogfile/CPXsetlogfile." />
+<meta name="DC.subject" content="CPXfopen, C API Reference Manual, CPXXfopen" />
+<meta name="keywords" content="CPXfopen, C API Reference Manual, CPXXfopen" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/groups/hpAlphabetEF.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/groups/homepageportability.html" />
+<meta name="DC.Relation" scheme="URI" content="../../refcallablelibrary/cpxapi/hpIO.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="fopen" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../refcallablelibrary/groups/hpAlphabetEF.html" />
+<link rel="Start" href="../../refcallablelibrary/groups/homepageportability.html" />
+<link rel="Start" href="../../refcallablelibrary/cpxapi/hpIO.html" />
+<title>CPXXfopen and CPXfopen</title>
+</head>
+<body id="fopen"><div role="main">
+<h1 class="title topictitle1"><span class="keyword apiname">CPXXfopen</span> and <span class="keyword apiname">CPXfopen</span></h1>
+<div class="body refbody"><p class="shortdesc">     
+
+
+The routine <samp class="ph codeph"><span class="keyword apiname">CPXXfopen</span>/<span class="keyword apiname">CPXfopen</span></samp> opens files to be used in
+conjunction with the routines <samp class="ph codeph"><span class="keyword apiname">CPXaddfpdest,</span></samp>
+<samp class="ph codeph"><span class="keyword apiname">CPXXdelfpdest</span>/<span class="keyword apiname">CPXdelfpdest</span></samp> and <samp class="ph codeph"><span class="keyword apiname">CPXXsetlogfile</span>/<span class="keyword apiname">CPXsetlogfile</span></samp>.
+  </p>
+<div class="section refsyn">      <p class="p"><span class="ph synph">        <span class="keyword kwd">CPXFILEptr</span>
+        <span class="ph sep"> </span><span class="keyword kwd">CPXXfopen</span><span class="ph delim">(</span>
+          <span class="keyword kwd">char const *</span><span class="ph sep"> </span><span class="ph var">filename_str</span><span class="ph delim">,</span>
+          <span class="keyword kwd">char const *</span><span class="ph sep"> </span><span class="ph var">type_str</span>        <span class="ph delim">)</span>
+      </span></p>
+
+      <p class="p"><span class="ph synph">        <span class="keyword kwd">CPXFILEptr</span>
+        <span class="ph sep"> </span><span class="keyword kwd">CPXfopen</span><span class="ph delim">(</span>
+          <span class="keyword kwd">char const *</span><span class="ph sep"> </span><span class="ph var">filename_str</span><span class="ph delim">,</span>
+          <span class="keyword kwd">char const *</span><span class="ph sep"> </span><span class="ph var">type_str</span>        <span class="ph delim">)</span>
+      </span></p>
+
+    </div>
+<div class="section"><h2 class="title sectiontitle">Description</h2>    
+ 
+
+
+<p class="p">The routine <samp class="ph codeph"><span class="keyword apiname">CPXXfopen</span>/<span class="keyword apiname">CPXfopen</span></samp> opens files to be used in
+conjunction with the routines <samp class="ph codeph"><span class="keyword apiname">CPXaddfpdest,</span></samp>
+<samp class="ph codeph"><span class="keyword apiname">CPXXdelfpdest</span>/<span class="keyword apiname">CPXdelfpdest</span></samp> and <samp class="ph codeph"><span class="keyword apiname">CPXXsetlogfile</span>/<span class="keyword apiname">CPXsetlogfile</span></samp>. It has the
+same arguments as the standard C library function <samp class="ph codeph">fopen</samp>.</p>
+
+
+    <div class="note warning"><span class="warningtitle">Warning:</span>       <div class="p">Generally, do <strong class="ph b">not</strong> use the pointer 
+          returned by this routine.
+        Use the pointer returned by this function <strong class="ph b">only</strong> with 
+        the following routines:
+        <ul class="ul"><li class="li"><a class="xref" href="fputs.html" title="The routine CPXXfputs/CPXfputs can be used to write output to a file opened with CPXXfopen/CPXfopen.">CPXXfputs and CPXfputs</a> </li>
+<li class="li"><a class="xref" href="addfpdest.html" title="The routine CPXXaddfpdest/CPXaddfpdest adds a file to the list of message destinations for a channel.">CPXXaddfpdest and CPXaddfpdest</a> </li>
+<li class="li"><a class="xref" href="delfpdest.html" title="The routine CPXXdelfpdest/CPXdelfpdest removes a file from the list of message destinations for a channel.">CPXXdelfpdest and CPXdelfpdest</a> </li>
+<li class="li"><a class="xref" href="setlogfile.html" title="The routine CPXXsetlogfile/CPXsetlogfile modifies the log file to which messages from all four CPLEX-defined channels are written. This function is deprecated. Use CPXXsetlogfilename/CPXsetlogfilename instead.">CPXXsetlogfile and CPXsetlogfile</a> </li>
+<li class="li"><a class="xref" href="fclose.html" title="The routine CPXXfclose/CPXfclose closes files that are used in conjunction with the routines CPXXaddfpdest/CPXaddfpdest, CPXXdelfpdest/CPXdelfpdest, and CPXXsetlogfile/CPXsetlogfile.">CPXXfclose and CPXfclose</a></li>
+</ul>
+
+        Using the pointer for anything else (with <samp class="ph codeph">fprintf</samp>, 
+        for example) results in undefined behavior.
+      </div>
+
+    </div>
+
+
+    </div>
+<div class="section"><h2 class="title sectiontitle">Arguments</h2>      
+    <dl class="dl parml"><dt class="dt pt dlterm">filename_str</dt>
+<dd class="dd pd">          
+          A pointer to a character string that contains the name of the file to be opened.
+        </dd>
+<dt class="dt pt dlterm">type_str</dt>
+<dd class="dd pd">          
+          A pointer to a character string, containing characters according to the syntax of the standard C function <samp class="ph codeph">fopen</samp>.
+        </dd>
+</dl>
+
+  </div>
+<div class="section"><h2 class="title sectiontitle">Return</h2>      
+      The routine returns a pointer to an object representing an open file, or NULL if the file could not be opened. A CPXFILEptr is analogous to FILE *type in C language.
+    </div>
+<div class="section"><h2 class="title sectiontitle">Example</h2>      
+      
+<pre class="pre codeblock"><code>fp = CPXfopen ("mylog.log", "w");</code></pre>
+
+
+<p class="p">See also <samp class="ph codeph">lpex5.c</samp> in the <em class="ph i">CPLEX User's Manual</em>.</p>
+
+
+
+
+    </div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../refcallablelibrary/groups/hpAlphabetEF.html">E, F</a></div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../refcallablelibrary/groups/homepageportability.html">Portability Routines in the CPLEX Callable Library (C API)</a></div>
+</div>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../refcallablelibrary/cpxapi/hpIO.html">Input, output, and communication channels</a></div>
+</div>
+</div></div></body>
+</html>

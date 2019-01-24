@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="New features in the Callable Library (C API) of CPLEX V12.8" />
+<meta name="abstract" content="These release notes highlight new features in the Callable Library (C API) in IBM CPLEX V12.8.0." />
+<meta name="Description" content="These release notes highlight new features in the Callable Library (C API) in IBM CPLEX V12.8.0." />
+<meta name="DC.subject" content="Callable Library (C API), CPLEX V12.8.0 release notes, CPXsetlogfilename, CPXXsetlogfilename" />
+<meta name="keywords" content="Callable Library (C API), CPLEX V12.8.0 release notes, CPXsetlogfilename, CPXXsetlogfilename" />
+<meta name="DC.Relation" scheme="URI" content="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="CPLEXReleaseNotesV128newCapi" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" />
+<title>New features in the Callable Library (C API) of CPLEX V12.8</title>
+</head>
+<body id="CPLEXReleaseNotesV128newCapi"><div role="main">
+<h1 class="title topictitle1">New features in the Callable Library (C API) of CPLEX V12.8 </h1>
+<div class="body"><p class="shortdesc">These release notes highlight new features in the Callable Library (C API) 
+in IBM CPLEX V12.8.0. </p>
+<p class="p">CPLEX V12.8.0 offers new routines in the Callable Library (C API).</p>
+<div class="section"><h2 class="title sectiontitle">Managing log files</h2> 
+ 
+<p class="p">The new routine
+<a class="xref" href="../../../../refcallablelibrary/cpxapi/setlogfilename.html" title="Sets and opens the log file.">CPXXsetlogfilename and CPXsetlogfilename</a> 
+opens a file by name for logging CPLEX activity. This new routine replaces the deprecated routine 
+<samp class="ph codeph">CPXsetlogfile</samp>, which has been removed from CPLEX V12.8.0.</p>
+ 
+<p class="p">The new routine 
+<a class="xref" href="../../../../refcallablelibrary/cpxapi/getlogfilename.html" title="The routine CPXXgetlogfilename/CPXgetlogfilename accesses the name of the current logfile.">CPXXgetlogfilename and CPXgetlogfilename</a> 
+accesses the name of a log file.</p>
+ </div>
+<div class="section"><h2 class="title sectiontitle">Modeling assistance: same coefficient in objective</h2> 
+ 
+<p class="p">CPLEX V12.8.0 supports an additional constant <samp class="ph codeph">CPXMI_SAMECOEF_OBJ</samp> to 
+alert the user when coefficients in the objective are very nearly the same value. 
+See the reference manual of the Callable Library (C API) for documentation of this constant in 
+<a class="xref" href="../../../../refcallablelibrary/macros/homepagemodelinfo.html">Modeling information in the CPLEX Callable Library (C API)</a>. </p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Indicator constraints and data checking</h2> 
+
+<p class="p">CPLEX V12.8 offers more data checking with respect to indicator constraints in your model.
+<a class="xref" href="../../../../refcallablelibrary/mipapi/addindconstraints.html" title="Adds a set of indicator constraints to the specified problem object.">CPXXaddindconstraints and CPXaddindconstraints</a> and 
+<a class="xref" href="../../../../refcallablelibrary/gcapi/addindconstr.html" title="The routine CPXXaddindconstr/CPXaddindconstr adds an indicator constraint to the specified problem object.">CPXXaddindconstr and CPXaddindconstr</a> 
+now validate the sense and return an error message in the case of invalid sense when data checking is on. 
+Likewise, these routines return an error if a NaN (not a number) or infinity appear as a righthand side (RHS) 
+value when data checking is on. For more about data checking, see 
+<a class="xref" href="../../../Parameters/topics/DataCheck.html" title="Turns on or off data consistency checking and modeling assistance.">data consistency checking and modeling assistance</a> 
+in the <em class="ph i">CPLEX Parameters Reference Manual</em>.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">New callback routines in the Callable Library (C API)</h2> 
+ 
+<p class="p">These new routines in the Callable Library (C API) offer a fresh approach to callbacks for CPLEX,
+without the limitations imposed by legacy control callbacks in CPLEX.
+For more about this idea, see the announcement 
+<a class="xref" href="newCallbacks.html" title="These release notes highlight newly redesigned callbacks in IBM CPLEX V12.8.0.">New callback design in CPLEX V12.8.0</a> 
+in these release notes as well as the 
+documentation of these routines in the reference manual of 
+the Callable Library (C API).</p>
+ 
+<ul class="ul"><li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbacksetfunc.html" title="Sets the generic callback function and specifies in which contexts it will be invoked.">CPXXcallbacksetfunc and CPXcallbacksetfunc</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackabort.html" title="Aborts a CPLEX solve from a callback.">CPXXcallbackabort and CPXcallbackabort</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackaddusercuts.html" title="Add user cuts from ***.">CPXXcallbackaddusercuts and CPXcallbackaddusercuts</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackcandidateispoint.html" title="Tests whether a callback in the context CPX_CALLBACKCONTEXT_CANDIDATE was invoked for a candidate feasible point.">CPXXcallbackcandidateispoint and CPXcallbackcandidateispoint</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackcandidateisray.html" title="Tests whether a callback in the context CPX_CALLBACKCONTEXT_CANDIDATE was invoked for an unbounded relaxation.">CPXXcallbackcandidateisray and CPXcallbackcandidateisray</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackgetcandidatepoint.html" title="Gets the candidate solution and its objective value for callback invocations in the context CPX_CALLBACKCONTEXT_CANDIDATE.">CPXXcallbackgetcandidatepoint and CPXcallbackgetcandidatepoint</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackgetcandidateray.html" title="Gets the unbounded ray for callback invocations in the context CPX_CALLBACKCONTEXT_CANDIDATE.">CPXXcallbackgetcandidateray and CPXcallbackgetcandidateray</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackgetfunc.html" title="Get the currently installed generic callback.">CPXXcallbackgetfunc and CPXcallbackgetfunc</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/mipapi/callbackgetgloballb.html" title="The routine CPXXcallbackgetgloballb/CPXcallbackgetgloballb retrieves the best known globally valid lower bound values during MIP optimization from within a user-written callback.">CPXXcallbackgetgloballb and CPXcallbackgetgloballb</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/mipapi/callbackgetglobalub.html" title="The routine CPXXcallbackgetglobalub/CPXcallbackgetglobalub retrieves the best known globally valid upper bound values during MIP optimization from within a user-written callback.">CPXXcallbackgetglobalub and CPXcallbackgetglobalub</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackgetincumbent.html" title="Gets the incumbent solution and its objective value for callback invocations in the context CPX_CALLBACKCONTEXT_CANDIDATE.dita.">CPXXcallbackgetincumbent and CPXcallbackgetincumbent</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackgetinfodbl.html" title="Accesses information of type double from a generic callback.">CPXXcallbackgetinfodbl and CPXcallbackgetinfodbl</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackgetinfoint.html" title="Accesses information of type integer from a generic callback.">CPXXcallbackgetinfoint and CPXcallbackgetinfoint</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackgetinfolong.html" title="Accesses information of type long from a generic callback.">CPXXcallbackgetinfolong and CPXcallbackgetinfolong</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/mipapi/callbackgetlocallb.html" title="The routine CPXXcallbackgetlocallb/CPXcallbackgetlocallb retrieves the lower bound values for the subproblem at the current node during MIP optimization from within a user-written callback.">CPXXcallbackgetlocallb and CPXcallbackgetlocallb</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/mipapi/callbackgetlocalub.html" title="The routine CPXXcallbackgetlocalub/CPXcallbackgetlocalub retrieves the upper bound values for the subproblem at the current node during MIP optimization from within a user-written callback.">CPXXcallbackgetlocalub and CPXcallbackgetlocalub</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackgetrelaxationpoint.html" title="Get the solution to the current relaxation and its objective value for callback invocations with ***.">CPXXcallbackgetrelaxationpoint and CPXcallbackgetrelaxationpoint</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackpostheursoln.html" title="Posts a feasible solution to CPLEX.">CPXXcallbackpostheursoln and CPXcallbackpostheursoln</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/cpxapi/callbackrejectcandidate.html" title="Rejects a candidate solution or an unbounded direction from a callback in the context CPX_CALLBACKCONTEXT_CANDIDATE and potentially specifies additional constraints that cut off the solution.">CPXXcallbackrejectcandidate and CPXcallbackrejectcandidate</a></li>
+</ul>
+</div>
+<div class="section"><h2 class="title sectiontitle">Contexts (macros) to support new callbacks</h2> 
+ 
+<ul class="ul"><li class="li"><a class="xref" href="../../../../refcallablelibrary/macros/CPX_CALLBACKCONTEXT_CANDIDATE.html" title="Generic callback at feasible solution candidate">CPX_CALLBACKCONTEXT_CANDIDATE</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/macros/CPX_CALLBACKCONTEXT_GLOBAL_PROGRESS.html" title="Generic callback at global progress">CPX_CALLBACKCONTEXT_GLOBAL_PROGRESS</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/macros/CPX_CALLBACKCONTEXT_LOCAL_PROGRESS.html" title="Generic callback at thread-local progress">CPX_CALLBACKCONTEXT_LOCAL_PROGRESS</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/macros/CPX_CALLBACKCONTEXT_RELAXATION.html" title="Generic callback at relaxation solution candidate">CPX_CALLBACKCONTEXT_RELAXATION</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/macros/CPX_CALLBACKCONTEXT_THREAD_DOWN.html" title="Generic callback at thread end">CPX_CALLBACKCONTEXT_THREAD_DOWN</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/macros/CPX_CALLBACKCONTEXT_THREAD_UP.html" title="Generic callback at thread start">CPX_CALLBACKCONTEXT_THREAD_UP</a></li>
+</ul>
+</div>
+<div class="section"><h2 class="title sectiontitle">Enumerations to support new callbacks</h2> 
+ 
+<ul class="ul"><li class="li"><a class="xref" href="../../../../refcallablelibrary/enumerations/CPXCALLBACKINFO.html">CPXCALLBACKINFO</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/enumerations/CPXCALLBACKSOLUTIONSTRATEGY.html" title="Solution strategies for handling solutions passed to CPXXcallbackpostheursoln.">CPXCALLBACKSOLUTIONSTRATEGY</a></li>
+</ul>
+</div>
+<div class="section"><h2 class="title sectiontitle">Type definitions (<samp class="ph codeph">typedef</samp>) to support new callbacks</h2> 
+ 
+<ul class="ul"><li class="li"><a class="xref" href="../../../../refcallablelibrary/typedefs/CPXCALLBACKCONTEXTptr.html" title="Pointer to a callback context.">CPXCALLBACKCONTEXTptr</a></li>
+<li class="li"><a class="xref" href="../../../../refcallablelibrary/typedefs/CPXCALLBACKFUNC.html" title="Prototype for generic callback functions">CPXCALLBACKFUNC</a></li>
+</ul>
+</div>
+<div class="section"><h2 class="title sectiontitle">Error messages to support new callbacks and their contexts</h2> 
+ 
+<p class="p"><a class="xref" href="../../../../refcallablelibrary/macros/CPXERR_CALLBACK_INCONSISTENT.html" title="1060 Inconsistent callback configuration">CPXERR_CALLBACK_INCONSISTENT</a></p>
+ 
+<p class="p"><a class="xref" href="../../../../refcallablelibrary/macros/CPXERR_CAND_NOT_RAY.html" title="3026 Candidate is not an unbounded ray">CPXERR_CAND_NOT_RAY</a></p>
+ 
+<p class="p"><a class="xref" href="../../../../refcallablelibrary/macros/CPXERR_CAND_NOT_POINT.html" title="3025 Candidate is not a point">CPXERR_CAND_NOT_POINT</a></p>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" title="These release notes highlight new features in IBM CPLEX V12.8.0.">New features in CPLEX V12.8.0</a></div>
+</div>
+</div></div></body>
+</html>

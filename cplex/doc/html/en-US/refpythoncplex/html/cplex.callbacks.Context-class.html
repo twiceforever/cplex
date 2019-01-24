@@ -1,0 +1,1515 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cplex.callbacks.Context</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+ <!-- CC Accessibility - Skip to main content link -->
+ <th bgcolor="#70b0f0" class="navbar-select">
+ <a href="#ibm-content">
+ <img class="ibm-access" src="whitepixel.png" alt="Skip&nbsp;to&nbsp;main&nbsp;content"/>
+ </a></th>
+ <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >CPLEX Python API Reference Manual</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cplex-module.html">Package&nbsp;cplex</a> ::
+        <a href="cplex.callbacks-module.html">Module&nbsp;callbacks</a> ::
+        Class&nbsp;Context
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cplex.callbacks.Context-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<a name="ibm-content">&nbsp;</a>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class Context</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="class_hierarchy_for_context" name="class_hierarchy_for_context">
+<area shape="rect" id="node1" href="cplex.callbacks.Context-class.html" title="Context" alt="" coords="5,5,80,35"/>
+</map>
+  <img src="class_hierarchy_for_context.gif" alt='' usemap="#class_hierarchy_for_context" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Callback context</p>
+<p>An instance of this class defines the context in which a callback was
+invoked. It provides functions to query information and perform all actions
+that can be performed from a callback.</p>
+<p>Note an instance of this class is only valid during execution of the
+callback into which it was passed. Don't store a reference to the context
+across that callback invocation.</p>
+
+<!-- ==================== NESTED CLASSES ==================== -->
+<a name="section-NestedClasses"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Nested Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cplex.callbacks.Context.info-class.html" class="summary-name">info</a><br />
+      The values that can be used with get_int_info(),
+get_long_info(), get_double_info().
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cplex.callbacks.Context.solution_strategy-class.html" class="summary-name">solution_strategy</a><br />
+      The different types of solutions that can submitted to
+post_heuristic_solution().
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cplex.callbacks.Context.id-class.html" class="summary-name">id</a><br />
+      The different contexts in which a callback can be invoked.
+    </td>
+  </tr>
+</table>
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="get_id"></a><span class="summary-sig-name">get_id</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the context in which the current callback was invoked.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#in_thread_up" class="summary-sig-name">in_thread_up</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Test whether the callback was invoked in context id.thread_up.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#in_thread_down" class="summary-sig-name">in_thread_down</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Test whether the callback was invoked in context id.thread_down.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#in_local_progress" class="summary-sig-name">in_local_progress</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Test whether the callback was invoked in context id.local_progress.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#in_global_progress" class="summary-sig-name">in_global_progress</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Test whether the callback was invoked in context id.global_progress.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#in_candidate" class="summary-sig-name">in_candidate</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Test whether the callback was invoked in context id.candidate.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#in_relaxation" class="summary-sig-name">in_relaxation</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Test whether the callback was invoked in context id.relaxation.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_int_info" class="summary-sig-name">get_int_info</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">what</span>)</span><br />
+      Get a 32bit signed information value.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_long_info" class="summary-sig-name">get_long_info</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">what</span>)</span><br />
+      Get a 64bit signed information value.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_double_info" class="summary-sig-name">get_double_info</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">what</span>)</span><br />
+      Get a float information value.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#abort" class="summary-sig-name">abort</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Abort optimization.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_relaxation_point" class="summary-sig-name">get_relaxation_point</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>)</span><br />
+      Get the solution to the current relaxation.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_relaxation_objective" class="summary-sig-name">get_relaxation_objective</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get objective value of current relaxation.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_incumbent" class="summary-sig-name">get_incumbent</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>)</span><br />
+      Get the current incumbent solution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_incumbent_objective" class="summary-sig-name">get_incumbent_objective</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get objective value of the current incumbent.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#is_candidate_point" class="summary-sig-name">is_candidate_point</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Test if the callback was invoked for a candidate feasible point.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_candidate_point" class="summary-sig-name">get_candidate_point</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>)</span><br />
+      Get the current candidate solution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_candidate_objective" class="summary-sig-name">get_candidate_objective</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get objective value of current candidate solution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#is_candidate_ray" class="summary-sig-name">is_candidate_ray</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Test if the callback was invoked for an unbounded ray.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_candidate_ray" class="summary-sig-name">get_candidate_ray</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>)</span><br />
+      Get the current unbounded ray.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_local_lower_bounds" class="summary-sig-name">get_local_lower_bounds</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>)</span><br />
+      Get the current local lower bounds.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_local_upper_bounds" class="summary-sig-name">get_local_upper_bounds</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>)</span><br />
+      Get the current local upper bounds.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_global_lower_bounds" class="summary-sig-name">get_global_lower_bounds</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>)</span><br />
+      Get the current globally valid lower bounds.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#get_global_upper_bounds" class="summary-sig-name">get_global_upper_bounds</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">*args</span>)</span><br />
+      Get the current globally valid upper bounds.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#post_heuristic_solution" class="summary-sig-name">post_heuristic_solution</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">x</span>,
+        <span class="summary-sig-arg">obj</span>,
+        <span class="summary-sig-arg">strategy</span>)</span><br />
+      Post a feasible solution vector to CPLEX.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#add_user_cuts" class="summary-sig-name">add_user_cuts</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cuts</span>,
+        <span class="summary-sig-arg">senses</span>,
+        <span class="summary-sig-arg">rhs</span>,
+        <span class="summary-sig-arg">cutmanagement</span>,
+        <span class="summary-sig-arg">local</span>)</span><br />
+      Add user cuts.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="add_user_cut"></a><span class="summary-sig-name">add_user_cut</span>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">cut</span>,
+        <span class="summary-sig-arg">sense</span>,
+        <span class="summary-sig-arg">rhs</span>,
+        <span class="summary-sig-arg">cutmanagement</span>,
+        <span class="summary-sig-arg">local</span>)</span><br />
+      Convenience wrapper for add_user_cuts that only adds a single cut.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cplex.callbacks.Context-class.html#reject_candidate" class="summary-sig-name">reject_candidate</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">constraints</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">senses</span>=<span class="summary-sig-default">None</span>,
+        <span class="summary-sig-arg">rhs</span>=<span class="summary-sig-default">None</span>)</span><br />
+      Reject the current candidate solution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__init__</code>,
+      <code>__new__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="in_thread_up"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">in_thread_up</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test whether the callback was invoked in context id.thread_up.</p>
+<p>It is a shortcut for get_id() == id.thread_up.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="in_thread_down"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">in_thread_down</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test whether the callback was invoked in context id.thread_down.</p>
+<p>It is a shortcut for get_id() == id.thread_down.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="in_local_progress"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">in_local_progress</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test whether the callback was invoked in context id.local_progress.</p>
+<p>It is a shortcut for get_id() == id.local_progress.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="in_global_progress"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">in_global_progress</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test whether the callback was invoked in context id.global_progress.</p>
+<p>It is a shortcut for get_id() == id.global_progress.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="in_candidate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">in_candidate</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test whether the callback was invoked in context id.candidate.</p>
+<p>It is a shortcut for get_id() == id.candidate.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="in_relaxation"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">in_relaxation</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test whether the callback was invoked in context id.relaxation.</p>
+<p>It is a shortcut for get_id() == id.relaxation.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_int_info"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_int_info</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">what</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a 32bit signed information value.</p>
+<p>Potential values are listed in cplex.callback.Context.info.
+Note that in all contexts but cplex.callback.Context.id.global_progress
+the information returned by the function is thread-local.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_long_info"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_long_info</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">what</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a 64bit signed information value.</p>
+<p>Potential values are listed in cplex.callback.Context.info.
+Note that in all contexts but cplex.callback.Context.id.global_progress
+the information returned by the function is thread-local.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_double_info"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_double_info</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">what</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a float information value.</p>
+<p>Potential values are listed in cplex.callback.Context.info.
+Note that in all contexts but cplex.callback.Context.id.global_progress
+the information returned by the function is thread-local.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="abort"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">abort</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Abort optimization.</p>
+<p>If you call this function then CPLEX will abort optimization at the
+next opportunity.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_relaxation_point"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_relaxation_point</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the solution to the current relaxation.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.relaxation. If invoked in a different
+context it will raise an exception.</p>
+<p>The function returns the values in the solution for the current
+relaxation for the variables specified by the arguments.</p>
+<p>There are four forms by which get_relaxation_point may be called.</p>
+<dl class="rst-docutils">
+<dt>self.get_relaxation_point()</dt>
+<dd>returns the full solution vector.</dd>
+<dt>self.get_relaxation_point(i)</dt>
+<dd>i must be a variable index or name.  Returns the value of the
+variable with index or name i in the solution to the current
+relaxation.</dd>
+<dt>self.get_relaxation_point(s)</dt>
+<dd>s must be a sequence of variable indices or names.  Returns
+a list of the values of the variables with indices
+the members of s, in the same order as they appear in s.
+Equivalent to [self.get_relaxation_point(i) for i in s]</dd>
+<dt>self.get_relaxation_point(begin, end)</dt>
+<dd>begin and end must be integers with begin &lt;= end or
+variable names with the same property.  Returns a list of
+solution values of variables with indices between begin
+and end, inclusive of end.  Equivalent to
+self.get_relaxation_point(range(begin, end + 1))</dd>
+</dl>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_relaxation_objective"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_relaxation_objective</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get objective value of current relaxation.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.relaxation. If invoked in a different
+context it will raise an exception.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_incumbent"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_incumbent</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current incumbent solution.</p>
+<p>The function returns the values in the current incumbent solution
+for the variables specified by the arguments.</p>
+<p>There are four forms by which get_candidate_point may be called.</p>
+<dl class="rst-docutils">
+<dt>self.get_incumbent()</dt>
+<dd>returns the full incumbent vector.</dd>
+<dt>self.get_incumbent(i)</dt>
+<dd>i must be a variable index or name.  Returns the value of the
+variable with index or name i in the current incumbent solution.</dd>
+<dt>self.get_incumbent(s)</dt>
+<dd>s must be a sequence of variable indices or names.  Returns
+a list of the values of the variables with indices
+the members of s, in the same order as they appear in s.
+Equivalent to [self.get_incumbent(i) for i in s]</dd>
+<dt>self.get_incumbent(begin, end)</dt>
+<dd>begin and end must be integers with begin &lt;= end or
+variable names with the same property.  Returns a list of
+solution values of variables with indices between begin
+and end, inclusive of end.  Equivalent to
+self.get_incumbent(range(begin, end + 1))</dd>
+</dl>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_incumbent_objective"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_incumbent_objective</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get objective value of the current incumbent.</p>
+<p>The returned value may be a huge value (such as 1e75) to indicate that
+no incumbent was found yet. Consider using get_int_info() with
+cplex.callbacks.Context.info.feasible first to check whether there
+is an incumbent.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="is_candidate_point"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">is_candidate_point</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test if the callback was invoked for a candidate feasible point.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.candidate. If invoked in a different
+context it will raise an exception.</p>
+<p>The function returns true if the callback was invoked for a
+candidate feasible point. In that case the candidate feasible point
+can be examined using get_candidate_point() and
+get_candidate_objective().</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_candidate_point"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_candidate_point</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current candidate solution.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.candidate and is_candidate_point()
+returns true. If invoked in a different
+context it will raise an exception.</p>
+<p>The function returns the values in the current candidate solution
+for the variables specified by the arguments.</p>
+<p>There are four forms by which get_candidate_point may be called.</p>
+<dl class="rst-docutils">
+<dt>self.get_candidate_point()</dt>
+<dd>returns the full solution vector.</dd>
+<dt>self.get_candidate_point(i)</dt>
+<dd>i must be a variable index or name.  Returns the value of the
+variable with index or name i in the current candidate solution.</dd>
+<dt>self.get_candidate_point(s)</dt>
+<dd>s must be a sequence of variable indices or names.  Returns
+a list of the values of the variables with indices
+the members of s, in the same order as they appear in s.
+Equivalent to [self.get_candidate_point(i) for i in s]</dd>
+<dt>self.get_candidate_point(begin, end)</dt>
+<dd>begin and end must be integers with begin &lt;= end or
+variable names with the same property.  Returns a list of
+solution values of variables with indices between begin
+and end, inclusive of end.  Equivalent to
+self.get_candidate_point(range(begin, end + 1))</dd>
+</dl>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_candidate_objective"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_candidate_objective</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get objective value of current candidate solution.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.candidate and is_candidate_point()
+returns true. It will raise an exception if
+invoked in a different context.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="is_candidate_ray"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">is_candidate_ray</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Test if the callback was invoked for an unbounded ray.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.candidate. If invoked in a different
+context it will raise an exception.</p>
+<p>The function returns true if the callback was invoked for an
+unbounded relaxation. In that case the unbounded ray
+can be obtained using get_candidate_ray() and.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_candidate_ray"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_candidate_ray</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current unbounded ray.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.candidate and is_candidate_ray()
+returns true. If invoked in a different
+context it will raise an exception.</p>
+<p>The function returns the values for in the unbounded ray
+for the variables specified by the arguments.</p>
+<p>There are four forms by which get_candidate_ray may be called.</p>
+<dl class="rst-docutils">
+<dt>self.get_candidate_ray()</dt>
+<dd>returns the full ray vector.</dd>
+<dt>self.get_candidate_ray(i)</dt>
+<dd>i must be a variable index or name.  Returns the value of the
+variable with index or name i in the unbounded ray.</dd>
+<dt>self.get_candidate_ray(s)</dt>
+<dd>s must be a sequence of variable indices or names.  Returns
+a list of the values of the variables with indices
+the members of s, in the same order as they appear in s.
+Equivalent to [self.get_candidate_ray(i) for i in s]</dd>
+<dt>self.get_candidate_ray(begin, end)</dt>
+<dd>begin and end must be integers with begin &lt;= end or
+variable names with the same property.  Returns a list of
+unbounded reay values of variables with indices between begin
+and end, inclusive of end.  Equivalent to
+self.get_candidate_ray(range(begin, end + 1))</dd>
+</dl>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_local_lower_bounds"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_local_lower_bounds</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current local lower bounds.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.relaxation. If invoked in a different
+context it will raise an exception.</p>
+<p>There are four forms by which get_local_lower_bounds may be called.</p>
+<dl class="rst-docutils">
+<dt>self.get_local_lower_bounds()</dt>
+<dd>returns local lower bounds for all variables.</dd>
+<dt>self.get_local_lower_bounds(i)</dt>
+<dd>i must be a variable index or name.  Returns the local lower
+bound of the variable with index or name i.</dd>
+<dt>self.get_local_lower_bounds(s)</dt>
+<dd>s must be a sequence of variable indices or names.  Returns
+a list of the local lower bounds of the variables with indices
+the members of s, in the same order as they appear in s.
+Equivalent to [self.get_local_lower_bounds(i) for i in s]</dd>
+<dt>self.get_local_lower_bounds(begin, end)</dt>
+<dd>begin and end must be integers with begin &lt;= end or
+variable names with the same property.  Returns a list of
+the local lower bounds of variables with indices between begin
+and end, inclusive of end.  Equivalent to
+self.get_local_lower_bounds(range(begin, end + 1))</dd>
+</dl>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_local_upper_bounds"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_local_upper_bounds</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current local upper bounds.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.relaxation. If invoked in a different
+context it will raise an exception.</p>
+<p>There are four forms by which get_local_upper_bounds may be called.</p>
+<dl class="rst-docutils">
+<dt>self.get_local_upper_bounds()</dt>
+<dd>returns local upper bounds for all variables.</dd>
+<dt>self.get_local_upper_bounds(i)</dt>
+<dd>i must be a variable index or name.  Returns the local upper
+bound of the variable with index or name i.</dd>
+<dt>self.get_local_upper_bounds(s)</dt>
+<dd>s must be a sequence of variable indices or names.  Returns
+a list of the local upper bounds of the variables with indices
+the members of s, in the same order as they appear in s.
+Equivalent to [self.get_local_upper_bounds(i) for i in s]</dd>
+<dt>self.get_local_upper_bounds(begin, end)</dt>
+<dd>begin and end must be integers with begin &lt;= end or
+variable names with the same property.  Returns a list of
+the local upper bounds of variables with indices between begin
+and end, inclusive of end.  Equivalent to
+self.get_local_upper_bounds(range(begin, end + 1))</dd>
+</dl>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_global_lower_bounds"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_global_lower_bounds</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current globally valid lower bounds.</p>
+<p>This function cannot be invoked if get_id() returns
+cplex.callbacks.Context.id.thread_up or
+cplex.callbacks.Context.id.thread_down.</p>
+<p>There are four forms by which get_global_lower_bounds may be called.</p>
+<dl class="rst-docutils">
+<dt>self.get_global_lower_bounds()</dt>
+<dd>returns global lower bounds for all variables.</dd>
+<dt>self.get_global_lower_bounds(i)</dt>
+<dd>i must be a variable index or name.  Returns the global lower
+bound of the variable with index or name i.</dd>
+<dt>self.get_global_lower_bounds(s)</dt>
+<dd>s must be a sequence of variable indices or names.  Returns
+a list of the global lower bounds of the variables with indices
+the members of s, in the same order as they appear in s.
+Equivalent to [self.get_global_lower_bounds(i) for i in s]</dd>
+<dt>self.get_global_lower_bounds(begin, end)</dt>
+<dd>begin and end must be integers with begin &lt;= end or
+variable names with the same property.  Returns a list of
+the global lower bounds of variables with indices between begin
+and end, inclusive of end.  Equivalent to
+self.get_global_lower_bounds(range(begin, end + 1))</dd>
+</dl>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="get_global_upper_bounds"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">get_global_upper_bounds</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">*args</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current globally valid upper bounds.</p>
+<p>This function cannot be invoked if get_id() returns
+cplex.callbacks.Context.id.thread_up or
+cplex.callbacks.Context.id.thread_down.</p>
+<p>There are four forms by which get_global_upper_bounds may be called.</p>
+<dl class="rst-docutils">
+<dt>self.get_global_upper_bounds()</dt>
+<dd>returns global upper bounds for all variables.</dd>
+<dt>self.get_global_upper_bounds(i)</dt>
+<dd>i must be a variable index or name.  Returns the global upper
+bound of the variable with index or name i.</dd>
+<dt>self.get_global_upper_bounds(s)</dt>
+<dd>s must be a sequence of variable indices or names.  Returns
+a list of the global upper bounds of the variables with indices
+the members of s, in the same order as they appear in s.
+Equivalent to [self.get_global_upper_bounds(i) for i in s]</dd>
+<dt>self.get_global_upper_bounds(begin, end)</dt>
+<dd>begin and end must be integers with begin &lt;= end or
+variable names with the same property.  Returns a list of
+the global upper bounds of variables with indices between begin
+and end, inclusive of end.  Equivalent to
+self.get_global_upper_bounds(range(begin, end + 1))</dd>
+</dl>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="post_heuristic_solution"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">post_heuristic_solution</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">x</span>,
+        <span class="sig-arg">obj</span>,
+        <span class="sig-arg">strategy</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Post a feasible solution vector to CPLEX.</p>
+<p>The function posts a (partial) feasible solution to CPLEX. CPLEX may
+use this vector to find a new incumbent solution.</p>
+<p>x is either a SparsePair instance or a list of two lists, the first
+of which specifies the variables (by index or name) and the second of
+which specifies the values. Note that for
+cplex.callbacks.Context.solution_strategy.complete the x vector
+must also explicitly contain all variables that are set to 0!</p>
+<p>obj is an estimate for the objective function value of the solution
+provided by x.</p>
+<p>strategy specifies how CPLEX should complete partial solutions. See
+cplex.callbacks.Context.solution_strategy for further details.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="add_user_cuts"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">add_user_cuts</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">cuts</span>,
+        <span class="sig-arg">senses</span>,
+        <span class="sig-arg">rhs</span>,
+        <span class="sig-arg">cutmanagement</span>,
+        <span class="sig-arg">local</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add user cuts.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.relaxation. If invoked in a different
+context it will raise an exception.</p>
+<p>The function submits the specified user cuts to CPLEX.</p>
+<p>cuts, senses, rhs, cutmanagement, local must all be lists of compatible
+dimensions. The first three specify the cuts to be added.</p>
+<p>cuts must be either a list of SparsePair instances or a list of lists of
+two lists, the first of which specifies variables, the second
+of which specifies the values of the constraint.</p>
+<p>senses must be list of single-character strings; (&quot;L&quot;, &quot;G&quot;, &quot;E&quot;)
+It may also be one single string (the concatenation of the single
+character strings).</p>
+<p>rhs is a list of floats, specifying the righthand side of the
+constraints.</p>
+<p>cutmanagement must be a list of cutmanagement constants and specifies
+for each cut how CPLEX should handle it (see the cutmanagement constants
+for further details). The values in cutmanagement should be chosen from
+the constants defined in cplex.callbacks.UserCutCallback.use_cut.</p>
+<p>local must be a list of boolean values and specifies for each cut
+whether it is only locally valid (True) or globally valid (False).</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="reject_candidate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">reject_candidate</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">constraints</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">senses</span>=<span class="sig-default">None</span>,
+        <span class="sig-arg">rhs</span>=<span class="sig-default">None</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Reject the current candidate solution.</p>
+<p>This function can only be invoked if get_id() returns
+cplex.callbacks.Context.id.candidate. If invoked in a different
+context it will raise an exception.</p>
+<p>The function marks the current candidate solution as infeasible,
+potentially specifying additional constraints that cut it off.</p>
+<p>If constraints, senses, and rhs are all None then the current candidate
+solution is just rejected. If any of the three is not None then
+all must be not None and all must have compatible dimensions. In that
+case the three arguments specify a set of constraints that cut off the
+current candidate solution. CPLEX may use this information to tighten
+the problem formulation and to avoid finding the same solution again.
+There is however no guarantee that CPLEX will actually use those
+additional constraints.</p>
+<p>constraints must be either a list of SparsePair instances or a list of lists of
+two lists, the first of which specifies variables, the second
+of which specifies the values of the constraint.</p>
+<p>senses must be list of single-character strings; (&quot;L&quot;, &quot;G&quot;, &quot;E&quot;)
+It may also be one single string (the concatenation of the single
+character strings).</p>
+<p>rhs is a list of floats, specifying the righthand side of the
+constraints.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+
+ <!-- CC Accessibility - Skip to main content link -->
+ <th bgcolor="#70b0f0" class="navbar-select">
+ <a href="#ibm-content">
+ <img class="ibm-access" src="whitepixel.png" alt="Skip&nbsp;to&nbsp;main&nbsp;content"/>
+ </a></th>
+ <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            >CPLEX Python API Reference Manual</th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+     &nbsp;
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

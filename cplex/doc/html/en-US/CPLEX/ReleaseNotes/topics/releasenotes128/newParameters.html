@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="New parameters in CPLEX V12.8.0" />
+<meta name="abstract" content="These release notes highlight new parameters in IBM CPLEX V12.8.0." />
+<meta name="Description" content="These release notes highlight new parameters in IBM CPLEX V12.8.0." />
+<meta name="DC.subject" content="parameter, CPLEX V12.8.0 release notes" />
+<meta name="keywords" content="parameter, CPLEX V12.8.0 release notes" />
+<meta name="DC.Relation" scheme="URI" content="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="CPLEXReleaseNotesV128newParameters" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" />
+<title>New parameters in CPLEX V12.8.0</title>
+</head>
+<body id="CPLEXReleaseNotesV128newParameters"><div role="main">
+<h1 class="title topictitle1">New parameters in CPLEX V12.8.0 </h1>
+<div class="body"><p class="shortdesc">These release notes highlight new parameters in IBM CPLEX V12.8.0.</p>
+<div class="section"><h2 class="title sectiontitle">Recording invocations of CPLEX</h2> 
+ 
+<p class="p">A new parameter, 
+<a class="xref" href="../../../Parameters/topics/Record.html" title="Records invocations of Callable Library (C API) routines">recording switch</a>, 
+<samp class="ph codeph">CPXPARAM_Record</samp>, 
+determines whether CPLEX records invocations of 
+ routines in an application of the CPLEX Callable Library (C API).</p>
+ 
+<p class="p"> This choice applies implicitly to all other application programming interfaces (APIs) 
+ of CPLEX (C++, Java, .NET, Python) as those APIs wrap routines of the 
+ CPLEX Callable Library (C API). </p>
+ 
+<p class="p">This parameter can help in technical support or debugging.  
+For example, in a custom application, the recording allows 
+technical support to replay the CPLEX-specific function calls without
+needing access to your original source code and data.</p>
+ 
+<p class="p"> 
+This parameter is off by default, that is, 0 (zero). </p>
+ 
+<p class="p"> 
+When this parameter is turned on, that is, 1 (one), it records all 
+invocations (function calls) of C routines in a file named 
+<samp class="ph codeph">cplex00000000.db</samp>, where <em class="ph i">00000000</em> varies appropriately. 
+The record includes input and output arguments as well as return values. 
+Recording continues until you close the CPLEX environment or your application 
+terminates.</p>
+ 
+<p class="p"> 
+When you want to record, set this parameter immediately after your application 
+creates the CPLEX environment. </p>
+ 
+<p class="p"> 
+Alternatively, you can also turn on this parameter by setting its value in a 
+formatted PRM file of CPLEX parameter settings, and then using the environment variable 
+<samp class="ph codeph">ILOG_CPLEX_PARAMETER_FILE</samp> to specify that file. 
+CPLEX applies the settings it finds in a PRM file designated by that environment 
+variable as early as possible. 
+For more detail about that environment variable, see the topic 
+<a class="xref" href="../../../UsrMan/topics/progr_consid/environmentVariables.html" title="CPLEX uses environment variables.">Using environment variables in CPLEX</a> 
+in the <em class="ph i">CPLEX User's Manual</em>. For more information about creating a file of parameter 
+settings (that is, a PRM file), see the topic 
+<a class="xref" href="../../../Parameters/topics/introPRMfile.html" title="Users of the Callable Library (C API) can save current parameter settings in a PRM file.">Saving parameter settings to a file in the C API</a> 
+in the <em class="ph i">CPLEX Parameters Reference Manual</em>. </p>
+</div>
+<div class="section"><h2 class="title sectiontitle">SubMIP parameters</h2> 
+
+<div class="p">CPLEX V12.8.0 offers three new parameters that give you more control over solving a 
+subMIP of a mixed integer programming (MIP) problem. For more information about these new parameters of CPLEX, 
+see their documentation in the <em class="ph i">Parameters of CPLEX Reference Manual</em>.
+<ul class="ul"><li class="li"><a class="xref" href="../../../Parameters/topics/SubMIPScale.html" title="Decides how to scale the problem matrix when CPLEX solves a subMIP during MIP optimization.">scale parameter for subMIPs</a></li>
+<li class="li"><a class="xref" href="../../../Parameters/topics/SubMIPStartAlg.html" title="Sets which continuous optimizer will be used to solve the initial relaxation of a subMIP of a MIP.">algorithm for initial MIP relaxation of a subMIP of a MIP</a></li>
+<li class="li"><a class="xref" href="../../../Parameters/topics/SubMIPSubAlg.html" title="Sets which optimizer will be used to solve the subproblems of a subMIP of a MIP.">algorithm for subproblems of a subMIP of a MIP</a></li>
+</ul>
+</div>
+ 
+<p class="p">For a definition of a subMIP and a list of conditions in which CPLEX solves a subMIP, see the topic 
+<a class="xref" href="../../../UsrMan/topics/discr_optim/mip/heuristics/subMIP.html" title="Defines subMIP and documents conditions in which CPLEX solves a subMIP.">What is a subMIP?</a> 
+in the <em class="ph i">CPLEX User's Manual</em>. </p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Dynamic row-management parameter</h2> 
+ 
+<p class="p"> 
+CPLEX V12.8.0 offers a new parameter 
+<a class="xref" href="../../../Parameters/topics/DynamicRows.html" title="This parameter specifies whether CPLEX should manage rows dynamically.">dynamic row-management</a> 
+to determine whether CPLEX dynamically manages rows active in the model during 
+dual simplex optimization.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Display of parameters</h2> 
+ 
+<p class="p">CPLEX V12.8.0 offers a new parameter 
+<a class="xref" href="../../../Parameters/topics/ParamDisplay.html" title="Decides whether to display parameters that are at nondefault values before optimization.">changed parameter display switch</a> 
+that turns on or off the feature for CPLEX to display parameters that are not at their 
+default value at the beginning of an optimization. 
+(The display appears on screen or in the CPLEX log according to settings of other 
+<a class="xref" href="../../../Parameters/topics/listDisplay.html" title="Here are links to parameters controlling screen displays, logs, and files.">Display and output</a> 
+parameters.)</p>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" title="These release notes highlight new features in IBM CPLEX V12.8.0.">New features in CPLEX V12.8.0</a></div>
+</div>
+</div></div></body>
+</html>

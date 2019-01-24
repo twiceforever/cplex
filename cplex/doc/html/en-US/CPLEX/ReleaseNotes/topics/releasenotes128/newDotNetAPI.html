@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="New features in the .NET API of CPLEX V12.8" />
+<meta name="abstract" content="These release notes highlight new features in the .NET API of in IBM CPLEX V12.8." />
+<meta name="Description" content="These release notes highlight new features in the .NET API of in IBM CPLEX V12.8." />
+<meta name="DC.subject" content=".NET API, CPLEX V12.8 release notes, callback, CPLEX V12.8 release notes (Java API)" />
+<meta name="keywords" content=".NET API, CPLEX V12.8 release notes, callback, CPLEX V12.8 release notes (Java API)" />
+<meta name="DC.Relation" scheme="URI" content="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="CPLEXReleaseNotesV128newDotNetAPI" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" />
+<title>New features in the .NET API of CPLEX V12.8</title>
+</head>
+<body id="CPLEXReleaseNotesV128newDotNetAPI"><div role="main">
+<h1 class="title topictitle1">New features in the .NET API of CPLEX V12.8 </h1>
+<div class="body"><p class="shortdesc">These release notes highlight new features in the .NET API of 
+in IBM CPLEX V12.8. </p>
+<p class="p">In the .NET API of CPLEX V12.8, the new implementation of <strong class="ph b">generic callbacks</strong> 
+offers these new classes, interfaces, methods, and 
+and enumerations (<samp class="ph codeph">enum</samp>). They are documented in the
+reference manual of the .NET API of CPLEX.</p>
+<div class="section"><h2 class="title sectiontitle">Classes and interfaces for the generic callback</h2> 
+ 
+<ul class="ul"><li class="li"><samp class="ph codeph">Cplex.Callback.Context</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.Id</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.Info</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.SolutionStrategy</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Function</samp></li>
+</ul>
+</div>
+<div class="section"><h2 class="title sectiontitle">Methods for the generic callback</h2>
+<ul class="ul"><li class="li"><samp class="ph codeph">Cplex.Callback.Context.Abort</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.AddUserCut</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.AddUserCuts</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetCandidateObjective</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetCandidatePoint</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetCandidateRay</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetCandidateValue</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetCplex</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetDoubleInfo</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetGlobalLB</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetGlobalUB</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetId</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetIntInfo</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetLongInfo</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetIncumbent</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetIncumbentObjective</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetIncumbentValue</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetLocalLB</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetLocalUB</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetRelaxationPoint</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetRelaxationObjective</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.GetRelaxationValue</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.InFeasible</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.InGlobalProgress</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.InLocalProgress</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.InRelaxation</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.InThreadDown</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.InThreadUp</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.IsCandidateIncumbent</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.IsCandidateRay</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.PostHeuristicSolution</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Context.RejectCandidate</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Callback.Function.Invoke</samp></li>
+</ul>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" title="These release notes highlight new features in IBM CPLEX V12.8.0.">New features in CPLEX V12.8.0</a></div>
+</div>
+</div></div></body>
+</html>

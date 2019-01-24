@@ -1,0 +1,1782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="9e2bfa53-c7e8-44d0-8ed5-1b5a11784fac" Title="CP Optimizer Class Library" Url="html/R_Project.htm">
+    <HelpTOCNode Id="5aa7a009-2887-407f-a9a8-cfb3fa000500" Title="ILOG.Concert Namespace" Url="html/N_ILOG_Concert.htm">
+      <HelpTOCNode Id="a4ee6349-74ae-4bf6-8904-59df583e3df3" Title="CloneManager Class" Url="html/T_ILOG_Concert_CloneManager.htm">
+        <HelpTOCNode Title="CloneManager Members" Url="html/AllMembers_T_ILOG_Concert_CloneManager.htm" />
+        <HelpTOCNode Title="CloneManager Constructor " Url="html/M_ILOG_Concert_CloneManager__ctor.htm" />
+        <HelpTOCNode Id="a8eb36cc-cf47-4e92-adb2-bf3dc2726e81" Title="CloneManager Methods" Url="html/Methods_T_ILOG_Concert_CloneManager.htm">
+          <HelpTOCNode Title="GetClone Method " Url="html/M_ILOG_Concert_CloneManager_GetClone.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="8fb4a258-9159-4b17-a22d-60b5b68e6a97" Title="CloneManager Properties" Url="html/Properties_T_ILOG_Concert_CloneManager.htm">
+          <HelpTOCNode Title="Modeler Property " Url="html/P_ILOG_Concert_CloneManager_Modeler.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="c43cd78e-bad1-4679-8ffb-b8bb18155f9e" Title="Exception Class" Url="html/T_ILOG_Concert_Exception.htm">
+        <HelpTOCNode Title="Exception Members" Url="html/AllMembers_T_ILOG_Concert_Exception.htm" />
+        <HelpTOCNode Id="b7a3eee9-414b-4c27-8e8c-a67e1b2ba865" Title="Exception Constructor " Url="html/Overload_ILOG_Concert_Exception__ctor.htm">
+          <HelpTOCNode Title="Exception Constructor " Url="html/M_ILOG_Concert_Exception__ctor.htm" />
+          <HelpTOCNode Title="Exception Constructor (String)" Url="html/M_ILOG_Concert_Exception__ctor_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="Exception Methods" Url="html/Methods_T_ILOG_Concert_Exception.htm" />
+        <HelpTOCNode Title="Exception Properties" Url="html/Properties_T_ILOG_Concert_Exception.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="90947bc1-1a7e-41bf-b5b2-e53c3ff3868e" Title="IAddable Interface" Url="html/T_ILOG_Concert_IAddable.htm">
+        <HelpTOCNode Title="IAddable Members" Url="html/AllMembers_T_ILOG_Concert_IAddable.htm" />
+        <HelpTOCNode Title="IAddable Methods" Url="html/Methods_T_ILOG_Concert_IAddable.htm" />
+        <HelpTOCNode Id="918af7e0-68a6-4386-b803-d00690ddde27" Title="IAddable Properties" Url="html/Properties_T_ILOG_Concert_IAddable.htm">
+          <HelpTOCNode Title="Name Property " Url="html/P_ILOG_Concert_IAddable_Name.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="0351bc18-cd6e-4154-9f92-95a3b348bdb8" Title="IAlternative Interface" Url="html/T_ILOG_Concert_IAlternative.htm">
+        <HelpTOCNode Title="IAlternative Members" Url="html/AllMembers_T_ILOG_Concert_IAlternative.htm" />
+        <HelpTOCNode Title="IAlternative Methods" Url="html/Methods_T_ILOG_Concert_IAlternative.htm" />
+        <HelpTOCNode Title="IAlternative Properties" Url="html/Properties_T_ILOG_Concert_IAlternative.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="fbc2a2bb-46fa-4b19-b68a-3c9f58c075a7" Title="IAnd Interface" Url="html/T_ILOG_Concert_IAnd.htm">
+        <HelpTOCNode Title="IAnd Members" Url="html/AllMembers_T_ILOG_Concert_IAnd.htm" />
+        <HelpTOCNode Id="775a79da-3fed-43c3-a14a-04ab3efdfccb" Title="IAnd Methods" Url="html/Methods_T_ILOG_Concert_IAnd.htm">
+          <HelpTOCNode Id="0677ce8f-dcb2-4d77-9541-27e3760ec132" Title="Add Method " Url="html/Overload_ILOG_Concert_IAnd_Add.htm">
+            <HelpTOCNode Title="Add Method (IConstraint)" Url="html/M_ILOG_Concert_IAnd_Add.htm" />
+            <HelpTOCNode Title="Add Method (IConstraint[])" Url="html/M_ILOG_Concert_IAnd_Add_1.htm" />
+            <HelpTOCNode Title="Add Method (IConstraint[], Int32, Int32)" Url="html/M_ILOG_Concert_IAnd_Add_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetEnumerator Method " Url="html/M_ILOG_Concert_IAnd_GetEnumerator.htm" />
+          <HelpTOCNode Id="afa3a75a-02a0-41d9-916e-6b8f4ad83ce1" Title="Remove Method " Url="html/Overload_ILOG_Concert_IAnd_Remove.htm">
+            <HelpTOCNode Title="Remove Method (IConstraint)" Url="html/M_ILOG_Concert_IAnd_Remove.htm" />
+            <HelpTOCNode Title="Remove Method (IConstraint[])" Url="html/M_ILOG_Concert_IAnd_Remove_1.htm" />
+            <HelpTOCNode Title="Remove Method (IConstraint[], Int32, Int32)" Url="html/M_ILOG_Concert_IAnd_Remove_2.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="IAnd Properties" Url="html/Properties_T_ILOG_Concert_IAnd.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="167b44b9-f407-4b29-a5c9-333f2639fc33" Title="IAnyCollection Interface" Url="html/T_ILOG_Concert_IAnyCollection.htm">
+        <HelpTOCNode Title="IAnyCollection Members" Url="html/AllMembers_T_ILOG_Concert_IAnyCollection.htm" />
+        <HelpTOCNode Id="77df4360-a79b-482e-8ba5-ed5495ee77a1" Title="IAnyCollection Methods" Url="html/Methods_T_ILOG_Concert_IAnyCollection.htm">
+          <HelpTOCNode Title="GetIndex Method " Url="html/Overload_ILOG_Concert_IAnyCollection_GetIndex.htm" />
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_IAnyCollection_GetValue.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IAnyCollection Properties" Url="html/Properties_T_ILOG_Concert_IAnyCollection.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="b44c922d-0191-44b6-a40b-d2b125c154a5" Title="ICollectionHelper Class" Url="html/T_ILOG_Concert_ICollectionHelper.htm">
+        <HelpTOCNode Title="ICollectionHelper Members" Url="html/AllMembers_T_ILOG_Concert_ICollectionHelper.htm" />
+        <HelpTOCNode Title="ICollectionHelper Constructor " Url="html/M_ILOG_Concert_ICollectionHelper__ctor.htm" />
+        <HelpTOCNode Id="b6f4c513-4995-4c33-bb94-c9f6f4d47272" Title="ICollectionHelper Methods" Url="html/Methods_T_ILOG_Concert_ICollectionHelper.htm">
+          <HelpTOCNode Title="asIntRange Method " Url="html/M_ILOG_Concert_ICollectionHelper_asIntRange.htm" />
+          <HelpTOCNode Title="asIntSet Method " Url="html/M_ILOG_Concert_ICollectionHelper_asIntSet.htm" />
+          <HelpTOCNode Title="asNumRange Method " Url="html/M_ILOG_Concert_ICollectionHelper_asNumRange.htm" />
+          <HelpTOCNode Title="asNumSet Method " Url="html/M_ILOG_Concert_ICollectionHelper_asNumSet.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="d747b584-e1b2-4f06-80d9-6f9f90effda2" Title="IColumn Interface" Url="html/T_ILOG_Concert_IColumn.htm">
+        <HelpTOCNode Title="IColumn Members" Url="html/AllMembers_T_ILOG_Concert_IColumn.htm" />
+        <HelpTOCNode Id="0932e62e-9239-4cb8-873f-08a6a65124ce" Title="IColumn Methods" Url="html/Methods_T_ILOG_Concert_IColumn.htm">
+          <HelpTOCNode Title="And Method " Url="html/M_ILOG_Concert_IColumn_And.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="01a207ae-9b83-4219-b2f9-40b29d37a6f3" Title="IConstraint Interface" Url="html/T_ILOG_Concert_IConstraint.htm">
+        <HelpTOCNode Title="IConstraint Members" Url="html/AllMembers_T_ILOG_Concert_IConstraint.htm" />
+        <HelpTOCNode Title="IConstraint Methods" Url="html/Methods_T_ILOG_Concert_IConstraint.htm" />
+        <HelpTOCNode Title="IConstraint Properties" Url="html/Properties_T_ILOG_Concert_IConstraint.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5cc95536-a5c3-4125-bfc6-2c607f5c5101" Title="IConversion Interface" Url="html/T_ILOG_Concert_IConversion.htm">
+        <HelpTOCNode Title="IConversion Members" Url="html/AllMembers_T_ILOG_Concert_IConversion.htm" />
+        <HelpTOCNode Id="dbc8b596-82f3-418e-a02f-0eb39b71f678" Title="IConversion Methods" Url="html/Methods_T_ILOG_Concert_IConversion.htm">
+          <HelpTOCNode Title="GetType Method " Url="html/M_ILOG_Concert_IConversion_GetType.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IConversion Properties" Url="html/Properties_T_ILOG_Concert_IConversion.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="0ab37c29-8956-4b97-a52c-78233ffff120" Title="ICopyable Interface" Url="html/T_ILOG_Concert_ICopyable.htm">
+        <HelpTOCNode Title="ICopyable Members" Url="html/AllMembers_T_ILOG_Concert_ICopyable.htm" />
+        <HelpTOCNode Id="38ca1579-3549-4976-9ab4-265c05dc06fb" Title="ICopyable Methods" Url="html/Methods_T_ILOG_Concert_ICopyable.htm">
+          <HelpTOCNode Title="MakeClone Method " Url="html/M_ILOG_Concert_ICopyable_MakeClone.htm" />
+          <HelpTOCNode Title="VisitChildren Method " Url="html/M_ILOG_Concert_ICopyable_VisitChildren.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="ac348607-a44a-40f9-b4ab-7ac18ffc9805" Title="ICopyableVisitor Interface" Url="html/T_ILOG_Concert_ICopyableVisitor.htm">
+        <HelpTOCNode Title="ICopyableVisitor Members" Url="html/AllMembers_T_ILOG_Concert_ICopyableVisitor.htm" />
+        <HelpTOCNode Id="a19e1d42-42fd-4e7c-ad9d-3fac8a444607" Title="ICopyableVisitor Methods" Url="html/Methods_T_ILOG_Concert_ICopyableVisitor.htm">
+          <HelpTOCNode Title="BeginVisit Method " Url="html/M_ILOG_Concert_ICopyableVisitor_BeginVisit.htm" />
+          <HelpTOCNode Title="EndVisit Method " Url="html/M_ILOG_Concert_ICopyableVisitor_EndVisit.htm" />
+          <HelpTOCNode Title="VisitChild Method " Url="html/M_ILOG_Concert_ICopyableVisitor_VisitChild.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="2d9d745d-e46e-4719-8af7-48e3133e613e" Title="ICumulFunctionExpr Interface" Url="html/T_ILOG_Concert_ICumulFunctionExpr.htm">
+        <HelpTOCNode Title="ICumulFunctionExpr Members" Url="html/AllMembers_T_ILOG_Concert_ICumulFunctionExpr.htm" />
+        <HelpTOCNode Id="68487eb0-0144-4961-a131-f7d6dc9003d4" Title="ICumulFunctionExpr Methods" Url="html/Methods_T_ILOG_Concert_ICumulFunctionExpr.htm">
+          <HelpTOCNode Title="Add Method " Url="html/M_ILOG_Concert_ICumulFunctionExpr_Add.htm" />
+          <HelpTOCNode Title="Sub Method " Url="html/M_ILOG_Concert_ICumulFunctionExpr_Sub.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="ICumulFunctionExpr Properties" Url="html/Properties_T_ILOG_Concert_ICumulFunctionExpr.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="bcfac545-80b1-43cf-ba23-c7bcfe984333" Title="IDataCollection Interface" Url="html/T_ILOG_Concert_IDataCollection.htm">
+        <HelpTOCNode Title="IDataCollection Members" Url="html/AllMembers_T_ILOG_Concert_IDataCollection.htm" />
+        <HelpTOCNode Id="97bf4a19-5d6f-4656-b55b-abf1b917543a" Title="IDataCollection Properties" Url="html/Properties_T_ILOG_Concert_IDataCollection.htm">
+          <HelpTOCNode Title="IsIntRange Property " Url="html/P_ILOG_Concert_IDataCollection_IsIntRange.htm" />
+          <HelpTOCNode Title="IsIntSet Property " Url="html/P_ILOG_Concert_IDataCollection_IsIntSet.htm" />
+          <HelpTOCNode Title="IsNumRange Property " Url="html/P_ILOG_Concert_IDataCollection_IsNumRange.htm" />
+          <HelpTOCNode Title="IsNumSet Property " Url="html/P_ILOG_Concert_IDataCollection_IsNumSet.htm" />
+          <HelpTOCNode Title="IsSymbolSet Property " Url="html/P_ILOG_Concert_IDataCollection_IsSymbolSet.htm" />
+          <HelpTOCNode Title="IsTupleSet Property " Url="html/P_ILOG_Concert_IDataCollection_IsTupleSet.htm" />
+          <HelpTOCNode Title="Name Property " Url="html/P_ILOG_Concert_IDataCollection_Name.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="7944c0a7-3f36-4f7e-a813-de3dd266a4b1" Title="IDiscreteDataCollection Interface" Url="html/T_ILOG_Concert_IDiscreteDataCollection.htm">
+        <HelpTOCNode Title="IDiscreteDataCollection Members" Url="html/AllMembers_T_ILOG_Concert_IDiscreteDataCollection.htm" />
+        <HelpTOCNode Id="de7b2a2c-5b11-4939-84a9-faddaec1701e" Title="IDiscreteDataCollection Methods" Url="html/Methods_T_ILOG_Concert_IDiscreteDataCollection.htm">
+          <HelpTOCNode Title="GetEnumerator Method " Url="html/M_ILOG_Concert_IDiscreteDataCollection_GetEnumerator.htm" />
+          <HelpTOCNode Id="5e18069c-edfd-46de-98e3-9d448df95267" Title="GetIndex Method " Url="html/Overload_ILOG_Concert_IDiscreteDataCollection_GetIndex.htm">
+            <HelpTOCNode Title="GetIndex Method (Double)" Url="html/M_ILOG_Concert_IDiscreteDataCollection_GetIndex.htm" />
+            <HelpTOCNode Title="GetIndex Method (Int32)" Url="html/M_ILOG_Concert_IDiscreteDataCollection_GetIndex_1.htm" />
+            <HelpTOCNode Title="GetIndex Method (String)" Url="html/M_ILOG_Concert_IDiscreteDataCollection_GetIndex_2.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Id="c82f80d4-7ad7-4963-8d2e-1ce309fc5285" Title="IDiscreteDataCollection Properties" Url="html/Properties_T_ILOG_Concert_IDiscreteDataCollection.htm">
+          <HelpTOCNode Title="Size Property " Url="html/P_ILOG_Concert_IDiscreteDataCollection_Size.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="51e9e730-e06f-4aa8-98f7-b91867339482" Title="IForAllRange Interface" Url="html/T_ILOG_Concert_IForAllRange.htm">
+        <HelpTOCNode Title="IForAllRange Members" Url="html/AllMembers_T_ILOG_Concert_IForAllRange.htm" />
+        <HelpTOCNode Id="ebc45eb8-facf-4e91-91c0-86d4e50355d7" Title="IForAllRange Methods" Url="html/Methods_T_ILOG_Concert_IForAllRange.htm">
+          <HelpTOCNode Title="SetBounds Method " Url="html/M_ILOG_Concert_IForAllRange_SetBounds.htm" />
+          <HelpTOCNode Title="SetLinearCoef Method " Url="html/M_ILOG_Concert_IForAllRange_SetLinearCoef.htm" />
+          <HelpTOCNode Title="SetLinearCoefs Method " Url="html/M_ILOG_Concert_IForAllRange_SetLinearCoefs.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="2a32bd80-0ee8-49db-a154-faafa1260ed3" Title="IForAllRange Properties" Url="html/Properties_T_ILOG_Concert_IForAllRange.htm">
+          <HelpTOCNode Title="LB Property " Url="html/P_ILOG_Concert_IForAllRange_LB.htm" />
+          <HelpTOCNode Title="UB Property " Url="html/P_ILOG_Concert_IForAllRange_UB.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="050c2057-272d-4536-846f-63ee35bec87d" Title="IIntCollection Interface" Url="html/T_ILOG_Concert_IIntCollection.htm">
+        <HelpTOCNode Title="IIntCollection Members" Url="html/AllMembers_T_ILOG_Concert_IIntCollection.htm" />
+        <HelpTOCNode Id="0e1d1561-e50b-4df8-9eff-e694371f9838" Title="IIntCollection Methods" Url="html/Methods_T_ILOG_Concert_IIntCollection.htm">
+          <HelpTOCNode Title="GetIndex Method " Url="html/Overload_ILOG_Concert_IIntCollection_GetIndex.htm" />
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_IIntCollection_GetValue.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IIntCollection Properties" Url="html/Properties_T_ILOG_Concert_IIntCollection.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ccf4d79a-3610-48a1-98e1-be61ba508212" Title="IIntCollectionVar Interface" Url="html/T_ILOG_Concert_IIntCollectionVar.htm">
+        <HelpTOCNode Title="IIntCollectionVar Members" Url="html/AllMembers_T_ILOG_Concert_IIntCollectionVar.htm" />
+        <HelpTOCNode Title="IIntCollectionVar Methods" Url="html/Methods_T_ILOG_Concert_IIntCollectionVar.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3d1d633b-6cab-410b-be6e-6b4c9e43d400" Title="IIntervalSequenceVar Interface" Url="html/T_ILOG_Concert_IIntervalSequenceVar.htm">
+        <HelpTOCNode Title="IIntervalSequenceVar Members" Url="html/AllMembers_T_ILOG_Concert_IIntervalSequenceVar.htm" />
+        <HelpTOCNode Title="IIntervalSequenceVar Methods" Url="html/Methods_T_ILOG_Concert_IIntervalSequenceVar.htm" />
+        <HelpTOCNode Title="IIntervalSequenceVar Properties" Url="html/Properties_T_ILOG_Concert_IIntervalSequenceVar.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5f54199a-ec74-49cd-9964-646e258398ce" Title="IIntervalVar Interface" Url="html/T_ILOG_Concert_IIntervalVar.htm">
+        <HelpTOCNode Title="IIntervalVar Members" Url="html/AllMembers_T_ILOG_Concert_IIntervalVar.htm" />
+        <HelpTOCNode Id="1a534d87-ecd3-496b-a8c2-cbeff43986ae" Title="IIntervalVar Methods" Url="html/Methods_T_ILOG_Concert_IIntervalVar.htm">
+          <HelpTOCNode Title="SetAbsent Method " Url="html/M_ILOG_Concert_IIntervalVar_SetAbsent.htm" />
+          <HelpTOCNode Title="SetIntensity Method " Url="html/M_ILOG_Concert_IIntervalVar_SetIntensity.htm" />
+          <HelpTOCNode Title="SetOptional Method " Url="html/M_ILOG_Concert_IIntervalVar_SetOptional.htm" />
+          <HelpTOCNode Title="SetPresent Method " Url="html/M_ILOG_Concert_IIntervalVar_SetPresent.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="2589a9e9-c059-498f-a87e-1cc95995fcc5" Title="IIntervalVar Properties" Url="html/Properties_T_ILOG_Concert_IIntervalVar.htm">
+          <HelpTOCNode Title="EndMax Property " Url="html/P_ILOG_Concert_IIntervalVar_EndMax.htm" />
+          <HelpTOCNode Title="EndMin Property " Url="html/P_ILOG_Concert_IIntervalVar_EndMin.htm" />
+          <HelpTOCNode Title="Granularity Property " Url="html/P_ILOG_Concert_IIntervalVar_Granularity.htm" />
+          <HelpTOCNode Title="Intensity Property " Url="html/P_ILOG_Concert_IIntervalVar_Intensity.htm" />
+          <HelpTOCNode Title="IsAbsent Property " Url="html/P_ILOG_Concert_IIntervalVar_IsAbsent.htm" />
+          <HelpTOCNode Title="IsPresent Property " Url="html/P_ILOG_Concert_IIntervalVar_IsPresent.htm" />
+          <HelpTOCNode Title="LengthMax Property " Url="html/P_ILOG_Concert_IIntervalVar_LengthMax.htm" />
+          <HelpTOCNode Title="LengthMin Property " Url="html/P_ILOG_Concert_IIntervalVar_LengthMin.htm" />
+          <HelpTOCNode Id="03d1faa3-59f9-42cb-9bd5-5b59162da880" Title="Name Property " Url="html/Overload_ILOG_Concert_IIntervalVar_Name.htm">
+            <HelpTOCNode Title="Name Property " Url="html/P_ILOG_Concert_IIntervalVar_Name.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="SizeMax Property " Url="html/P_ILOG_Concert_IIntervalVar_SizeMax.htm" />
+          <HelpTOCNode Title="SizeMin Property " Url="html/P_ILOG_Concert_IIntervalVar_SizeMin.htm" />
+          <HelpTOCNode Title="StartMax Property " Url="html/P_ILOG_Concert_IIntervalVar_StartMax.htm" />
+          <HelpTOCNode Title="StartMin Property " Url="html/P_ILOG_Concert_IIntervalVar_StartMin.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="038abc33-5747-4e45-8aaa-c132857bdcd6" Title="IIntExpr Interface" Url="html/T_ILOG_Concert_IIntExpr.htm">
+        <HelpTOCNode Title="IIntExpr Members" Url="html/AllMembers_T_ILOG_Concert_IIntExpr.htm" />
+        <HelpTOCNode Title="IIntExpr Methods" Url="html/Methods_T_ILOG_Concert_IIntExpr.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="037215cd-5837-418a-ae4e-5f5b485a0bf2" Title="IIntRange Interface" Url="html/T_ILOG_Concert_IIntRange.htm">
+        <HelpTOCNode Title="IIntRange Members" Url="html/AllMembers_T_ILOG_Concert_IIntRange.htm" />
+        <HelpTOCNode Id="1636f9c4-fd48-403b-8933-6a5c6c44a63a" Title="IIntRange Methods" Url="html/Methods_T_ILOG_Concert_IIntRange.htm">
+          <HelpTOCNode Title="GetIndex Method " Url="html/Overload_ILOG_Concert_IIntRange_GetIndex.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="9854b0c4-899c-40d1-b3fc-c57c8c908c5b" Title="IIntRange Properties" Url="html/Properties_T_ILOG_Concert_IIntRange.htm">
+          <HelpTOCNode Title="LB Property " Url="html/P_ILOG_Concert_IIntRange_LB.htm" />
+          <HelpTOCNode Title="UB Property " Url="html/P_ILOG_Concert_IIntRange_UB.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="1388328b-c3f7-4728-8c8e-710145b5273e" Title="IIntSet Interface" Url="html/T_ILOG_Concert_IIntSet.htm">
+        <HelpTOCNode Title="IIntSet Members" Url="html/AllMembers_T_ILOG_Concert_IIntSet.htm" />
+        <HelpTOCNode Id="2757ed40-3b18-4f87-b90a-6555adbd2c1d" Title="IIntSet Methods" Url="html/Methods_T_ILOG_Concert_IIntSet.htm">
+          <HelpTOCNode Title="Add Method " Url="html/M_ILOG_Concert_IIntSet_Add.htm" />
+          <HelpTOCNode Title="Contains Method " Url="html/M_ILOG_Concert_IIntSet_Contains.htm" />
+          <HelpTOCNode Title="GetIndex Method " Url="html/Overload_ILOG_Concert_IIntSet_GetIndex.htm" />
+          <HelpTOCNode Title="Remove Method " Url="html/M_ILOG_Concert_IIntSet_Remove.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IIntSet Properties" Url="html/Properties_T_ILOG_Concert_IIntSet.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="e994fb4b-9320-441a-bd38-5b4d1bcad420" Title="IIntVar Interface" Url="html/T_ILOG_Concert_IIntVar.htm">
+        <HelpTOCNode Title="IIntVar Members" Url="html/AllMembers_T_ILOG_Concert_IIntVar.htm" />
+        <HelpTOCNode Title="IIntVar Methods" Url="html/Methods_T_ILOG_Concert_IIntVar.htm" />
+        <HelpTOCNode Id="300343e0-41ce-411f-bdaa-ac4b7b4e0944" Title="IIntVar Properties" Url="html/Properties_T_ILOG_Concert_IIntVar.htm">
+          <HelpTOCNode Title="Max Property " Url="html/P_ILOG_Concert_IIntVar_Max.htm" />
+          <HelpTOCNode Title="Min Property " Url="html/P_ILOG_Concert_IIntVar_Min.htm" />
+          <HelpTOCNode Title="Name Property " Url="html/Overload_ILOG_Concert_IIntVar_Name.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="1204d0ee-a3ae-4899-a0c9-b66e9fc58ffb" Title="IIsomorphism Interface" Url="html/T_ILOG_Concert_IIsomorphism.htm">
+        <HelpTOCNode Title="IIsomorphism Members" Url="html/AllMembers_T_ILOG_Concert_IIsomorphism.htm" />
+        <HelpTOCNode Title="IIsomorphism Methods" Url="html/Methods_T_ILOG_Concert_IIsomorphism.htm" />
+        <HelpTOCNode Title="IIsomorphism Properties" Url="html/Properties_T_ILOG_Concert_IIsomorphism.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="56a7f255-f837-474e-a92a-fbec5a635bc3" Title="ILinearIntExpr Interface" Url="html/T_ILOG_Concert_ILinearIntExpr.htm">
+        <HelpTOCNode Title="ILinearIntExpr Members" Url="html/AllMembers_T_ILOG_Concert_ILinearIntExpr.htm" />
+        <HelpTOCNode Id="ed8ee75c-882f-4c42-ad4d-30bda6df55f7" Title="ILinearIntExpr Methods" Url="html/Methods_T_ILOG_Concert_ILinearIntExpr.htm">
+          <HelpTOCNode Title="Add Method " Url="html/M_ILOG_Concert_ILinearIntExpr_Add.htm" />
+          <HelpTOCNode Id="de84f393-5d73-4174-8e01-5a04628ab561" Title="AddTerm Method " Url="html/Overload_ILOG_Concert_ILinearIntExpr_AddTerm.htm">
+            <HelpTOCNode Title="AddTerm Method (Int32, IIntVar)" Url="html/M_ILOG_Concert_ILinearIntExpr_AddTerm_1.htm" />
+            <HelpTOCNode Title="AddTerm Method (IIntVar, Int32)" Url="html/M_ILOG_Concert_ILinearIntExpr_AddTerm.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="d9b312a6-0ea1-40ed-b5cb-d13d1e90fc04" Title="AddTerms Method " Url="html/Overload_ILOG_Concert_ILinearIntExpr_AddTerms.htm">
+            <HelpTOCNode Title="AddTerms Method (Int32[], IIntVar[])" Url="html/M_ILOG_Concert_ILinearIntExpr_AddTerms_2.htm" />
+            <HelpTOCNode Title="AddTerms Method (IIntVar[], Int32[])" Url="html/M_ILOG_Concert_ILinearIntExpr_AddTerms.htm" />
+            <HelpTOCNode Title="AddTerms Method (Int32[], IIntVar[], Int32, Int32)" Url="html/M_ILOG_Concert_ILinearIntExpr_AddTerms_3.htm" />
+            <HelpTOCNode Title="AddTerms Method (IIntVar[], Int32[], Int32, Int32)" Url="html/M_ILOG_Concert_ILinearIntExpr_AddTerms_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Clear Method " Url="html/M_ILOG_Concert_ILinearIntExpr_Clear.htm" />
+          <HelpTOCNode Title="GetLinearEnumerator Method " Url="html/M_ILOG_Concert_ILinearIntExpr_GetLinearEnumerator.htm" />
+          <HelpTOCNode Id="e8c58a60-7be1-4827-91ac-54829d9f1f4a" Title="Remove Method " Url="html/Overload_ILOG_Concert_ILinearIntExpr_Remove.htm">
+            <HelpTOCNode Title="Remove Method (IIntVar)" Url="html/M_ILOG_Concert_ILinearIntExpr_Remove.htm" />
+            <HelpTOCNode Title="Remove Method (IIntVar[])" Url="html/M_ILOG_Concert_ILinearIntExpr_Remove_1.htm" />
+            <HelpTOCNode Title="Remove Method (IIntVar[], Int32, Int32)" Url="html/M_ILOG_Concert_ILinearIntExpr_Remove_2.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Id="557f4e17-d4bf-4043-932b-5d5ea9174f3e" Title="ILinearIntExpr Properties" Url="html/Properties_T_ILOG_Concert_ILinearIntExpr.htm">
+          <HelpTOCNode Title="Constant Property " Url="html/P_ILOG_Concert_ILinearIntExpr_Constant.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="029ebd88-96b0-4910-aed9-1fbc253d261e" Title="ILinearIntExprEnumerator Interface" Url="html/T_ILOG_Concert_ILinearIntExprEnumerator.htm">
+        <HelpTOCNode Title="ILinearIntExprEnumerator Members" Url="html/AllMembers_T_ILOG_Concert_ILinearIntExprEnumerator.htm" />
+        <HelpTOCNode Title="ILinearIntExprEnumerator Methods" Url="html/Methods_T_ILOG_Concert_ILinearIntExprEnumerator.htm" />
+        <HelpTOCNode Id="78a99ecc-d631-47dc-98d4-3414ba47fc5a" Title="ILinearIntExprEnumerator Properties" Url="html/Properties_T_ILOG_Concert_ILinearIntExprEnumerator.htm">
+          <HelpTOCNode Title="IntVar Property " Url="html/P_ILOG_Concert_ILinearIntExprEnumerator_IntVar.htm" />
+          <HelpTOCNode Title="Value Property " Url="html/P_ILOG_Concert_ILinearIntExprEnumerator_Value.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="7fee0ed3-6fb3-40b5-9dba-6533fee92bc1" Title="ILinearNumExpr Interface" Url="html/T_ILOG_Concert_ILinearNumExpr.htm">
+        <HelpTOCNode Title="ILinearNumExpr Members" Url="html/AllMembers_T_ILOG_Concert_ILinearNumExpr.htm" />
+        <HelpTOCNode Id="bd5df2ac-44d7-439c-a7a5-4a42c56eb8ab" Title="ILinearNumExpr Methods" Url="html/Methods_T_ILOG_Concert_ILinearNumExpr.htm">
+          <HelpTOCNode Title="Add Method " Url="html/M_ILOG_Concert_ILinearNumExpr_Add.htm" />
+          <HelpTOCNode Id="bc15ce7b-2a34-4157-8548-904c0c08e03e" Title="AddTerm Method " Url="html/Overload_ILOG_Concert_ILinearNumExpr_AddTerm.htm">
+            <HelpTOCNode Title="AddTerm Method (Double, INumVar)" Url="html/M_ILOG_Concert_ILinearNumExpr_AddTerm_1.htm" />
+            <HelpTOCNode Title="AddTerm Method (INumVar, Double)" Url="html/M_ILOG_Concert_ILinearNumExpr_AddTerm.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="4b1b9d4c-d007-4f23-841b-5ae164a72f33" Title="AddTerms Method " Url="html/Overload_ILOG_Concert_ILinearNumExpr_AddTerms.htm">
+            <HelpTOCNode Title="AddTerms Method (Double[], INumVar[])" Url="html/M_ILOG_Concert_ILinearNumExpr_AddTerms_2.htm" />
+            <HelpTOCNode Title="AddTerms Method (INumVar[], Double[])" Url="html/M_ILOG_Concert_ILinearNumExpr_AddTerms.htm" />
+            <HelpTOCNode Title="AddTerms Method (Double[], INumVar[], Int32, Int32)" Url="html/M_ILOG_Concert_ILinearNumExpr_AddTerms_3.htm" />
+            <HelpTOCNode Title="AddTerms Method (INumVar[], Double[], Int32, Int32)" Url="html/M_ILOG_Concert_ILinearNumExpr_AddTerms_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Clear Method " Url="html/M_ILOG_Concert_ILinearNumExpr_Clear.htm" />
+          <HelpTOCNode Title="GetLinearEnumerator Method " Url="html/M_ILOG_Concert_ILinearNumExpr_GetLinearEnumerator.htm" />
+          <HelpTOCNode Id="2561b828-686c-4cd1-b4c3-3a4f1376e363" Title="Remove Method " Url="html/Overload_ILOG_Concert_ILinearNumExpr_Remove.htm">
+            <HelpTOCNode Title="Remove Method (INumVar)" Url="html/M_ILOG_Concert_ILinearNumExpr_Remove.htm" />
+            <HelpTOCNode Title="Remove Method (INumVar[])" Url="html/M_ILOG_Concert_ILinearNumExpr_Remove_1.htm" />
+            <HelpTOCNode Title="Remove Method (INumVar[], Int32, Int32)" Url="html/M_ILOG_Concert_ILinearNumExpr_Remove_2.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Id="6a150f48-3015-40b9-9345-3376346f5940" Title="ILinearNumExpr Properties" Url="html/Properties_T_ILOG_Concert_ILinearNumExpr.htm">
+          <HelpTOCNode Title="Constant Property " Url="html/P_ILOG_Concert_ILinearNumExpr_Constant.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="31d45dfa-537d-4345-8f1a-d9fbf58dc288" Title="ILinearNumExprEnumerator Interface" Url="html/T_ILOG_Concert_ILinearNumExprEnumerator.htm">
+        <HelpTOCNode Title="ILinearNumExprEnumerator Members" Url="html/AllMembers_T_ILOG_Concert_ILinearNumExprEnumerator.htm" />
+        <HelpTOCNode Title="ILinearNumExprEnumerator Methods" Url="html/Methods_T_ILOG_Concert_ILinearNumExprEnumerator.htm" />
+        <HelpTOCNode Id="ceaed16c-e088-4ade-b00b-560d45ed731f" Title="ILinearNumExprEnumerator Properties" Url="html/Properties_T_ILOG_Concert_ILinearNumExprEnumerator.htm">
+          <HelpTOCNode Title="NumVar Property " Url="html/P_ILOG_Concert_ILinearNumExprEnumerator_NumVar.htm" />
+          <HelpTOCNode Title="Value Property " Url="html/P_ILOG_Concert_ILinearNumExprEnumerator_Value.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="b6571b85-6ca8-4eea-be35-71143b6d83e2" Title="IloException Class" Url="html/T_ILOG_Concert_IloException.htm">
+        <HelpTOCNode Title="IloException Members" Url="html/AllMembers_T_ILOG_Concert_IloException.htm" />
+        <HelpTOCNode Id="4f6b4042-766f-4408-86be-61464d164e0e" Title="IloException Constructor " Url="html/Overload_ILOG_Concert_IloException__ctor.htm">
+          <HelpTOCNode Title="IloException Constructor " Url="html/M_ILOG_Concert_IloException__ctor.htm" />
+          <HelpTOCNode Title="IloException Constructor (String)" Url="html/M_ILOG_Concert_IloException__ctor_1.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="IloException Methods" Url="html/Methods_T_ILOG_Concert_IloException.htm" />
+        <HelpTOCNode Title="IloException Properties" Url="html/Properties_T_ILOG_Concert_IloException.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="f9da58c4-6dce-4f85-a14f-bb45f558d76b" Title="IModel Interface" Url="html/T_ILOG_Concert_IModel.htm">
+        <HelpTOCNode Title="IModel Members" Url="html/AllMembers_T_ILOG_Concert_IModel.htm" />
+        <HelpTOCNode Id="bc7b2506-ff63-4df8-a0fb-7ba791aaaee4" Title="IModel Methods" Url="html/Methods_T_ILOG_Concert_IModel.htm">
+          <HelpTOCNode Id="079d929c-6c02-4829-8c25-2a15718b1d4f" Title="Add Method " Url="html/Overload_ILOG_Concert_IModel_Add.htm">
+            <HelpTOCNode Title="Add Method (IAddable)" Url="html/M_ILOG_Concert_IModel_Add.htm" />
+            <HelpTOCNode Title="Add Method (IAddable[])" Url="html/M_ILOG_Concert_IModel_Add_1.htm" />
+            <HelpTOCNode Title="Add Method (IAddable[], Int32, Int32)" Url="html/M_ILOG_Concert_IModel_Add_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetEnumerator Method " Url="html/M_ILOG_Concert_IModel_GetEnumerator.htm" />
+          <HelpTOCNode Id="61753827-0435-4289-91f7-4acb8c495dd7" Title="Remove Method " Url="html/Overload_ILOG_Concert_IModel_Remove.htm">
+            <HelpTOCNode Title="Remove Method (IAddable)" Url="html/M_ILOG_Concert_IModel_Remove.htm" />
+            <HelpTOCNode Title="Remove Method (IAddable[])" Url="html/M_ILOG_Concert_IModel_Remove_1.htm" />
+            <HelpTOCNode Title="Remove Method (IAddable[], Int32, Int32)" Url="html/M_ILOG_Concert_IModel_Remove_2.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="IModel Properties" Url="html/Properties_T_ILOG_Concert_IModel.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="885aa1ad-4c91-4ed8-bf4a-e14e41aa6bd0" Title="IModeler Interface" Url="html/T_ILOG_Concert_IModeler.htm">
+        <HelpTOCNode Title="IModeler Members" Url="html/AllMembers_T_ILOG_Concert_IModeler.htm" />
+        <HelpTOCNode Id="419d4315-7570-4bb3-b263-a8aa281cccd8" Title="IModeler Methods" Url="html/Methods_T_ILOG_Concert_IModeler.htm">
+          <HelpTOCNode Title="Abs Method " Url="html/M_ILOG_Concert_IModeler_Abs.htm" />
+          <HelpTOCNode Title="Add Method " Url="html/Overload_ILOG_Concert_IModeler_Add.htm" />
+          <HelpTOCNode Id="0cf4d702-b63c-4030-afa2-ddd29804bea9" Title="AddEq Method " Url="html/Overload_ILOG_Concert_IModeler_AddEq.htm">
+            <HelpTOCNode Title="AddEq Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddEq_4.htm" />
+            <HelpTOCNode Title="AddEq Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddEq.htm" />
+            <HelpTOCNode Title="AddEq Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_AddEq_2.htm" />
+            <HelpTOCNode Title="AddEq Method (Double, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddEq_5.htm" />
+            <HelpTOCNode Title="AddEq Method (INumExpr, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddEq_1.htm" />
+            <HelpTOCNode Title="AddEq Method (INumExpr, Double, String)" Url="html/M_ILOG_Concert_IModeler_AddEq_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="1f60fe1f-8b6c-4e74-801f-04e63400c5e9" Title="AddGe Method " Url="html/Overload_ILOG_Concert_IModeler_AddGe.htm">
+            <HelpTOCNode Title="AddGe Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddGe_4.htm" />
+            <HelpTOCNode Title="AddGe Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddGe.htm" />
+            <HelpTOCNode Title="AddGe Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_AddGe_2.htm" />
+            <HelpTOCNode Title="AddGe Method (Double, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddGe_5.htm" />
+            <HelpTOCNode Title="AddGe Method (INumExpr, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddGe_1.htm" />
+            <HelpTOCNode Title="AddGe Method (INumExpr, Double, String)" Url="html/M_ILOG_Concert_IModeler_AddGe_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="04358d05-a352-409a-889d-2a80c1d60bcd" Title="AddLe Method " Url="html/Overload_ILOG_Concert_IModeler_AddLe.htm">
+            <HelpTOCNode Title="AddLe Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddLe_4.htm" />
+            <HelpTOCNode Title="AddLe Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddLe.htm" />
+            <HelpTOCNode Title="AddLe Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_AddLe_2.htm" />
+            <HelpTOCNode Title="AddLe Method (Double, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddLe_5.htm" />
+            <HelpTOCNode Title="AddLe Method (INumExpr, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddLe_1.htm" />
+            <HelpTOCNode Title="AddLe Method (INumExpr, Double, String)" Url="html/M_ILOG_Concert_IModeler_AddLe_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="61d708ef-da59-4b40-bbff-ddfc75c797f6" Title="AddMaximize Method " Url="html/Overload_ILOG_Concert_IModeler_AddMaximize.htm">
+            <HelpTOCNode Title="AddMaximize Method (INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddMaximize.htm" />
+            <HelpTOCNode Title="AddMaximize Method (INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddMaximize_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="2f8a9413-f268-492c-910c-c26df91efad6" Title="AddMinimize Method " Url="html/Overload_ILOG_Concert_IModeler_AddMinimize.htm">
+            <HelpTOCNode Title="AddMinimize Method (INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddMinimize.htm" />
+            <HelpTOCNode Title="AddMinimize Method (INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddMinimize_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5d0a86f9-9f3c-4cc9-84fc-819b06023855" Title="AddObjective Method " Url="html/Overload_ILOG_Concert_IModeler_AddObjective.htm">
+            <HelpTOCNode Title="AddObjective Method (ObjectiveSense, INumExpr)" Url="html/M_ILOG_Concert_IModeler_AddObjective.htm" />
+            <HelpTOCNode Title="AddObjective Method (ObjectiveSense, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_AddObjective_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="04e86e11-fb37-475c-ada4-e2cbb07d68d7" Title="AddRange Method " Url="html/Overload_ILOG_Concert_IModeler_AddRange.htm">
+            <HelpTOCNode Title="AddRange Method (Double, INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_AddRange.htm" />
+            <HelpTOCNode Title="AddRange Method (Double, INumExpr, Double, String)" Url="html/M_ILOG_Concert_IModeler_AddRange_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="3928c107-7308-44f4-9f3d-b5040a9710a1" Title="And Method " Url="html/Overload_ILOG_Concert_IModeler_And.htm">
+            <HelpTOCNode Title="And Method " Url="html/M_ILOG_Concert_IModeler_And.htm" />
+            <HelpTOCNode Title="And Method (IConstraint[])" Url="html/M_ILOG_Concert_IModeler_And_3.htm" />
+            <HelpTOCNode Title="And Method (IConstraint, IConstraint)" Url="html/M_ILOG_Concert_IModeler_And_1.htm" />
+            <HelpTOCNode Title="And Method (IConstraint[], String)" Url="html/M_ILOG_Concert_IModeler_And_6.htm" />
+            <HelpTOCNode Title="And Method (IConstraint, IConstraint, String)" Url="html/M_ILOG_Concert_IModeler_And_2.htm" />
+            <HelpTOCNode Title="And Method (IConstraint[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_And_4.htm" />
+            <HelpTOCNode Title="And Method (IConstraint[], Int32, Int32, String)" Url="html/M_ILOG_Concert_IModeler_And_5.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="832da3a6-3fef-488f-8f9c-abe433d08ced" Title="BoolVar Method " Url="html/Overload_ILOG_Concert_IModeler_BoolVar.htm">
+            <HelpTOCNode Title="BoolVar Method " Url="html/M_ILOG_Concert_IModeler_BoolVar.htm" />
+            <HelpTOCNode Title="BoolVar Method (String)" Url="html/M_ILOG_Concert_IModeler_BoolVar_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="268fc7a8-1450-4be7-a034-b0052bcec16f" Title="BoolVarArray Method " Url="html/Overload_ILOG_Concert_IModeler_BoolVarArray.htm">
+            <HelpTOCNode Title="BoolVarArray Method (Int32)" Url="html/M_ILOG_Concert_IModeler_BoolVarArray.htm" />
+            <HelpTOCNode Title="BoolVarArray Method (Int32, String[])" Url="html/M_ILOG_Concert_IModeler_BoolVarArray_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="d4b40efb-e2e1-4587-af43-707fcd66b5d8" Title="Constant Method " Url="html/Overload_ILOG_Concert_IModeler_Constant.htm">
+            <HelpTOCNode Title="Constant Method (Double)" Url="html/M_ILOG_Concert_IModeler_Constant.htm" />
+            <HelpTOCNode Title="Constant Method (Int32)" Url="html/M_ILOG_Concert_IModeler_Constant_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="0775a089-5afb-4064-967c-a02769230166" Title="Diff Method " Url="html/Overload_ILOG_Concert_IModeler_Diff.htm">
+            <HelpTOCNode Title="Diff Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Diff_4.htm" />
+            <HelpTOCNode Title="Diff Method (Int32, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Diff_5.htm" />
+            <HelpTOCNode Title="Diff Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Diff.htm" />
+            <HelpTOCNode Title="Diff Method (IIntExpr, Int32)" Url="html/M_ILOG_Concert_IModeler_Diff_1.htm" />
+            <HelpTOCNode Title="Diff Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Diff_2.htm" />
+            <HelpTOCNode Title="Diff Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Diff_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="d46e1c78-215d-4d0b-b309-a8383e376783" Title="Eq Method " Url="html/Overload_ILOG_Concert_IModeler_Eq.htm">
+            <HelpTOCNode Title="Eq Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Eq_4.htm" />
+            <HelpTOCNode Title="Eq Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Eq.htm" />
+            <HelpTOCNode Title="Eq Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Eq_2.htm" />
+            <HelpTOCNode Title="Eq Method (Double, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Eq_5.htm" />
+            <HelpTOCNode Title="Eq Method (INumExpr, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Eq_1.htm" />
+            <HelpTOCNode Title="Eq Method (INumExpr, Double, String)" Url="html/M_ILOG_Concert_IModeler_Eq_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5b52fea4-7a44-4f77-aa28-c12e2ef125bb" Title="Ge Method " Url="html/Overload_ILOG_Concert_IModeler_Ge.htm">
+            <HelpTOCNode Title="Ge Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Ge_4.htm" />
+            <HelpTOCNode Title="Ge Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Ge.htm" />
+            <HelpTOCNode Title="Ge Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Ge_2.htm" />
+            <HelpTOCNode Title="Ge Method (Double, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Ge_5.htm" />
+            <HelpTOCNode Title="Ge Method (INumExpr, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Ge_1.htm" />
+            <HelpTOCNode Title="Ge Method (INumExpr, Double, String)" Url="html/M_ILOG_Concert_IModeler_Ge_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="35e9e198-6a22-47da-b38d-60f3eb4bd10f" Title="IfThen Method " Url="html/Overload_ILOG_Concert_IModeler_IfThen.htm">
+            <HelpTOCNode Title="IfThen Method (IConstraint, IConstraint)" Url="html/M_ILOG_Concert_IModeler_IfThen.htm" />
+            <HelpTOCNode Title="IfThen Method (IConstraint, IConstraint, String)" Url="html/M_ILOG_Concert_IModeler_IfThen_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="IntExpr Method " Url="html/M_ILOG_Concert_IModeler_IntExpr.htm" />
+          <HelpTOCNode Id="ca778dbd-45b0-4a43-8b4d-0b942b4accfc" Title="IntVar Method " Url="html/Overload_ILOG_Concert_IModeler_IntVar.htm">
+            <HelpTOCNode Title="IntVar Method (Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_IntVar.htm" />
+            <HelpTOCNode Title="IntVar Method (Int32, Int32, String)" Url="html/M_ILOG_Concert_IModeler_IntVar_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="4572c27c-fbf2-49e8-a358-b6786887d50c" Title="IntVarArray Method " Url="html/Overload_ILOG_Concert_IModeler_IntVarArray.htm">
+            <HelpTOCNode Title="IntVarArray Method (Int32, Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_IntVarArray.htm" />
+            <HelpTOCNode Title="IntVarArray Method (Int32, Int32[], Int32[])" Url="html/M_ILOG_Concert_IModeler_IntVarArray_2.htm" />
+            <HelpTOCNode Title="IntVarArray Method (Int32, Int32, Int32, String[])" Url="html/M_ILOG_Concert_IModeler_IntVarArray_1.htm" />
+            <HelpTOCNode Title="IntVarArray Method (Int32, Int32[], Int32[], String[])" Url="html/M_ILOG_Concert_IModeler_IntVarArray_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="038055e2-7d9e-4f3f-abe3-b8ccd5613aa0" Title="Le Method " Url="html/Overload_ILOG_Concert_IModeler_Le.htm">
+            <HelpTOCNode Title="Le Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Le_4.htm" />
+            <HelpTOCNode Title="Le Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Le.htm" />
+            <HelpTOCNode Title="Le Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Le_2.htm" />
+            <HelpTOCNode Title="Le Method (Double, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Le_5.htm" />
+            <HelpTOCNode Title="Le Method (INumExpr, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Le_1.htm" />
+            <HelpTOCNode Title="Le Method (INumExpr, Double, String)" Url="html/M_ILOG_Concert_IModeler_Le_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="33ba5f5f-3bbb-4598-a05a-4b0267f73c03" Title="LinearIntExpr Method " Url="html/Overload_ILOG_Concert_IModeler_LinearIntExpr.htm">
+            <HelpTOCNode Title="LinearIntExpr Method " Url="html/M_ILOG_Concert_IModeler_LinearIntExpr.htm" />
+            <HelpTOCNode Title="LinearIntExpr Method (Int32)" Url="html/M_ILOG_Concert_IModeler_LinearIntExpr_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="95e4b9ea-6b7c-44c8-9c1f-848bc93f45c5" Title="LinearNumExpr Method " Url="html/Overload_ILOG_Concert_IModeler_LinearNumExpr.htm">
+            <HelpTOCNode Title="LinearNumExpr Method " Url="html/M_ILOG_Concert_IModeler_LinearNumExpr.htm" />
+            <HelpTOCNode Title="LinearNumExpr Method (Double)" Url="html/M_ILOG_Concert_IModeler_LinearNumExpr_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="9d785ef3-3d3c-4bbd-acef-7b93ff6db2e2" Title="Max Method " Url="html/Overload_ILOG_Concert_IModeler_Max.htm">
+            <HelpTOCNode Title="Max Method (IIntExpr[])" Url="html/M_ILOG_Concert_IModeler_Max_2.htm" />
+            <HelpTOCNode Title="Max Method (INumExpr[])" Url="html/M_ILOG_Concert_IModeler_Max_5.htm" />
+            <HelpTOCNode Title="Max Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Max_6.htm" />
+            <HelpTOCNode Title="Max Method (Int32, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Max_7.htm" />
+            <HelpTOCNode Title="Max Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Max.htm" />
+            <HelpTOCNode Title="Max Method (IIntExpr, Int32)" Url="html/M_ILOG_Concert_IModeler_Max_1.htm" />
+            <HelpTOCNode Title="Max Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Max_3.htm" />
+            <HelpTOCNode Title="Max Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Max_4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="00a44331-5992-40ac-9e96-570d3479053f" Title="Maximize Method " Url="html/Overload_ILOG_Concert_IModeler_Maximize.htm">
+            <HelpTOCNode Title="Maximize Method (INumExpr)" Url="html/M_ILOG_Concert_IModeler_Maximize.htm" />
+            <HelpTOCNode Title="Maximize Method (INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Maximize_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="05c5e450-2268-419a-bde5-50f0fdc02d55" Title="Min Method " Url="html/Overload_ILOG_Concert_IModeler_Min.htm">
+            <HelpTOCNode Title="Min Method (IIntExpr[])" Url="html/M_ILOG_Concert_IModeler_Min_2.htm" />
+            <HelpTOCNode Title="Min Method (INumExpr[])" Url="html/M_ILOG_Concert_IModeler_Min_5.htm" />
+            <HelpTOCNode Title="Min Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Min_6.htm" />
+            <HelpTOCNode Title="Min Method (Int32, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Min_7.htm" />
+            <HelpTOCNode Title="Min Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Min.htm" />
+            <HelpTOCNode Title="Min Method (IIntExpr, Int32)" Url="html/M_ILOG_Concert_IModeler_Min_1.htm" />
+            <HelpTOCNode Title="Min Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Min_3.htm" />
+            <HelpTOCNode Title="Min Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Min_4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="ead486d4-c5bf-4b15-8a4d-71f888513e7a" Title="Minimize Method " Url="html/Overload_ILOG_Concert_IModeler_Minimize.htm">
+            <HelpTOCNode Title="Minimize Method (INumExpr)" Url="html/M_ILOG_Concert_IModeler_Minimize.htm" />
+            <HelpTOCNode Title="Minimize Method (INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Minimize_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="27534c32-4de4-4ae3-adc9-cdcd312925f9" Title="Negative Method " Url="html/Overload_ILOG_Concert_IModeler_Negative.htm">
+            <HelpTOCNode Title="Negative Method (IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Negative.htm" />
+            <HelpTOCNode Title="Negative Method (INumExpr)" Url="html/M_ILOG_Concert_IModeler_Negative_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="aff6e88a-30d4-4501-82b8-649a8c79e5e4" Title="Not Method " Url="html/Overload_ILOG_Concert_IModeler_Not.htm">
+            <HelpTOCNode Title="Not Method (IConstraint)" Url="html/M_ILOG_Concert_IModeler_Not.htm" />
+            <HelpTOCNode Title="Not Method (IConstraint, String)" Url="html/M_ILOG_Concert_IModeler_Not_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="NumExpr Method " Url="html/M_ILOG_Concert_IModeler_NumExpr.htm" />
+          <HelpTOCNode Id="68fd8fe3-cf5a-4a06-9f1f-4e0eff2cc470" Title="NumVar Method " Url="html/Overload_ILOG_Concert_IModeler_NumVar.htm">
+            <HelpTOCNode Title="NumVar Method (Double, Double)" Url="html/M_ILOG_Concert_IModeler_NumVar.htm" />
+            <HelpTOCNode Title="NumVar Method (Double, Double, NumVarType)" Url="html/M_ILOG_Concert_IModeler_NumVar_1.htm" />
+            <HelpTOCNode Title="NumVar Method (Double, Double, String)" Url="html/M_ILOG_Concert_IModeler_NumVar_3.htm" />
+            <HelpTOCNode Title="NumVar Method (Double, Double, NumVarType, String)" Url="html/M_ILOG_Concert_IModeler_NumVar_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="558473cb-c1ba-452f-9562-39f6f741738b" Title="NumVarArray Method " Url="html/Overload_ILOG_Concert_IModeler_NumVarArray.htm">
+            <HelpTOCNode Title="NumVarArray Method (Int32, Double, Double)" Url="html/M_ILOG_Concert_IModeler_NumVarArray.htm" />
+            <HelpTOCNode Title="NumVarArray Method (Int32, Double[], Double[])" Url="html/M_ILOG_Concert_IModeler_NumVarArray_4.htm" />
+            <HelpTOCNode Title="NumVarArray Method (Int32, Double, Double, NumVarType)" Url="html/M_ILOG_Concert_IModeler_NumVarArray_1.htm" />
+            <HelpTOCNode Title="NumVarArray Method (Int32, Double, Double, String[])" Url="html/M_ILOG_Concert_IModeler_NumVarArray_3.htm" />
+            <HelpTOCNode Title="NumVarArray Method (Int32, Double[], Double[], NumVarType[])" Url="html/M_ILOG_Concert_IModeler_NumVarArray_5.htm" />
+            <HelpTOCNode Title="NumVarArray Method (Int32, Double[], Double[], String[])" Url="html/M_ILOG_Concert_IModeler_NumVarArray_7.htm" />
+            <HelpTOCNode Title="NumVarArray Method (Int32, Double, Double, NumVarType, String[])" Url="html/M_ILOG_Concert_IModeler_NumVarArray_2.htm" />
+            <HelpTOCNode Title="NumVarArray Method (Int32, Double[], Double[], NumVarType[], String[])" Url="html/M_ILOG_Concert_IModeler_NumVarArray_6.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="17c6c65f-8db2-410b-b774-c315649a43a4" Title="Objective Method " Url="html/Overload_ILOG_Concert_IModeler_Objective.htm">
+            <HelpTOCNode Title="Objective Method (ObjectiveSense, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Objective.htm" />
+            <HelpTOCNode Title="Objective Method (ObjectiveSense, INumExpr, String)" Url="html/M_ILOG_Concert_IModeler_Objective_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="e63dea42-574d-4e33-a9ca-83f297ed9d42" Title="Or Method " Url="html/Overload_ILOG_Concert_IModeler_Or.htm">
+            <HelpTOCNode Title="Or Method " Url="html/M_ILOG_Concert_IModeler_Or.htm" />
+            <HelpTOCNode Title="Or Method (IConstraint[])" Url="html/M_ILOG_Concert_IModeler_Or_3.htm" />
+            <HelpTOCNode Title="Or Method (IConstraint, IConstraint)" Url="html/M_ILOG_Concert_IModeler_Or_1.htm" />
+            <HelpTOCNode Title="Or Method (IConstraint[], String)" Url="html/M_ILOG_Concert_IModeler_Or_6.htm" />
+            <HelpTOCNode Title="Or Method (IConstraint, IConstraint, String)" Url="html/M_ILOG_Concert_IModeler_Or_2.htm" />
+            <HelpTOCNode Title="Or Method (IConstraint[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_Or_4.htm" />
+            <HelpTOCNode Title="Or Method (IConstraint[], Int32, Int32, String)" Url="html/M_ILOG_Concert_IModeler_Or_5.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="cd5617e4-087a-4987-aa5c-eae846f91b09" Title="Prod Method " Url="html/Overload_ILOG_Concert_IModeler_Prod.htm">
+            <HelpTOCNode Title="Prod Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Prod_6.htm" />
+            <HelpTOCNode Title="Prod Method (Int32, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Prod_8.htm" />
+            <HelpTOCNode Title="Prod Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Prod.htm" />
+            <HelpTOCNode Title="Prod Method (IIntExpr, Int32)" Url="html/M_ILOG_Concert_IModeler_Prod_1.htm" />
+            <HelpTOCNode Title="Prod Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Prod_2.htm" />
+            <HelpTOCNode Title="Prod Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Prod_3.htm" />
+            <HelpTOCNode Title="Prod Method (Double, INumVar, INumVar)" Url="html/M_ILOG_Concert_IModeler_Prod_7.htm" />
+            <HelpTOCNode Title="Prod Method (INumVar, INumVar, Double)" Url="html/M_ILOG_Concert_IModeler_Prod_4.htm" />
+            <HelpTOCNode Title="Prod Method (INumVar, Double, INumVar)" Url="html/M_ILOG_Concert_IModeler_Prod_5.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="e1d2fa68-659b-4cac-a4b7-1b017e4e1540" Title="Range Method " Url="html/Overload_ILOG_Concert_IModeler_Range.htm">
+            <HelpTOCNode Title="Range Method (Double, INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Range.htm" />
+            <HelpTOCNode Title="Range Method (Double, INumExpr, Double, String)" Url="html/M_ILOG_Concert_IModeler_Range_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Remove Method " Url="html/Overload_ILOG_Concert_IModeler_Remove.htm" />
+          <HelpTOCNode Id="9c18b6fd-4c44-4fa5-99d8-96ecdf3d7d1c" Title="ScalProd Method " Url="html/Overload_ILOG_Concert_IModeler_ScalProd.htm">
+            <HelpTOCNode Title="ScalProd Method (Double[], INumVar[])" Url="html/M_ILOG_Concert_IModeler_ScalProd_9.htm" />
+            <HelpTOCNode Title="ScalProd Method (Int32[], IIntVar[])" Url="html/M_ILOG_Concert_IModeler_ScalProd_11.htm" />
+            <HelpTOCNode Title="ScalProd Method (Int32[], INumVar[])" Url="html/M_ILOG_Concert_IModeler_ScalProd_13.htm" />
+            <HelpTOCNode Title="ScalProd Method (IIntVar[], IIntVar[])" Url="html/M_ILOG_Concert_IModeler_ScalProd.htm" />
+            <HelpTOCNode Title="ScalProd Method (IIntVar[], Int32[])" Url="html/M_ILOG_Concert_IModeler_ScalProd_2.htm" />
+            <HelpTOCNode Title="ScalProd Method (INumVar[], INumVar[])" Url="html/M_ILOG_Concert_IModeler_ScalProd_4.htm" />
+            <HelpTOCNode Title="ScalProd Method (INumVar[], Double[])" Url="html/M_ILOG_Concert_IModeler_ScalProd_6.htm" />
+            <HelpTOCNode Title="ScalProd Method (INumVar[], Int32[])" Url="html/M_ILOG_Concert_IModeler_ScalProd_8.htm" />
+            <HelpTOCNode Title="ScalProd Method (Double[], INumVar[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_ScalProd_10.htm" />
+            <HelpTOCNode Title="ScalProd Method (Int32[], IIntVar[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_ScalProd_12.htm" />
+            <HelpTOCNode Title="ScalProd Method (IIntVar[], IIntVar[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_ScalProd_1.htm" />
+            <HelpTOCNode Title="ScalProd Method (IIntVar[], Int32[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_ScalProd_3.htm" />
+            <HelpTOCNode Title="ScalProd Method (INumVar[], INumVar[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_ScalProd_5.htm" />
+            <HelpTOCNode Title="ScalProd Method (INumVar[], Double[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_ScalProd_7.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="c7eeaca5-7290-43f6-9e21-c7132dfeaafc" Title="Square Method " Url="html/Overload_ILOG_Concert_IModeler_Square.htm">
+            <HelpTOCNode Title="Square Method (IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Square.htm" />
+            <HelpTOCNode Title="Square Method (INumExpr)" Url="html/M_ILOG_Concert_IModeler_Square_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="f6e8ac8c-5155-40cf-815e-f015bb547e44" Title="Sum Method " Url="html/Overload_ILOG_Concert_IModeler_Sum.htm">
+            <HelpTOCNode Title="Sum Method (IIntExpr[])" Url="html/M_ILOG_Concert_IModeler_Sum_8.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr[])" Url="html/M_ILOG_Concert_IModeler_Sum_18.htm" />
+            <HelpTOCNode Title="Sum Method (Double, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_20.htm" />
+            <HelpTOCNode Title="Sum Method (Int32, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_21.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Sum.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr, Int32)" Url="html/M_ILOG_Concert_IModeler_Sum_7.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_10.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr, Double)" Url="html/M_ILOG_Concert_IModeler_Sum_17.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr, IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_1.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_Sum_9.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr, INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_11.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr[], Int32, Int32)" Url="html/M_ILOG_Concert_IModeler_Sum_19.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr, IIntExpr, IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_2.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr, INumExpr, INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_12.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_3.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr, INumExpr, INumExpr, INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_13.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_4.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr, INumExpr, INumExpr, INumExpr, INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_14.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_5.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr, INumExpr, INumExpr, INumExpr, INumExpr, INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_15.htm" />
+            <HelpTOCNode Title="Sum Method (IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr, IIntExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_6.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr, INumExpr, INumExpr, INumExpr, INumExpr, INumExpr, INumExpr, INumExpr)" Url="html/M_ILOG_Concert_IModeler_Sum_16.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="IModeler Properties" Url="html/Properties_T_ILOG_Concert_IModeler.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="IMultiCriterionExpr Interface" Url="html/T_ILOG_Concert_IMultiCriterionExpr.htm" />
+      <HelpTOCNode Id="783c4f06-4722-4135-b04c-dfbb64ba5241" Title="INoOverlap Interface" Url="html/T_ILOG_Concert_INoOverlap.htm">
+        <HelpTOCNode Title="INoOverlap Members" Url="html/AllMembers_T_ILOG_Concert_INoOverlap.htm" />
+        <HelpTOCNode Title="INoOverlap Methods" Url="html/Methods_T_ILOG_Concert_INoOverlap.htm" />
+        <HelpTOCNode Title="INoOverlap Properties" Url="html/Properties_T_ILOG_Concert_INoOverlap.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="221acfaa-21b4-4e22-8ca4-26725386ef20" Title="INumCollection Interface" Url="html/T_ILOG_Concert_INumCollection.htm">
+        <HelpTOCNode Title="INumCollection Members" Url="html/AllMembers_T_ILOG_Concert_INumCollection.htm" />
+        <HelpTOCNode Id="666789a3-be53-44b9-9033-819004a1345b" Title="INumCollection Methods" Url="html/Methods_T_ILOG_Concert_INumCollection.htm">
+          <HelpTOCNode Title="GetIndex Method " Url="html/Overload_ILOG_Concert_INumCollection_GetIndex.htm" />
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_INumCollection_GetValue.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="INumCollection Properties" Url="html/Properties_T_ILOG_Concert_INumCollection.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="d33b3c2a-678a-47ec-990b-838cb10700d6" Title="INumExpr Interface" Url="html/T_ILOG_Concert_INumExpr.htm">
+        <HelpTOCNode Title="INumExpr Members" Url="html/AllMembers_T_ILOG_Concert_INumExpr.htm" />
+        <HelpTOCNode Title="INumExpr Methods" Url="html/Methods_T_ILOG_Concert_INumExpr.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="3c83efa4-b810-42a4-892c-d39f368375b9" Title="INumRange Interface" Url="html/T_ILOG_Concert_INumRange.htm">
+        <HelpTOCNode Title="INumRange Members" Url="html/AllMembers_T_ILOG_Concert_INumRange.htm" />
+        <HelpTOCNode Id="1778de01-3ec8-4a85-adb5-6784bb584833" Title="INumRange Properties" Url="html/Properties_T_ILOG_Concert_INumRange.htm">
+          <HelpTOCNode Title="LB Property " Url="html/P_ILOG_Concert_INumRange_LB.htm" />
+          <HelpTOCNode Title="UB Property " Url="html/P_ILOG_Concert_INumRange_UB.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="3c6a5558-6240-4025-a453-7e66e8d0e2a8" Title="INumSet Interface" Url="html/T_ILOG_Concert_INumSet.htm">
+        <HelpTOCNode Title="INumSet Members" Url="html/AllMembers_T_ILOG_Concert_INumSet.htm" />
+        <HelpTOCNode Id="0125fd0c-68ae-4ba4-b7b7-2a546f72c334" Title="INumSet Methods" Url="html/Methods_T_ILOG_Concert_INumSet.htm">
+          <HelpTOCNode Title="Add Method " Url="html/M_ILOG_Concert_INumSet_Add.htm" />
+          <HelpTOCNode Title="Contains Method " Url="html/M_ILOG_Concert_INumSet_Contains.htm" />
+          <HelpTOCNode Title="GetIndex Method " Url="html/Overload_ILOG_Concert_INumSet_GetIndex.htm" />
+          <HelpTOCNode Title="Remove Method " Url="html/M_ILOG_Concert_INumSet_Remove.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="INumSet Properties" Url="html/Properties_T_ILOG_Concert_INumSet.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c6c96afa-db5d-4e75-8d83-1fac48258aef" Title="INumToNumSegmentFunction Interface" Url="html/T_ILOG_Concert_INumToNumSegmentFunction.htm">
+        <HelpTOCNode Title="INumToNumSegmentFunction Members" Url="html/AllMembers_T_ILOG_Concert_INumToNumSegmentFunction.htm" />
+        <HelpTOCNode Id="0b740a20-85f4-4545-8d9c-500b995620c6" Title="INumToNumSegmentFunction Methods" Url="html/Methods_T_ILOG_Concert_INumToNumSegmentFunction.htm">
+          <HelpTOCNode Title="Add Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_Add.htm" />
+          <HelpTOCNode Title="AddValue Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_AddValue.htm" />
+          <HelpTOCNode Title="Copy Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_Copy.htm" />
+          <HelpTOCNode Title="Dilate Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_Dilate.htm" />
+          <HelpTOCNode Title="GetArea Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_GetArea.htm" />
+          <HelpTOCNode Title="GetDefinitionIntervalMax Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_GetDefinitionIntervalMax.htm" />
+          <HelpTOCNode Title="GetDefinitionIntervalMin Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_GetDefinitionIntervalMin.htm" />
+          <HelpTOCNode Title="GetMax Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_GetMax.htm" />
+          <HelpTOCNode Title="GetMin Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_GetMin.htm" />
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_GetValue.htm" />
+          <HelpTOCNode Title="IsSemiConvex Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_IsSemiConvex.htm" />
+          <HelpTOCNode Title="Prod Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_Prod.htm" />
+          <HelpTOCNode Id="0fc6638b-7968-4174-b64c-46a45f597e13" Title="SetMax Method " Url="html/Overload_ILOG_Concert_INumToNumSegmentFunction_SetMax.htm">
+            <HelpTOCNode Title="SetMax Method (INumToNumSegmentFunction)" Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetMax.htm" />
+            <HelpTOCNode Title="SetMax Method (Double, Double, Double)" Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetMax_1.htm" />
+            <HelpTOCNode Title="SetMax Method (Double, Double, Double, Double)" Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetMax_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="73f1b46d-55fd-4996-9d43-c7b64bfaf63a" Title="SetMin Method " Url="html/Overload_ILOG_Concert_INumToNumSegmentFunction_SetMin.htm">
+            <HelpTOCNode Title="SetMin Method (INumToNumSegmentFunction)" Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetMin.htm" />
+            <HelpTOCNode Title="SetMin Method (Double, Double, Double)" Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetMin_1.htm" />
+            <HelpTOCNode Title="SetMin Method (Double, Double, Double, Double)" Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetMin_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="SetPeriodic Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetPeriodic.htm" />
+          <HelpTOCNode Title="SetPeriodicValue Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetPeriodicValue.htm" />
+          <HelpTOCNode Title="SetPoints Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetPoints.htm" />
+          <HelpTOCNode Title="SetSlope Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetSlope.htm" />
+          <HelpTOCNode Title="SetValue Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_SetValue.htm" />
+          <HelpTOCNode Title="Shift Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_Shift.htm" />
+          <HelpTOCNode Title="Sub Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunction_Sub.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="91186e3c-9b29-46e2-89ba-ad5e05f90559" Title="INumToNumSegmentFunctionCursor Interface" Url="html/T_ILOG_Concert_INumToNumSegmentFunctionCursor.htm">
+        <HelpTOCNode Title="INumToNumSegmentFunctionCursor Members" Url="html/AllMembers_T_ILOG_Concert_INumToNumSegmentFunctionCursor.htm" />
+        <HelpTOCNode Id="dcf52237-9b95-4c73-a7d6-5cca001255ab" Title="INumToNumSegmentFunctionCursor Methods" Url="html/Methods_T_ILOG_Concert_INumToNumSegmentFunctionCursor.htm">
+          <HelpTOCNode Title="GetSegmentMax Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_GetSegmentMax.htm" />
+          <HelpTOCNode Title="GetSegmentMin Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_GetSegmentMin.htm" />
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_GetValue.htm" />
+          <HelpTOCNode Title="GetValueLeft Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_GetValueLeft.htm" />
+          <HelpTOCNode Title="GetValueRight Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_GetValueRight.htm" />
+          <HelpTOCNode Title="Next Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_Next.htm" />
+          <HelpTOCNode Title="Ok Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_Ok.htm" />
+          <HelpTOCNode Title="Previous Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_Previous.htm" />
+          <HelpTOCNode Title="Seek Method " Url="html/M_ILOG_Concert_INumToNumSegmentFunctionCursor_Seek.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="1964d1b2-f441-493f-9742-30eb8b97248e" Title="INumToNumStepFunction Interface" Url="html/T_ILOG_Concert_INumToNumStepFunction.htm">
+        <HelpTOCNode Title="INumToNumStepFunction Members" Url="html/AllMembers_T_ILOG_Concert_INumToNumStepFunction.htm" />
+        <HelpTOCNode Id="b3c9430e-3be0-4f43-a094-d98da431c7fc" Title="INumToNumStepFunction Methods" Url="html/Methods_T_ILOG_Concert_INumToNumStepFunction.htm">
+          <HelpTOCNode Title="Add Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_Add.htm" />
+          <HelpTOCNode Title="AddValue Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_AddValue.htm" />
+          <HelpTOCNode Title="Copy Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_Copy.htm" />
+          <HelpTOCNode Title="Dilate Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_Dilate.htm" />
+          <HelpTOCNode Title="GetArea Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_GetArea.htm" />
+          <HelpTOCNode Title="GetDefinitionIntervalMax Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_GetDefinitionIntervalMax.htm" />
+          <HelpTOCNode Title="GetDefinitionIntervalMin Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_GetDefinitionIntervalMin.htm" />
+          <HelpTOCNode Title="GetMax Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_GetMax.htm" />
+          <HelpTOCNode Title="GetMin Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_GetMin.htm" />
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_GetValue.htm" />
+          <HelpTOCNode Title="Prod Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_Prod.htm" />
+          <HelpTOCNode Id="64e658bc-559f-432c-bf1b-08f50e3fdf5f" Title="SetMax Method " Url="html/Overload_ILOG_Concert_INumToNumStepFunction_SetMax.htm">
+            <HelpTOCNode Title="SetMax Method (INumToNumStepFunction)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetMax.htm" />
+            <HelpTOCNode Title="SetMax Method (Double, Double, Double)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetMax_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="4a4bf42d-39a9-4807-aa5f-18eef04e238e" Title="SetMin Method " Url="html/Overload_ILOG_Concert_INumToNumStepFunction_SetMin.htm">
+            <HelpTOCNode Title="SetMin Method (INumToNumStepFunction)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetMin.htm" />
+            <HelpTOCNode Title="SetMin Method (Double, Double, Double)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetMin_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="78c15634-aafb-429d-bfff-7bb4ec34214f" Title="SetPeriodic Method " Url="html/Overload_ILOG_Concert_INumToNumStepFunction_SetPeriodic.htm">
+            <HelpTOCNode Title="SetPeriodic Method (INumToNumStepFunction, Double)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetPeriodic.htm" />
+            <HelpTOCNode Title="SetPeriodic Method (INumToNumStepFunction, Double, Double)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetPeriodic_1.htm" />
+            <HelpTOCNode Title="SetPeriodic Method (INumToNumStepFunction, Double, Double, Double)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetPeriodic_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="7d1974b8-b7a4-49f0-9edc-c3d7cefedee4" Title="SetPeriodicValue Method " Url="html/Overload_ILOG_Concert_INumToNumStepFunction_SetPeriodicValue.htm">
+            <HelpTOCNode Title="SetPeriodicValue Method (Double, Double, INumToNumStepFunction)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetPeriodicValue.htm" />
+            <HelpTOCNode Title="SetPeriodicValue Method (Double, Double, INumToNumStepFunction, Double)" Url="html/M_ILOG_Concert_INumToNumStepFunction_SetPeriodicValue_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="SetSteps Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_SetSteps.htm" />
+          <HelpTOCNode Title="SetValue Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_SetValue.htm" />
+          <HelpTOCNode Id="da729b9a-c30b-45fb-94f6-d0235f7d3f7a" Title="Shift Method " Url="html/Overload_ILOG_Concert_INumToNumStepFunction_Shift.htm">
+            <HelpTOCNode Title="Shift Method (Double)" Url="html/M_ILOG_Concert_INumToNumStepFunction_Shift.htm" />
+            <HelpTOCNode Title="Shift Method (Double, Double)" Url="html/M_ILOG_Concert_INumToNumStepFunction_Shift_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Sub Method " Url="html/M_ILOG_Concert_INumToNumStepFunction_Sub.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="1716df9c-2efe-489f-8fe7-4a9f8b4ccccd" Title="INumToNumStepFunctionCursor Interface" Url="html/T_ILOG_Concert_INumToNumStepFunctionCursor.htm">
+        <HelpTOCNode Title="INumToNumStepFunctionCursor Members" Url="html/AllMembers_T_ILOG_Concert_INumToNumStepFunctionCursor.htm" />
+        <HelpTOCNode Id="4ef9acb1-3671-4cc5-8ef0-126d692aabe2" Title="INumToNumStepFunctionCursor Methods" Url="html/Methods_T_ILOG_Concert_INumToNumStepFunctionCursor.htm">
+          <HelpTOCNode Title="GetSegmentMax Method " Url="html/M_ILOG_Concert_INumToNumStepFunctionCursor_GetSegmentMax.htm" />
+          <HelpTOCNode Title="GetSegmentMin Method " Url="html/M_ILOG_Concert_INumToNumStepFunctionCursor_GetSegmentMin.htm" />
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_INumToNumStepFunctionCursor_GetValue.htm" />
+          <HelpTOCNode Title="Next Method " Url="html/M_ILOG_Concert_INumToNumStepFunctionCursor_Next.htm" />
+          <HelpTOCNode Title="Ok Method " Url="html/M_ILOG_Concert_INumToNumStepFunctionCursor_Ok.htm" />
+          <HelpTOCNode Title="Previous Method " Url="html/M_ILOG_Concert_INumToNumStepFunctionCursor_Previous.htm" />
+          <HelpTOCNode Title="Seek Method " Url="html/M_ILOG_Concert_INumToNumStepFunctionCursor_Seek.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="4cf21b39-f517-44ac-95db-745c48c85189" Title="INumVar Interface" Url="html/T_ILOG_Concert_INumVar.htm">
+        <HelpTOCNode Title="INumVar Members" Url="html/AllMembers_T_ILOG_Concert_INumVar.htm" />
+        <HelpTOCNode Title="INumVar Methods" Url="html/Methods_T_ILOG_Concert_INumVar.htm" />
+        <HelpTOCNode Id="ff0eeb5a-5ac6-4017-a76a-5d8a3a075676" Title="INumVar Properties" Url="html/Properties_T_ILOG_Concert_INumVar.htm">
+          <HelpTOCNode Title="LB Property " Url="html/P_ILOG_Concert_INumVar_LB.htm" />
+          <HelpTOCNode Id="6b170944-633f-4246-9320-51617ef24ecd" Title="Name Property " Url="html/Overload_ILOG_Concert_INumVar_Name.htm">
+            <HelpTOCNode Title="Name Property " Url="html/P_ILOG_Concert_INumVar_Name.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Type Property " Url="html/P_ILOG_Concert_INumVar_Type.htm" />
+          <HelpTOCNode Title="UB Property " Url="html/P_ILOG_Concert_INumVar_UB.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="f0152580-de37-489c-aa14-3d49fad74c42" Title="IObjective Interface" Url="html/T_ILOG_Concert_IObjective.htm">
+        <HelpTOCNode Title="IObjective Members" Url="html/AllMembers_T_ILOG_Concert_IObjective.htm" />
+        <HelpTOCNode Id="3a132033-eda1-4c8f-b325-d0a8bf2d89e3" Title="IObjective Methods" Url="html/Methods_T_ILOG_Concert_IObjective.htm">
+          <HelpTOCNode Title="ClearExpr Method " Url="html/M_ILOG_Concert_IObjective_ClearExpr.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="ada03c1f-5fc7-47ff-80ef-164ff2b8744f" Title="IObjective Properties" Url="html/Properties_T_ILOG_Concert_IObjective.htm">
+          <HelpTOCNode Title="Expr Property " Url="html/P_ILOG_Concert_IObjective_Expr.htm" />
+          <HelpTOCNode Title="Sense Property " Url="html/P_ILOG_Concert_IObjective_Sense.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="e4bbfd67-3d5a-439f-8bfc-961a75764700" Title="IOr Interface" Url="html/T_ILOG_Concert_IOr.htm">
+        <HelpTOCNode Title="IOr Members" Url="html/AllMembers_T_ILOG_Concert_IOr.htm" />
+        <HelpTOCNode Id="07d030a7-f777-4ac4-95f9-d6c3e3e7546c" Title="IOr Methods" Url="html/Methods_T_ILOG_Concert_IOr.htm">
+          <HelpTOCNode Id="dee0fbfd-89e7-4cb3-b850-b7f551b0e637" Title="Add Method " Url="html/Overload_ILOG_Concert_IOr_Add.htm">
+            <HelpTOCNode Title="Add Method (IConstraint)" Url="html/M_ILOG_Concert_IOr_Add.htm" />
+            <HelpTOCNode Title="Add Method (IConstraint[])" Url="html/M_ILOG_Concert_IOr_Add_1.htm" />
+            <HelpTOCNode Title="Add Method (IConstraint[], Int32, Int32)" Url="html/M_ILOG_Concert_IOr_Add_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetEnumerator Method " Url="html/M_ILOG_Concert_IOr_GetEnumerator.htm" />
+          <HelpTOCNode Id="75590e10-7de5-4ede-be39-b923d18802af" Title="Remove Method " Url="html/Overload_ILOG_Concert_IOr_Remove.htm">
+            <HelpTOCNode Title="Remove Method (IConstraint)" Url="html/M_ILOG_Concert_IOr_Remove.htm" />
+            <HelpTOCNode Title="Remove Method (IConstraint[])" Url="html/M_ILOG_Concert_IOr_Remove_1.htm" />
+            <HelpTOCNode Title="Remove Method (IConstraint[], Int32, Int32)" Url="html/M_ILOG_Concert_IOr_Remove_2.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Title="IOr Properties" Url="html/Properties_T_ILOG_Concert_IOr.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="94c155e6-d91a-4625-b893-9e08ee4080e0" Title="IRange Interface" Url="html/T_ILOG_Concert_IRange.htm">
+        <HelpTOCNode Title="IRange Members" Url="html/AllMembers_T_ILOG_Concert_IRange.htm" />
+        <HelpTOCNode Id="53757e09-20de-4dc4-b3ea-8f2e9c822745" Title="IRange Methods" Url="html/Methods_T_ILOG_Concert_IRange.htm">
+          <HelpTOCNode Title="ClearExpr Method " Url="html/M_ILOG_Concert_IRange_ClearExpr.htm" />
+          <HelpTOCNode Title="SetBounds Method " Url="html/M_ILOG_Concert_IRange_SetBounds.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="b58e8175-23f8-468e-8533-3dd5f9891df2" Title="IRange Properties" Url="html/Properties_T_ILOG_Concert_IRange.htm">
+          <HelpTOCNode Title="Expr Property " Url="html/P_ILOG_Concert_IRange_Expr.htm" />
+          <HelpTOCNode Title="LB Property " Url="html/P_ILOG_Concert_IRange_LB.htm" />
+          <HelpTOCNode Title="UB Property " Url="html/P_ILOG_Concert_IRange_UB.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="b0fcc1e8-d20e-405b-ab4e-8ae7033f9bfd" Title="ISemiContVar Interface" Url="html/T_ILOG_Concert_ISemiContVar.htm">
+        <HelpTOCNode Title="ISemiContVar Members" Url="html/AllMembers_T_ILOG_Concert_ISemiContVar.htm" />
+        <HelpTOCNode Title="ISemiContVar Methods" Url="html/Methods_T_ILOG_Concert_ISemiContVar.htm" />
+        <HelpTOCNode Id="1901fa18-f2de-4029-89f4-4d6f7fe2dbae" Title="ISemiContVar Properties" Url="html/Properties_T_ILOG_Concert_ISemiContVar.htm">
+          <HelpTOCNode Title="Name Property " Url="html/Overload_ILOG_Concert_ISemiContVar_Name.htm" />
+          <HelpTOCNode Title="SemiContLB Property " Url="html/P_ILOG_Concert_ISemiContVar_SemiContLB.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="5dcbe47e-acc6-4278-884b-ba4d5c64f653" Title="ISolution Interface" Url="html/T_ILOG_Concert_ISolution.htm">
+        <HelpTOCNode Title="ISolution Members" Url="html/AllMembers_T_ILOG_Concert_ISolution.htm" />
+        <HelpTOCNode Id="2eb8eb59-87fa-4b13-8526-75f5739e31ba" Title="ISolution Methods" Url="html/Methods_T_ILOG_Concert_ISolution.htm">
+          <HelpTOCNode Id="0b3c04ff-e5e3-4993-bad0-d2bcc6faa27d" Title="Add Method " Url="html/Overload_ILOG_Concert_ISolution_Add.htm">
+            <HelpTOCNode Title="Add Method (IIntervalVar)" Url="html/M_ILOG_Concert_ISolution_Add.htm" />
+            <HelpTOCNode Title="Add Method (IIntervalVar[])" Url="html/M_ILOG_Concert_ISolution_Add_1.htm" />
+            <HelpTOCNode Title="Add Method (IIntVar)" Url="html/M_ILOG_Concert_ISolution_Add_2.htm" />
+            <HelpTOCNode Title="Add Method (IIntVar[])" Url="html/M_ILOG_Concert_ISolution_Add_3.htm" />
+            <HelpTOCNode Title="Add Method (INumVar)" Url="html/M_ILOG_Concert_ISolution_Add_4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="d9ec0021-2615-4806-bb81-b7b673232474" Title="Contains Method " Url="html/Overload_ILOG_Concert_ISolution_Contains.htm">
+            <HelpTOCNode Title="Contains Method (IIntervalVar)" Url="html/M_ILOG_Concert_ISolution_Contains.htm" />
+            <HelpTOCNode Title="Contains Method (IIntVar)" Url="html/M_ILOG_Concert_ISolution_Contains_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_Concert_ISolution_End.htm" />
+          <HelpTOCNode Title="GetEnd Method " Url="html/M_ILOG_Concert_ISolution_GetEnd.htm" />
+          <HelpTOCNode Title="GetEndMax Method " Url="html/M_ILOG_Concert_ISolution_GetEndMax.htm" />
+          <HelpTOCNode Title="GetEndMin Method " Url="html/M_ILOG_Concert_ISolution_GetEndMin.htm" />
+          <HelpTOCNode Title="GetLength Method " Url="html/M_ILOG_Concert_ISolution_GetLength.htm" />
+          <HelpTOCNode Title="GetLengthMax Method " Url="html/M_ILOG_Concert_ISolution_GetLengthMax.htm" />
+          <HelpTOCNode Title="GetLengthMin Method " Url="html/M_ILOG_Concert_ISolution_GetLengthMin.htm" />
+          <HelpTOCNode Id="a85e367a-ca67-4401-aa5c-ddb8eddd8d34" Title="GetMax Method " Url="html/Overload_ILOG_Concert_ISolution_GetMax.htm">
+            <HelpTOCNode Title="GetMax Method (IIntVar)" Url="html/M_ILOG_Concert_ISolution_GetMax.htm" />
+            <HelpTOCNode Title="GetMax Method (INumVar)" Url="html/M_ILOG_Concert_ISolution_GetMax_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="b3af6be7-8f36-4885-91cc-ebc61ae5e364" Title="GetMin Method " Url="html/Overload_ILOG_Concert_ISolution_GetMin.htm">
+            <HelpTOCNode Title="GetMin Method (IIntVar)" Url="html/M_ILOG_Concert_ISolution_GetMin.htm" />
+            <HelpTOCNode Title="GetMin Method (INumVar)" Url="html/M_ILOG_Concert_ISolution_GetMin_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetSize Method " Url="html/M_ILOG_Concert_ISolution_GetSize.htm" />
+          <HelpTOCNode Title="GetSizeMax Method " Url="html/M_ILOG_Concert_ISolution_GetSizeMax.htm" />
+          <HelpTOCNode Title="GetSizeMin Method " Url="html/M_ILOG_Concert_ISolution_GetSizeMin.htm" />
+          <HelpTOCNode Title="GetStart Method " Url="html/M_ILOG_Concert_ISolution_GetStart.htm" />
+          <HelpTOCNode Title="GetStartMax Method " Url="html/M_ILOG_Concert_ISolution_GetStartMax.htm" />
+          <HelpTOCNode Title="GetStartMin Method " Url="html/M_ILOG_Concert_ISolution_GetStartMin.htm" />
+          <HelpTOCNode Id="172ddcad-0ee1-4eb6-9815-2ef3f3e51df2" Title="GetValue Method " Url="html/Overload_ILOG_Concert_ISolution_GetValue.htm">
+            <HelpTOCNode Title="GetValue Method (IIntVar)" Url="html/M_ILOG_Concert_ISolution_GetValue.htm" />
+            <HelpTOCNode Title="GetValue Method (INumVar)" Url="html/M_ILOG_Concert_ISolution_GetValue_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="IsAbsent Method " Url="html/M_ILOG_Concert_ISolution_IsAbsent.htm" />
+          <HelpTOCNode Title="IsFixed Method " Url="html/M_ILOG_Concert_ISolution_IsFixed.htm" />
+          <HelpTOCNode Title="IsInDomain Method " Url="html/M_ILOG_Concert_ISolution_IsInDomain.htm" />
+          <HelpTOCNode Title="IsPresent Method " Url="html/M_ILOG_Concert_ISolution_IsPresent.htm" />
+          <HelpTOCNode Id="12465ede-bf87-46a3-8b63-a4d5f8e3d6a2" Title="Remove Method " Url="html/Overload_ILOG_Concert_ISolution_Remove.htm">
+            <HelpTOCNode Title="Remove Method (IIntervalVar)" Url="html/M_ILOG_Concert_ISolution_Remove.htm" />
+            <HelpTOCNode Title="Remove Method (IIntervalVar[])" Url="html/M_ILOG_Concert_ISolution_Remove_1.htm" />
+            <HelpTOCNode Title="Remove Method (IIntVar)" Url="html/M_ILOG_Concert_ISolution_Remove_2.htm" />
+            <HelpTOCNode Title="Remove Method (IIntVar[])" Url="html/M_ILOG_Concert_ISolution_Remove_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="SetAbsent Method " Url="html/M_ILOG_Concert_ISolution_SetAbsent.htm" />
+          <HelpTOCNode Title="SetDomain Method " Url="html/M_ILOG_Concert_ISolution_SetDomain.htm" />
+          <HelpTOCNode Title="SetEnd Method " Url="html/M_ILOG_Concert_ISolution_SetEnd.htm" />
+          <HelpTOCNode Title="SetEndMax Method " Url="html/M_ILOG_Concert_ISolution_SetEndMax.htm" />
+          <HelpTOCNode Title="SetEndMin Method " Url="html/M_ILOG_Concert_ISolution_SetEndMin.htm" />
+          <HelpTOCNode Title="SetLength Method " Url="html/M_ILOG_Concert_ISolution_SetLength.htm" />
+          <HelpTOCNode Title="SetLengthMax Method " Url="html/M_ILOG_Concert_ISolution_SetLengthMax.htm" />
+          <HelpTOCNode Title="SetLengthMin Method " Url="html/M_ILOG_Concert_ISolution_SetLengthMin.htm" />
+          <HelpTOCNode Id="458400d6-c2a0-4ced-b002-d6b625f0b0cc" Title="SetMax Method " Url="html/Overload_ILOG_Concert_ISolution_SetMax.htm">
+            <HelpTOCNode Title="SetMax Method (IIntVar, Int32)" Url="html/M_ILOG_Concert_ISolution_SetMax.htm" />
+            <HelpTOCNode Title="SetMax Method (INumVar, Double)" Url="html/M_ILOG_Concert_ISolution_SetMax_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="f0c34681-ccdc-41a7-9ec4-2459110dcbcc" Title="SetMin Method " Url="html/Overload_ILOG_Concert_ISolution_SetMin.htm">
+            <HelpTOCNode Title="SetMin Method (IIntVar, Int32)" Url="html/M_ILOG_Concert_ISolution_SetMin.htm" />
+            <HelpTOCNode Title="SetMin Method (INumVar, Double)" Url="html/M_ILOG_Concert_ISolution_SetMin_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="SetOptional Method " Url="html/M_ILOG_Concert_ISolution_SetOptional.htm" />
+          <HelpTOCNode Title="SetPresent Method " Url="html/M_ILOG_Concert_ISolution_SetPresent.htm" />
+          <HelpTOCNode Title="SetSize Method " Url="html/M_ILOG_Concert_ISolution_SetSize.htm" />
+          <HelpTOCNode Title="SetSizeMax Method " Url="html/M_ILOG_Concert_ISolution_SetSizeMax.htm" />
+          <HelpTOCNode Title="SetSizeMin Method " Url="html/M_ILOG_Concert_ISolution_SetSizeMin.htm" />
+          <HelpTOCNode Title="SetStart Method " Url="html/M_ILOG_Concert_ISolution_SetStart.htm" />
+          <HelpTOCNode Title="SetStartMax Method " Url="html/M_ILOG_Concert_ISolution_SetStartMax.htm" />
+          <HelpTOCNode Title="SetStartMin Method " Url="html/M_ILOG_Concert_ISolution_SetStartMin.htm" />
+          <HelpTOCNode Id="aad5b874-7000-4fba-958b-93e7f34e0d5e" Title="SetValue Method " Url="html/Overload_ILOG_Concert_ISolution_SetValue.htm">
+            <HelpTOCNode Title="SetValue Method (IIntVar, Int32)" Url="html/M_ILOG_Concert_ISolution_SetValue.htm" />
+            <HelpTOCNode Title="SetValue Method (INumVar, Double)" Url="html/M_ILOG_Concert_ISolution_SetValue_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Store Method " Url="html/M_ILOG_Concert_ISolution_Store.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="5c6f0b44-024a-47fe-88ef-a70d50e89fb8" Title="ISOS1 Interface" Url="html/T_ILOG_Concert_ISOS1.htm">
+        <HelpTOCNode Title="ISOS1 Members" Url="html/AllMembers_T_ILOG_Concert_ISOS1.htm" />
+        <HelpTOCNode Title="ISOS1 Methods" Url="html/Methods_T_ILOG_Concert_ISOS1.htm" />
+        <HelpTOCNode Id="b685305d-45ab-4e96-ac89-6ef9e053fdd7" Title="ISOS1 Properties" Url="html/Properties_T_ILOG_Concert_ISOS1.htm">
+          <HelpTOCNode Title="NumVars Property " Url="html/P_ILOG_Concert_ISOS1_NumVars.htm" />
+          <HelpTOCNode Title="Values Property " Url="html/P_ILOG_Concert_ISOS1_Values.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="992f632e-306c-4645-868b-c2d9504e20dc" Title="ISOS2 Interface" Url="html/T_ILOG_Concert_ISOS2.htm">
+        <HelpTOCNode Title="ISOS2 Members" Url="html/AllMembers_T_ILOG_Concert_ISOS2.htm" />
+        <HelpTOCNode Title="ISOS2 Methods" Url="html/Methods_T_ILOG_Concert_ISOS2.htm" />
+        <HelpTOCNode Id="15acc778-b227-426a-9607-98b2c0ea390e" Title="ISOS2 Properties" Url="html/Properties_T_ILOG_Concert_ISOS2.htm">
+          <HelpTOCNode Title="NumVars Property " Url="html/P_ILOG_Concert_ISOS2_NumVars.htm" />
+          <HelpTOCNode Title="Values Property " Url="html/P_ILOG_Concert_ISOS2_Values.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="b755fb8a-c4d4-435b-b1d2-7bf2ffcd7376" Title="ISpan Interface" Url="html/T_ILOG_Concert_ISpan.htm">
+        <HelpTOCNode Title="ISpan Members" Url="html/AllMembers_T_ILOG_Concert_ISpan.htm" />
+        <HelpTOCNode Title="ISpan Methods" Url="html/Methods_T_ILOG_Concert_ISpan.htm" />
+        <HelpTOCNode Title="ISpan Properties" Url="html/Properties_T_ILOG_Concert_ISpan.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="IStateFunction Interface" Url="html/T_ILOG_Concert_IStateFunction.htm" />
+      <HelpTOCNode Id="fdad7025-8ba4-4706-9db0-eaf5d58afec4" Title="IStateFunctionExpr Interface" Url="html/T_ILOG_Concert_IStateFunctionExpr.htm">
+        <HelpTOCNode Title="IStateFunctionExpr Members" Url="html/AllMembers_T_ILOG_Concert_IStateFunctionExpr.htm" />
+        <HelpTOCNode Title="IStateFunctionExpr Methods" Url="html/Methods_T_ILOG_Concert_IStateFunctionExpr.htm" />
+        <HelpTOCNode Title="IStateFunctionExpr Properties" Url="html/Properties_T_ILOG_Concert_IStateFunctionExpr.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="53e1f6bf-57c1-4852-8bdf-1f37ba5bd7dd" Title="ISynchronize Interface" Url="html/T_ILOG_Concert_ISynchronize.htm">
+        <HelpTOCNode Title="ISynchronize Members" Url="html/AllMembers_T_ILOG_Concert_ISynchronize.htm" />
+        <HelpTOCNode Title="ISynchronize Methods" Url="html/Methods_T_ILOG_Concert_ISynchronize.htm" />
+        <HelpTOCNode Title="ISynchronize Properties" Url="html/Properties_T_ILOG_Concert_ISynchronize.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="cd6c4e22-9ea9-48ea-9f01-64cd0b062616" Title="ITransitionDistance Interface" Url="html/T_ILOG_Concert_ITransitionDistance.htm">
+        <HelpTOCNode Title="ITransitionDistance Members" Url="html/AllMembers_T_ILOG_Concert_ITransitionDistance.htm" />
+        <HelpTOCNode Id="85195242-71ba-4306-b29d-70eebca534bb" Title="ITransitionDistance Methods" Url="html/Methods_T_ILOG_Concert_ITransitionDistance.htm">
+          <HelpTOCNode Title="GetSize Method " Url="html/M_ILOG_Concert_ITransitionDistance_GetSize.htm" />
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_ITransitionDistance_GetValue.htm" />
+          <HelpTOCNode Title="SetValue Method " Url="html/M_ILOG_Concert_ITransitionDistance_SetValue.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="9be6b306-7d1b-450c-be1a-d05c6883a8d0" Title="NumVarType Class" Url="html/T_ILOG_Concert_NumVarType.htm">
+        <HelpTOCNode Title="NumVarType Members" Url="html/AllMembers_T_ILOG_Concert_NumVarType.htm" />
+        <HelpTOCNode Title="NumVarType Constructor " Url="html/M_ILOG_Concert_NumVarType__ctor.htm" />
+        <HelpTOCNode Id="242ed969-42d9-4ec9-89e4-e697a805b99e" Title="NumVarType Fields" Url="html/Fields_T_ILOG_Concert_NumVarType.htm">
+          <HelpTOCNode Title="Bool Field" Url="html/F_ILOG_Concert_NumVarType_Bool.htm" />
+          <HelpTOCNode Title="Float Field" Url="html/F_ILOG_Concert_NumVarType_Float.htm" />
+          <HelpTOCNode Title="Int Field" Url="html/F_ILOG_Concert_NumVarType_Int.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="NumVarType Methods" Url="html/Methods_T_ILOG_Concert_NumVarType.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="36b12698-5338-48c8-8f29-17f781042398" Title="ObjectiveSense Class" Url="html/T_ILOG_Concert_ObjectiveSense.htm">
+        <HelpTOCNode Title="ObjectiveSense Members" Url="html/AllMembers_T_ILOG_Concert_ObjectiveSense.htm" />
+        <HelpTOCNode Title="ObjectiveSense Constructor " Url="html/M_ILOG_Concert_ObjectiveSense__ctor.htm" />
+        <HelpTOCNode Id="e988796c-f923-4231-a0e6-ab7bafcf510f" Title="ObjectiveSense Fields" Url="html/Fields_T_ILOG_Concert_ObjectiveSense.htm">
+          <HelpTOCNode Title="Maximize Field" Url="html/F_ILOG_Concert_ObjectiveSense_Maximize.htm" />
+          <HelpTOCNode Title="Minimize Field" Url="html/F_ILOG_Concert_ObjectiveSense_Minimize.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="6bd922b0-859b-4faa-84ff-ec5c7943e70b" Title="ObjectiveSense Methods" Url="html/Methods_T_ILOG_Concert_ObjectiveSense.htm">
+          <HelpTOCNode Title="GetValue Method " Url="html/M_ILOG_Concert_ObjectiveSense_GetValue.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="d53bfd88-5478-4957-b206-629a58c6f9ac" Title="ILOG.CP Namespace" Url="html/N_ILOG_CP.htm">
+      <HelpTOCNode Id="a051c625-5313-4b1a-8924-66788f6d5f66" Title="CP Class" Url="html/T_ILOG_CP_CP.htm">
+        <HelpTOCNode Title="CP Members" Url="html/AllMembers_T_ILOG_CP_CP.htm" />
+        <HelpTOCNode Id="62b81221-6f50-4fca-9e16-02daf2bc5f8f" Title="CP Fields" Url="html/Fields_T_ILOG_CP_CP.htm">
+          <HelpTOCNode Title="IntervalMax Field" Url="html/F_ILOG_CP_CP_IntervalMax.htm" />
+          <HelpTOCNode Title="IntervalMin Field" Url="html/F_ILOG_CP_CP_IntervalMin.htm" />
+          <HelpTOCNode Title="NoState Field" Url="html/F_ILOG_CP_CP_NoState.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="cde6001e-36a9-4b68-a551-92970a691bb7" Title="CP Methods" Url="html/Methods_T_ILOG_CP_CP.htm">
+          <HelpTOCNode Title="AbortSearch Method " Url="html/M_ILOG_CP_CP_AbortSearch.htm" />
+          <HelpTOCNode Title="AddTuple Method " Url="html/M_ILOG_CP_CP_AddTuple.htm" />
+          <HelpTOCNode Title="AllDiff Method " Url="html/M_ILOG_CP_CP_AllDiff.htm" />
+          <HelpTOCNode Title="AllMinDistance Method " Url="html/M_ILOG_CP_CP_AllMinDistance.htm" />
+          <HelpTOCNode Id="8c31518d-2695-46e0-ae14-db07fded6b42" Title="AllowedAssignments Method " Url="html/Overload_ILOG_CP_CP_AllowedAssignments.htm">
+            <HelpTOCNode Title="AllowedAssignments Method (IIntVar, Int32[])" Url="html/M_ILOG_CP_CP_AllowedAssignments.htm" />
+            <HelpTOCNode Title="AllowedAssignments Method (IIntVar[], )" Url="html/M_ILOG_CP_CP_AllowedAssignments_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="76d019ce-52ac-4156-81ac-addfd29aed10" Title="Alternative Method " Url="html/Overload_ILOG_CP_CP_Alternative.htm">
+            <HelpTOCNode Title="Alternative Method (IIntervalVar, IIntervalVar[])" Url="html/M_ILOG_CP_CP_Alternative.htm" />
+            <HelpTOCNode Title="Alternative Method (IIntervalVar, IIntervalVar[], IIntExpr)" Url="html/M_ILOG_CP_CP_Alternative_1.htm" />
+            <HelpTOCNode Title="Alternative Method (IIntervalVar, IIntervalVar[], Int32)" Url="html/M_ILOG_CP_CP_Alternative_3.htm" />
+            <HelpTOCNode Title="Alternative Method (IIntervalVar, IIntervalVar[], String)" Url="html/M_ILOG_CP_CP_Alternative_5.htm" />
+            <HelpTOCNode Title="Alternative Method (IIntervalVar, IIntervalVar[], IIntExpr, String)" Url="html/M_ILOG_CP_CP_Alternative_2.htm" />
+            <HelpTOCNode Title="Alternative Method (IIntervalVar, IIntervalVar[], Int32, String)" Url="html/M_ILOG_CP_CP_Alternative_4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="969e15cd-82d5-4d12-99f5-618a3d605406" Title="AlwaysConstant Method " Url="html/Overload_ILOG_CP_CP_AlwaysConstant.htm">
+            <HelpTOCNode Title="AlwaysConstant Method (IStateFunction, IIntervalVar)" Url="html/M_ILOG_CP_CP_AlwaysConstant.htm" />
+            <HelpTOCNode Title="AlwaysConstant Method (IStateFunction, Int32, Int32)" Url="html/M_ILOG_CP_CP_AlwaysConstant_2.htm" />
+            <HelpTOCNode Title="AlwaysConstant Method (IStateFunction, IIntervalVar, Boolean, Boolean)" Url="html/M_ILOG_CP_CP_AlwaysConstant_1.htm" />
+            <HelpTOCNode Title="AlwaysConstant Method (IStateFunction, Int32, Int32, Boolean, Boolean)" Url="html/M_ILOG_CP_CP_AlwaysConstant_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="4c488d51-1864-4dea-b54d-f54c412ee47c" Title="AlwaysEqual Method " Url="html/Overload_ILOG_CP_CP_AlwaysEqual.htm">
+            <HelpTOCNode Title="AlwaysEqual Method (ICumulFunctionExpr, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_AlwaysEqual.htm" />
+            <HelpTOCNode Title="AlwaysEqual Method (IStateFunction, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_AlwaysEqual_2.htm" />
+            <HelpTOCNode Title="AlwaysEqual Method (ICumulFunctionExpr, Int32, Int32, Int32)" Url="html/M_ILOG_CP_CP_AlwaysEqual_1.htm" />
+            <HelpTOCNode Title="AlwaysEqual Method (IStateFunction, Int32, Int32, Int32)" Url="html/M_ILOG_CP_CP_AlwaysEqual_4.htm" />
+            <HelpTOCNode Title="AlwaysEqual Method (IStateFunction, IIntervalVar, Int32, Boolean, Boolean)" Url="html/M_ILOG_CP_CP_AlwaysEqual_3.htm" />
+            <HelpTOCNode Title="AlwaysEqual Method (IStateFunction, Int32, Int32, Int32, Boolean, Boolean)" Url="html/M_ILOG_CP_CP_AlwaysEqual_5.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="64a92723-eeff-4de6-83bc-a8a505a73a3c" Title="AlwaysIn Method " Url="html/Overload_ILOG_CP_CP_AlwaysIn.htm">
+            <HelpTOCNode Title="AlwaysIn Method (ICumulFunctionExpr, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_AlwaysIn.htm" />
+            <HelpTOCNode Title="AlwaysIn Method (IStateFunction, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_AlwaysIn_2.htm" />
+            <HelpTOCNode Title="AlwaysIn Method (ICumulFunctionExpr, Int32, Int32, Int32, Int32)" Url="html/M_ILOG_CP_CP_AlwaysIn_1.htm" />
+            <HelpTOCNode Title="AlwaysIn Method (IStateFunction, Int32, Int32, Int32, Int32)" Url="html/M_ILOG_CP_CP_AlwaysIn_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5a895c9f-a9d1-49e4-909b-e7a2dc48959f" Title="AlwaysNoState Method " Url="html/Overload_ILOG_CP_CP_AlwaysNoState.htm">
+            <HelpTOCNode Title="AlwaysNoState Method (IStateFunction, IIntervalVar)" Url="html/M_ILOG_CP_CP_AlwaysNoState.htm" />
+            <HelpTOCNode Title="AlwaysNoState Method (IStateFunction, Int32, Int32)" Url="html/M_ILOG_CP_CP_AlwaysNoState_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="ArrayEltName Method " Url="html/M_ILOG_CP_CP_ArrayEltName.htm" />
+          <HelpTOCNode Title="Before Method " Url="html/M_ILOG_CP_CP_Before.htm" />
+          <HelpTOCNode Title="ClearAbort Method " Url="html/M_ILOG_CP_CP_ClearAbort.htm" />
+          <HelpTOCNode Title="ClearExplanations Method " Url="html/M_ILOG_CP_CP_ClearExplanations.htm" />
+          <HelpTOCNode Title="ClearStartingPoint Method " Url="html/M_ILOG_CP_CP_ClearStartingPoint.htm" />
+          <HelpTOCNode Id="3ff635dc-f787-427a-b4f3-79d931c258df" Title="Constant Method " Url="html/Overload_ILOG_CP_CP_Constant.htm">
+            <HelpTOCNode Title="Constant Method (Double, String)" Url="html/M_ILOG_CP_CP_Constant.htm" />
+            <HelpTOCNode Title="Constant Method (Int32, String)" Url="html/M_ILOG_CP_CP_Constant_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Count Method " Url="html/M_ILOG_CP_CP_Count.htm" />
+          <HelpTOCNode Title="CountDifferent Method " Url="html/M_ILOG_CP_CP_CountDifferent.htm" />
+          <HelpTOCNode Id="70dbb7dc-803a-4ff4-9f8c-12c315f56a29" Title="CumulFunctionExpr Method " Url="html/Overload_ILOG_CP_CP_CumulFunctionExpr.htm">
+            <HelpTOCNode Title="CumulFunctionExpr Method " Url="html/M_ILOG_CP_CP_CumulFunctionExpr.htm" />
+            <HelpTOCNode Title="CumulFunctionExpr Method (String)" Url="html/M_ILOG_CP_CP_CumulFunctionExpr_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Diff Method " Url="html/M_ILOG_CP_CP_Diff.htm" />
+          <HelpTOCNode Id="02e5971a-8952-4e19-a307-5a04cd05e148" Title="Distribute Method " Url="html/Overload_ILOG_CP_CP_Distribute.htm">
+            <HelpTOCNode Title="Distribute Method (IIntExpr[], IIntExpr[])" Url="html/M_ILOG_CP_CP_Distribute.htm" />
+            <HelpTOCNode Title="Distribute Method (IIntExpr[], Int32[], IIntExpr[])" Url="html/M_ILOG_CP_CP_Distribute_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="a877d805-085f-438f-be99-e000f8cde503" Title="Div Method " Url="html/Overload_ILOG_CP_CP_Div.htm">
+            <HelpTOCNode Title="Div Method (Int32, IIntExpr)" Url="html/M_ILOG_CP_CP_Div_2.htm" />
+            <HelpTOCNode Title="Div Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Div.htm" />
+            <HelpTOCNode Title="Div Method (IIntExpr, Int32)" Url="html/M_ILOG_CP_CP_Div_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="DomainMax Method " Url="html/M_ILOG_CP_CP_DomainMax.htm" />
+          <HelpTOCNode Title="DomainMin Method " Url="html/M_ILOG_CP_CP_DomainMin.htm" />
+          <HelpTOCNode Title="DomainSize Method " Url="html/M_ILOG_CP_CP_DomainSize.htm" />
+          <HelpTOCNode Id="1807b65c-edbc-4137-b78c-2cb8878cbaf5" Title="DumpModel Method " Url="html/Overload_ILOG_CP_CP_DumpModel.htm">
+            <HelpTOCNode Title="DumpModel Method (TextWriter)" Url="html/M_ILOG_CP_CP_DumpModel.htm" />
+            <HelpTOCNode Title="DumpModel Method (String)" Url="html/M_ILOG_CP_CP_DumpModel_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="11c37f4e-2f95-4e20-89a5-0420101cce02" Title="Element Method " Url="html/Overload_ILOG_CP_CP_Element.htm">
+            <HelpTOCNode Title="Element Method (Double[], IIntExpr)" Url="html/M_ILOG_CP_CP_Element_3.htm" />
+            <HelpTOCNode Title="Element Method (Int32[], IIntExpr)" Url="html/M_ILOG_CP_CP_Element_4.htm" />
+            <HelpTOCNode Title="Element Method (IIntExpr[], IIntExpr)" Url="html/M_ILOG_CP_CP_Element_1.htm" />
+            <HelpTOCNode Title="Element Method (IIntExpr, IIntExpr, Int32[])" Url="html/M_ILOG_CP_CP_Element.htm" />
+            <HelpTOCNode Title="Element Method (INumExpr, IIntExpr, Double[])" Url="html/M_ILOG_CP_CP_Element_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_CP_CP_End.htm" />
+          <HelpTOCNode Id="e5147a16-aab7-449e-a0e7-ab47f8df5291" Title="EndAtEnd Method " Url="html/Overload_ILOG_CP_CP_EndAtEnd.htm">
+            <HelpTOCNode Title="EndAtEnd Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_EndAtEnd.htm" />
+            <HelpTOCNode Title="EndAtEnd Method (IIntervalVar, IIntervalVar, IIntExpr)" Url="html/M_ILOG_CP_CP_EndAtEnd_1.htm" />
+            <HelpTOCNode Title="EndAtEnd Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_EndAtEnd_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="6d64aaca-7f8e-41a0-b43a-935f0c8956e4" Title="EndAtStart Method " Url="html/Overload_ILOG_CP_CP_EndAtStart.htm">
+            <HelpTOCNode Title="EndAtStart Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_EndAtStart.htm" />
+            <HelpTOCNode Title="EndAtStart Method (IIntervalVar, IIntervalVar, IIntExpr)" Url="html/M_ILOG_CP_CP_EndAtStart_1.htm" />
+            <HelpTOCNode Title="EndAtStart Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_EndAtStart_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="99c9644a-deea-43d4-a5f2-9bfd50c869eb" Title="EndBeforeEnd Method " Url="html/Overload_ILOG_CP_CP_EndBeforeEnd.htm">
+            <HelpTOCNode Title="EndBeforeEnd Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_EndBeforeEnd.htm" />
+            <HelpTOCNode Title="EndBeforeEnd Method (IIntervalVar, IIntervalVar, IIntExpr)" Url="html/M_ILOG_CP_CP_EndBeforeEnd_1.htm" />
+            <HelpTOCNode Title="EndBeforeEnd Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_EndBeforeEnd_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="e3bc0c8c-af55-41fa-9d38-dc05898a180f" Title="EndBeforeStart Method " Url="html/Overload_ILOG_CP_CP_EndBeforeStart.htm">
+            <HelpTOCNode Title="EndBeforeStart Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_EndBeforeStart.htm" />
+            <HelpTOCNode Title="EndBeforeStart Method (IIntervalVar, IIntervalVar, IIntExpr)" Url="html/M_ILOG_CP_CP_EndBeforeStart_1.htm" />
+            <HelpTOCNode Title="EndBeforeStart Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_EndBeforeStart_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="ed60f78c-c39d-428e-a737-d8ea1ffef73c" Title="EndEval Method " Url="html/Overload_ILOG_CP_CP_EndEval.htm">
+            <HelpTOCNode Title="EndEval Method (IIntervalVar, INumToNumSegmentFunction)" Url="html/M_ILOG_CP_CP_EndEval.htm" />
+            <HelpTOCNode Title="EndEval Method (IIntervalVar, INumToNumSegmentFunction, Double)" Url="html/M_ILOG_CP_CP_EndEval_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="9f495daa-6d45-4a80-9a73-e2f2caa09f98" Title="EndOf Method " Url="html/Overload_ILOG_CP_CP_EndOf.htm">
+            <HelpTOCNode Title="EndOf Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_EndOf.htm" />
+            <HelpTOCNode Title="EndOf Method (IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_EndOf_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="44c438fc-8378-497e-af6a-1f58ab9922d0" Title="EndOfNext Method " Url="html/Overload_ILOG_CP_CP_EndOfNext.htm">
+            <HelpTOCNode Title="EndOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_EndOfNext.htm" />
+            <HelpTOCNode Title="EndOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_EndOfNext_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5802e7c2-6c10-4895-bfab-fd8ab3741b45" Title="EndOfPrevious Method " Url="html/Overload_ILOG_CP_CP_EndOfPrevious.htm">
+            <HelpTOCNode Title="EndOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_EndOfPrevious.htm" />
+            <HelpTOCNode Title="EndOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_EndOfPrevious_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="EndSearch Method " Url="html/M_ILOG_CP_CP_EndSearch.htm" />
+          <HelpTOCNode Id="0acdfa64-42fc-400d-8467-5b94944210ed" Title="Eq Method " Url="html/Overload_ILOG_CP_CP_Eq.htm">
+            <HelpTOCNode Title="Eq Method (Int32, IIntExpr)" Url="html/M_ILOG_CP_CP_Eq_2.htm" />
+            <HelpTOCNode Title="Eq Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Eq.htm" />
+            <HelpTOCNode Title="Eq Method (IIntExpr, Int32)" Url="html/M_ILOG_CP_CP_Eq_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Equiv Method " Url="html/M_ILOG_CP_CP_Equiv.htm" />
+          <HelpTOCNode Title="Error Method " Url="html/M_ILOG_CP_CP_Error.htm" />
+          <HelpTOCNode Id="ca8198db-91c1-40df-aae1-ab81fabc44b7" Title="ExplainFailure Method " Url="html/Overload_ILOG_CP_CP_ExplainFailure.htm">
+            <HelpTOCNode Title="ExplainFailure Method (Int32)" Url="html/M_ILOG_CP_CP_ExplainFailure.htm" />
+            <HelpTOCNode Title="ExplainFailure Method (Int32[])" Url="html/M_ILOG_CP_CP_ExplainFailure_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="91e72bf9-c08f-4689-9a63-baca3742970b" Title="ExplicitValueEval Method " Url="html/Overload_ILOG_CP_CP_ExplicitValueEval.htm">
+            <HelpTOCNode Title="ExplicitValueEval Method (Int32[], Double[])" Url="html/M_ILOG_CP_CP_ExplicitValueEval.htm" />
+            <HelpTOCNode Title="ExplicitValueEval Method (Int32[], Int32[])" Url="html/M_ILOG_CP_CP_ExplicitValueEval_2.htm" />
+            <HelpTOCNode Title="ExplicitValueEval Method (Int32[], Double[], Double)" Url="html/M_ILOG_CP_CP_ExplicitValueEval_1.htm" />
+            <HelpTOCNode Title="ExplicitValueEval Method (Int32[], Int32[], Double)" Url="html/M_ILOG_CP_CP_ExplicitValueEval_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="7c729a26-0fec-49f5-a63e-d3d59c3e6c93" Title="ExplicitVarEval Method " Url="html/Overload_ILOG_CP_CP_ExplicitVarEval.htm">
+            <HelpTOCNode Title="ExplicitVarEval Method (IIntVar[], Double[])" Url="html/M_ILOG_CP_CP_ExplicitVarEval.htm" />
+            <HelpTOCNode Title="ExplicitVarEval Method (IIntVar[], Int32[])" Url="html/M_ILOG_CP_CP_ExplicitVarEval_2.htm" />
+            <HelpTOCNode Title="ExplicitVarEval Method (IIntVar[], Double[], Double)" Url="html/M_ILOG_CP_CP_ExplicitVarEval_1.htm" />
+            <HelpTOCNode Title="ExplicitVarEval Method (IIntVar[], Int32[], Double)" Url="html/M_ILOG_CP_CP_ExplicitVarEval_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Exponent Method " Url="html/M_ILOG_CP_CP_Exponent.htm" />
+          <HelpTOCNode Id="547b66b8-ac57-4bac-9cac-689f01a730da" Title="ExportModel Method " Url="html/Overload_ILOG_CP_CP_ExportModel.htm">
+            <HelpTOCNode Title="ExportModel Method (TextWriter)" Url="html/M_ILOG_CP_CP_ExportModel.htm" />
+            <HelpTOCNode Title="ExportModel Method (String)" Url="html/M_ILOG_CP_CP_ExportModel_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="FalseConstraint Method " Url="html/M_ILOG_CP_CP_FalseConstraint.htm" />
+          <HelpTOCNode Title="First Method " Url="html/M_ILOG_CP_CP_First.htm" />
+          <HelpTOCNode Title="Floor Method " Url="html/M_ILOG_CP_CP_Floor.htm" />
+          <HelpTOCNode Id="ad892964-b3cb-445f-9de2-1864d7409672" Title="ForbiddenAssignments Method " Url="html/Overload_ILOG_CP_CP_ForbiddenAssignments.htm">
+            <HelpTOCNode Title="ForbiddenAssignments Method (IIntVar, Int32[])" Url="html/M_ILOG_CP_CP_ForbiddenAssignments.htm" />
+            <HelpTOCNode Title="ForbiddenAssignments Method (IIntVar[], )" Url="html/M_ILOG_CP_CP_ForbiddenAssignments_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="ForbidEnd Method " Url="html/M_ILOG_CP_CP_ForbidEnd.htm" />
+          <HelpTOCNode Title="ForbidExtent Method " Url="html/M_ILOG_CP_CP_ForbidExtent.htm" />
+          <HelpTOCNode Title="ForbidStart Method " Url="html/M_ILOG_CP_CP_ForbidStart.htm" />
+          <HelpTOCNode Id="33922f59-30b8-4b52-8a90-ab180e36ce56" Title="Ge Method " Url="html/Overload_ILOG_CP_CP_Ge.htm">
+            <HelpTOCNode Title="Ge Method (Int32, ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_Ge_5.htm" />
+            <HelpTOCNode Title="Ge Method (Int32, IIntExpr)" Url="html/M_ILOG_CP_CP_Ge_6.htm" />
+            <HelpTOCNode Title="Ge Method (ICumulFunctionExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Ge.htm" />
+            <HelpTOCNode Title="Ge Method (ICumulFunctionExpr, Int32)" Url="html/M_ILOG_CP_CP_Ge_1.htm" />
+            <HelpTOCNode Title="Ge Method (IIntExpr, ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_Ge_2.htm" />
+            <HelpTOCNode Title="Ge Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Ge_3.htm" />
+            <HelpTOCNode Title="Ge Method (IIntExpr, Int32)" Url="html/M_ILOG_CP_CP_Ge_4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetAllConstrainedICumulFunctionExprs Method " Url="html/M_ILOG_CP_CP_GetAllConstrainedICumulFunctionExprs.htm" />
+          <HelpTOCNode Title="GetAllIIntervalSequenceVars Method " Url="html/M_ILOG_CP_CP_GetAllIIntervalSequenceVars.htm" />
+          <HelpTOCNode Title="GetAllIIntervalVars Method " Url="html/M_ILOG_CP_CP_GetAllIIntervalVars.htm" />
+          <HelpTOCNode Title="GetAllIIntVars Method " Url="html/M_ILOG_CP_CP_GetAllIIntVars.htm" />
+          <HelpTOCNode Title="GetAllIStateFunctions Method " Url="html/M_ILOG_CP_CP_GetAllIStateFunctions.htm" />
+          <HelpTOCNode Id="1aaa9607-ac22-4b88-bcc3-4bb177ec331f" Title="GetConflict Method " Url="html/Overload_ILOG_CP_CP_GetConflict.htm">
+            <HelpTOCNode Title="GetConflict Method (IConstraint)" Url="html/M_ILOG_CP_CP_GetConflict.htm" />
+            <HelpTOCNode Title="GetConflict Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_GetConflict_1.htm" />
+            <HelpTOCNode Title="GetConflict Method (INumVar)" Url="html/M_ILOG_CP_CP_GetConflict_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetDomain Method " Url="html/M_ILOG_CP_CP_GetDomain.htm" />
+          <HelpTOCNode Title="GetDomainSize Method " Url="html/M_ILOG_CP_CP_GetDomainSize.htm" />
+          <HelpTOCNode Id="4a43f7aa-a0fc-4ca5-b6cf-4ef457b7a75b" Title="GetEnd Method " Url="html/Overload_ILOG_CP_CP_GetEnd.htm">
+            <HelpTOCNode Title="GetEnd Method (String)" Url="html/M_ILOG_CP_CP_GetEnd_1.htm" />
+            <HelpTOCNode Title="GetEnd Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_GetEnd.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetEndMax Method " Url="html/M_ILOG_CP_CP_GetEndMax.htm" />
+          <HelpTOCNode Title="GetEndMin Method " Url="html/M_ILOG_CP_CP_GetEndMin.htm" />
+          <HelpTOCNode Title="GetFirst Method " Url="html/M_ILOG_CP_CP_GetFirst.htm" />
+          <HelpTOCNode Title="GetICumulFunctionExpr Method " Url="html/M_ILOG_CP_CP_GetICumulFunctionExpr.htm" />
+          <HelpTOCNode Title="GetIIntervalSequenceVar Method " Url="html/M_ILOG_CP_CP_GetIIntervalSequenceVar.htm" />
+          <HelpTOCNode Title="GetIIntervalVar Method " Url="html/M_ILOG_CP_CP_GetIIntervalVar.htm" />
+          <HelpTOCNode Title="GetIIntVar Method " Url="html/M_ILOG_CP_CP_GetIIntVar.htm" />
+          <HelpTOCNode Id="4b26aa01-4203-447c-8f5d-8e06ea5956d2" Title="GetInfo Method " Url="html/Overload_ILOG_CP_CP_GetInfo.htm">
+            <HelpTOCNode Title="GetInfo Method (CP.DoubleInfo)" Url="html/M_ILOG_CP_CP_GetInfo.htm" />
+            <HelpTOCNode Title="GetInfo Method (CP.IntInfo)" Url="html/M_ILOG_CP_CP_GetInfo_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetIntValue Method " Url="html/M_ILOG_CP_CP_GetIntValue.htm" />
+          <HelpTOCNode Title="GetIStateFunction Method " Url="html/M_ILOG_CP_CP_GetIStateFunction.htm" />
+          <HelpTOCNode Title="GetLast Method " Url="html/M_ILOG_CP_CP_GetLast.htm" />
+          <HelpTOCNode Id="4fcd01ae-505b-4114-90a9-06f8f1ffaebe" Title="GetLength Method " Url="html/Overload_ILOG_CP_CP_GetLength.htm">
+            <HelpTOCNode Title="GetLength Method (String)" Url="html/M_ILOG_CP_CP_GetLength_1.htm" />
+            <HelpTOCNode Title="GetLength Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_GetLength.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetLengthMax Method " Url="html/M_ILOG_CP_CP_GetLengthMax.htm" />
+          <HelpTOCNode Title="GetLengthMin Method " Url="html/M_ILOG_CP_CP_GetLengthMin.htm" />
+          <HelpTOCNode Title="GetMax Method " Url="html/M_ILOG_CP_CP_GetMax.htm" />
+          <HelpTOCNode Title="GetMin Method " Url="html/M_ILOG_CP_CP_GetMin.htm" />
+          <HelpTOCNode Title="GetNext Method " Url="html/M_ILOG_CP_CP_GetNext.htm" />
+          <HelpTOCNode Id="64cc2f22-ba2c-40f0-a147-add5845cb398" Title="GetNumberOfSegments Method " Url="html/Overload_ILOG_CP_CP_GetNumberOfSegments.htm">
+            <HelpTOCNode Title="GetNumberOfSegments Method (ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_GetNumberOfSegments.htm" />
+            <HelpTOCNode Title="GetNumberOfSegments Method (IStateFunction)" Url="html/M_ILOG_CP_CP_GetNumberOfSegments_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetObjBounds Method " Url="html/M_ILOG_CP_CP_GetObjBounds.htm" />
+          <HelpTOCNode Title="GetObjGaps Method " Url="html/M_ILOG_CP_CP_GetObjGaps.htm" />
+          <HelpTOCNode Title="GetObjValues Method " Url="html/M_ILOG_CP_CP_GetObjValues.htm" />
+          <HelpTOCNode Id="922e660f-11df-4213-a5c3-37c5deda4607" Title="GetParameter Method " Url="html/Overload_ILOG_CP_CP_GetParameter.htm">
+            <HelpTOCNode Title="GetParameter Method (CP.DoubleParam)" Url="html/M_ILOG_CP_CP_GetParameter.htm" />
+            <HelpTOCNode Title="GetParameter Method (CP.IntParam)" Url="html/M_ILOG_CP_CP_GetParameter_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="941a09d6-dd8c-4a42-bf41-c83f2b67427c" Title="GetParameterDefault Method " Url="html/Overload_ILOG_CP_CP_GetParameterDefault.htm">
+            <HelpTOCNode Title="GetParameterDefault Method (CP.DoubleParam)" Url="html/M_ILOG_CP_CP_GetParameterDefault.htm" />
+            <HelpTOCNode Title="GetParameterDefault Method (CP.IntParam)" Url="html/M_ILOG_CP_CP_GetParameterDefault_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetPrev Method " Url="html/M_ILOG_CP_CP_GetPrev.htm" />
+          <HelpTOCNode Title="GetRandomInt Method " Url="html/M_ILOG_CP_CP_GetRandomInt.htm" />
+          <HelpTOCNode Id="4616682f-3ad3-41c5-9ba9-4cab89d73df7" Title="GetSegmentEnd Method " Url="html/Overload_ILOG_CP_CP_GetSegmentEnd.htm">
+            <HelpTOCNode Title="GetSegmentEnd Method (ICumulFunctionExpr, Int32)" Url="html/M_ILOG_CP_CP_GetSegmentEnd.htm" />
+            <HelpTOCNode Title="GetSegmentEnd Method (IStateFunction, Int32)" Url="html/M_ILOG_CP_CP_GetSegmentEnd_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="c20357c7-10b9-48ec-a0b1-8e8a7bb294a9" Title="GetSegmentStart Method " Url="html/Overload_ILOG_CP_CP_GetSegmentStart.htm">
+            <HelpTOCNode Title="GetSegmentStart Method (ICumulFunctionExpr, Int32)" Url="html/M_ILOG_CP_CP_GetSegmentStart.htm" />
+            <HelpTOCNode Title="GetSegmentStart Method (IStateFunction, Int32)" Url="html/M_ILOG_CP_CP_GetSegmentStart_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="38373313-edca-48b1-8562-50d9966c2219" Title="GetSegmentValue Method " Url="html/Overload_ILOG_CP_CP_GetSegmentValue.htm">
+            <HelpTOCNode Title="GetSegmentValue Method (ICumulFunctionExpr, Int32)" Url="html/M_ILOG_CP_CP_GetSegmentValue.htm" />
+            <HelpTOCNode Title="GetSegmentValue Method (IStateFunction, Int32)" Url="html/M_ILOG_CP_CP_GetSegmentValue_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="eb17f646-1f60-4b5e-b370-81cd44c2e5b1" Title="GetSize Method " Url="html/Overload_ILOG_CP_CP_GetSize.htm">
+            <HelpTOCNode Title="GetSize Method (String)" Url="html/M_ILOG_CP_CP_GetSize_1.htm" />
+            <HelpTOCNode Title="GetSize Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_GetSize.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetSizeMax Method " Url="html/M_ILOG_CP_CP_GetSizeMax.htm" />
+          <HelpTOCNode Title="GetSizeMin Method " Url="html/M_ILOG_CP_CP_GetSizeMin.htm" />
+          <HelpTOCNode Id="62d89ef0-825b-462c-8af0-fe0daa9e27bc" Title="GetStart Method " Url="html/Overload_ILOG_CP_CP_GetStart.htm">
+            <HelpTOCNode Title="GetStart Method (String)" Url="html/M_ILOG_CP_CP_GetStart_1.htm" />
+            <HelpTOCNode Title="GetStart Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_GetStart.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="GetStartMax Method " Url="html/M_ILOG_CP_CP_GetStartMax.htm" />
+          <HelpTOCNode Title="GetStartMin Method " Url="html/M_ILOG_CP_CP_GetStartMin.htm" />
+          <HelpTOCNode Id="62d7370d-a0cd-460e-b1fa-1d8c15bfaff7" Title="GetValue Method " Url="html/Overload_ILOG_CP_CP_GetValue.htm">
+            <HelpTOCNode Title="GetValue Method (String)" Url="html/M_ILOG_CP_CP_GetValue_6.htm" />
+            <HelpTOCNode Title="GetValue Method (IIntExpr)" Url="html/M_ILOG_CP_CP_GetValue_1.htm" />
+            <HelpTOCNode Title="GetValue Method (IIntVar)" Url="html/M_ILOG_CP_CP_GetValue_2.htm" />
+            <HelpTOCNode Title="GetValue Method (INumExpr)" Url="html/M_ILOG_CP_CP_GetValue_3.htm" />
+            <HelpTOCNode Title="GetValue Method (INumVar)" Url="html/M_ILOG_CP_CP_GetValue_4.htm" />
+            <HelpTOCNode Title="GetValue Method (ICumulFunctionExpr, Int32)" Url="html/M_ILOG_CP_CP_GetValue.htm" />
+            <HelpTOCNode Title="GetValue Method (IStateFunction, Int32)" Url="html/M_ILOG_CP_CP_GetValue_5.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="0a622772-6a98-4085-8070-13561fc1c9e7" Title="GetValues Method " Url="html/Overload_ILOG_CP_CP_GetValues.htm">
+            <HelpTOCNode Title="GetValues Method (IIntVar[], Double[])" Url="html/M_ILOG_CP_CP_GetValues.htm" />
+            <HelpTOCNode Title="GetValues Method (INumVar[], Double[])" Url="html/M_ILOG_CP_CP_GetValues_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="cc476341-322a-4ba4-85bd-dcb637d9ec40" Title="Gt Method " Url="html/Overload_ILOG_CP_CP_Gt.htm">
+            <HelpTOCNode Title="Gt Method (Int32, IIntExpr)" Url="html/M_ILOG_CP_CP_Gt_2.htm" />
+            <HelpTOCNode Title="Gt Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Gt.htm" />
+            <HelpTOCNode Title="Gt Method (IIntExpr, Int32)" Url="html/M_ILOG_CP_CP_Gt_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="HasObjective Method " Url="html/M_ILOG_CP_CP_HasObjective.htm" />
+          <HelpTOCNode Id="b2f10541-43f1-42ce-9c00-bc323de2b945" Title="HeightAtEnd Method " Url="html/Overload_ILOG_CP_CP_HeightAtEnd.htm">
+            <HelpTOCNode Title="HeightAtEnd Method (IIntervalVar, ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_HeightAtEnd.htm" />
+            <HelpTOCNode Title="HeightAtEnd Method (IIntervalVar, ICumulFunctionExpr, Int32)" Url="html/M_ILOG_CP_CP_HeightAtEnd_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="0d1e61ea-6691-4e16-880a-77c7bb1a7c60" Title="HeightAtStart Method " Url="html/Overload_ILOG_CP_CP_HeightAtStart.htm">
+            <HelpTOCNode Title="HeightAtStart Method (IIntervalVar, ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_HeightAtStart.htm" />
+            <HelpTOCNode Title="HeightAtStart Method (IIntervalVar, ICumulFunctionExpr, Int32)" Url="html/M_ILOG_CP_CP_HeightAtStart_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="IfThenElse Method " Url="html/M_ILOG_CP_CP_IfThenElse.htm" />
+          <HelpTOCNode Title="ImpactOfLastBranch Method " Url="html/M_ILOG_CP_CP_ImpactOfLastBranch.htm" />
+          <HelpTOCNode Title="Imply Method " Url="html/M_ILOG_CP_CP_Imply.htm" />
+          <HelpTOCNode Id="c928e7c5-0ade-44a2-a31f-000caf7b7edf" Title="ImportModel Method " Url="html/Overload_ILOG_CP_CP_ImportModel.htm">
+            <HelpTOCNode Title="ImportModel Method (Stream)" Url="html/M_ILOG_CP_CP_ImportModel.htm" />
+            <HelpTOCNode Title="ImportModel Method (String)" Url="html/M_ILOG_CP_CP_ImportModel_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="cf5af11c-a9b4-40ee-8fc0-41be312bf325" Title="IntervalSequenceVar Method " Url="html/Overload_ILOG_CP_CP_IntervalSequenceVar.htm">
+            <HelpTOCNode Title="IntervalSequenceVar Method (IIntervalVar[])" Url="html/M_ILOG_CP_CP_IntervalSequenceVar.htm" />
+            <HelpTOCNode Title="IntervalSequenceVar Method (IIntervalVar[], Int32[])" Url="html/M_ILOG_CP_CP_IntervalSequenceVar_1.htm" />
+            <HelpTOCNode Title="IntervalSequenceVar Method (IIntervalVar[], String)" Url="html/M_ILOG_CP_CP_IntervalSequenceVar_3.htm" />
+            <HelpTOCNode Title="IntervalSequenceVar Method (IIntervalVar[], Int32[], String)" Url="html/M_ILOG_CP_CP_IntervalSequenceVar_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="aaf7b6cd-4da6-44dc-90e5-358bd60ce2ae" Title="IntervalVar Method " Url="html/Overload_ILOG_CP_CP_IntervalVar.htm">
+            <HelpTOCNode Title="IntervalVar Method " Url="html/M_ILOG_CP_CP_IntervalVar.htm" />
+            <HelpTOCNode Title="IntervalVar Method (Int32)" Url="html/M_ILOG_CP_CP_IntervalVar_1.htm" />
+            <HelpTOCNode Title="IntervalVar Method (String)" Url="html/M_ILOG_CP_CP_IntervalVar_5.htm" />
+            <HelpTOCNode Title="IntervalVar Method (Int32, Int32)" Url="html/M_ILOG_CP_CP_IntervalVar_2.htm" />
+            <HelpTOCNode Title="IntervalVar Method (Int32, String)" Url="html/M_ILOG_CP_CP_IntervalVar_4.htm" />
+            <HelpTOCNode Title="IntervalVar Method (Int32, Int32, Boolean, INumToNumStepFunction, Int32)" Url="html/M_ILOG_CP_CP_IntervalVar_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="IntExpr Method " Url="html/M_ILOG_CP_CP_IntExpr.htm" />
+          <HelpTOCNode Title="IntExprArray Method " Url="html/M_ILOG_CP_CP_IntExprArray.htm" />
+          <HelpTOCNode Title="IntTable Method " Url="html/M_ILOG_CP_CP_IntTable.htm" />
+          <HelpTOCNode Id="65c3b14c-14d8-448b-871e-8ba05da704a2" Title="IntValueChooser Method " Url="html/Overload_ILOG_CP_CP_IntValueChooser.htm">
+            <HelpTOCNode Title="IntValueChooser Method (IValueSelector)" Url="html/M_ILOG_CP_CP_IntValueChooser.htm" />
+            <HelpTOCNode Title="IntValueChooser Method (IValueSelector[])" Url="html/M_ILOG_CP_CP_IntValueChooser_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="f7603ddc-9443-4a41-9e24-0eaa847b6057" Title="IntVar Method " Url="html/Overload_ILOG_CP_CP_IntVar.htm">
+            <HelpTOCNode Title="IntVar Method (Int32[])" Url="html/M_ILOG_CP_CP_IntVar.htm" />
+            <HelpTOCNode Title="IntVar Method (Int32[], String)" Url="html/M_ILOG_CP_CP_IntVar_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="db7ed8d5-26a8-400e-8f40-5a5f6ced8797" Title="IntVarChooser Method " Url="html/Overload_ILOG_CP_CP_IntVarChooser.htm">
+            <HelpTOCNode Title="IntVarChooser Method (IVarSelector)" Url="html/M_ILOG_CP_CP_IntVarChooser.htm" />
+            <HelpTOCNode Title="IntVarChooser Method (IVarSelector[])" Url="html/M_ILOG_CP_CP_IntVarChooser_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Inverse Method " Url="html/M_ILOG_CP_CP_Inverse.htm" />
+          <HelpTOCNode Id="23861fee-0946-403c-b96e-f400c1a3ae78" Title="IsAbsent Method " Url="html/Overload_ILOG_CP_CP_IsAbsent.htm">
+            <HelpTOCNode Title="IsAbsent Method (String)" Url="html/M_ILOG_CP_CP_IsAbsent_1.htm" />
+            <HelpTOCNode Title="IsAbsent Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_IsAbsent.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="891a1941-4755-4d13-8b37-cab3953c4870" Title="IsFixed Method " Url="html/Overload_ILOG_CP_CP_IsFixed.htm">
+            <HelpTOCNode Title="IsFixed Method (ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_IsFixed.htm" />
+            <HelpTOCNode Title="IsFixed Method (IIntervalSequenceVar)" Url="html/M_ILOG_CP_CP_IsFixed_1.htm" />
+            <HelpTOCNode Title="IsFixed Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_IsFixed_2.htm" />
+            <HelpTOCNode Title="IsFixed Method (INumVar)" Url="html/M_ILOG_CP_CP_IsFixed_3.htm" />
+            <HelpTOCNode Title="IsFixed Method (IStateFunction)" Url="html/M_ILOG_CP_CP_IsFixed_4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="IsInDomain Method " Url="html/M_ILOG_CP_CP_IsInDomain.htm" />
+          <HelpTOCNode Id="4b395e0d-d1b1-4477-9eb0-dfad70805766" Title="Isomorphism Method " Url="html/Overload_ILOG_CP_CP_Isomorphism.htm">
+            <HelpTOCNode Title="Isomorphism Method (IIntervalVar[], IIntervalVar[])" Url="html/M_ILOG_CP_CP_Isomorphism.htm" />
+            <HelpTOCNode Title="Isomorphism Method (IIntervalVar[], IIntervalVar[], String)" Url="html/M_ILOG_CP_CP_Isomorphism_3.htm" />
+            <HelpTOCNode Title="Isomorphism Method (IIntervalVar[], IIntervalVar[], IIntExpr[], Int32)" Url="html/M_ILOG_CP_CP_Isomorphism_1.htm" />
+            <HelpTOCNode Title="Isomorphism Method (IIntervalVar[], IIntervalVar[], IIntExpr[], Int32, String)" Url="html/M_ILOG_CP_CP_Isomorphism_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="c05d0a79-e216-447c-8def-e837327e0b7b" Title="IsPresent Method " Url="html/Overload_ILOG_CP_CP_IsPresent.htm">
+            <HelpTOCNode Title="IsPresent Method (String)" Url="html/M_ILOG_CP_CP_IsPresent_1.htm" />
+            <HelpTOCNode Title="IsPresent Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_IsPresent.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Last Method " Url="html/M_ILOG_CP_CP_Last.htm" />
+          <HelpTOCNode Id="267ab6bf-7e79-4208-9f30-cc62022b0a38" Title="Le Method " Url="html/Overload_ILOG_CP_CP_Le.htm">
+            <HelpTOCNode Title="Le Method (Int32, ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_Le_5.htm" />
+            <HelpTOCNode Title="Le Method (Int32, IIntExpr)" Url="html/M_ILOG_CP_CP_Le_6.htm" />
+            <HelpTOCNode Title="Le Method (ICumulFunctionExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Le.htm" />
+            <HelpTOCNode Title="Le Method (ICumulFunctionExpr, Int32)" Url="html/M_ILOG_CP_CP_Le_1.htm" />
+            <HelpTOCNode Title="Le Method (IIntExpr, ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_Le_2.htm" />
+            <HelpTOCNode Title="Le Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Le_3.htm" />
+            <HelpTOCNode Title="Le Method (IIntExpr, Int32)" Url="html/M_ILOG_CP_CP_Le_4.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="481884fc-eef2-46eb-9eee-eba47de60cfc" Title="LengthEval Method " Url="html/Overload_ILOG_CP_CP_LengthEval.htm">
+            <HelpTOCNode Title="LengthEval Method (IIntervalVar, INumToNumSegmentFunction)" Url="html/M_ILOG_CP_CP_LengthEval.htm" />
+            <HelpTOCNode Title="LengthEval Method (IIntervalVar, INumToNumSegmentFunction, Double)" Url="html/M_ILOG_CP_CP_LengthEval_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="e4f1dbbc-1f7c-4c9b-8437-20faa3c8a305" Title="LengthOf Method " Url="html/Overload_ILOG_CP_CP_LengthOf.htm">
+            <HelpTOCNode Title="LengthOf Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_LengthOf.htm" />
+            <HelpTOCNode Title="LengthOf Method (IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_LengthOf_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="68cb6a68-e2de-42ed-baf6-1b52dc20bad2" Title="LengthOfNext Method " Url="html/Overload_ILOG_CP_CP_LengthOfNext.htm">
+            <HelpTOCNode Title="LengthOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_LengthOfNext.htm" />
+            <HelpTOCNode Title="LengthOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_LengthOfNext_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="bf36b0e5-e255-4fab-9153-7be13639ac44" Title="LengthOfPrevious Method " Url="html/Overload_ILOG_CP_CP_LengthOfPrevious.htm">
+            <HelpTOCNode Title="LengthOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_LengthOfPrevious.htm" />
+            <HelpTOCNode Title="LengthOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_LengthOfPrevious_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Lexicographic Method " Url="html/M_ILOG_CP_CP_Lexicographic.htm" />
+          <HelpTOCNode Title="Log Method " Url="html/M_ILOG_CP_CP_Log.htm" />
+          <HelpTOCNode Id="0fc0788e-7c70-4f47-8f29-9f4f5328e44c" Title="Lt Method " Url="html/Overload_ILOG_CP_CP_Lt.htm">
+            <HelpTOCNode Title="Lt Method (Int32, IIntExpr)" Url="html/M_ILOG_CP_CP_Lt_2.htm" />
+            <HelpTOCNode Title="Lt Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Lt.htm" />
+            <HelpTOCNode Title="Lt Method (IIntExpr, Int32)" Url="html/M_ILOG_CP_CP_Lt_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="0e88a6e0-c1c1-4707-b4e7-958a0e6b4578" Title="Max Method " Url="html/Overload_ILOG_CP_CP_Max.htm">
+            <HelpTOCNode Title="Max Method (IIntExpr[])" Url="html/M_ILOG_CP_CP_Max.htm" />
+            <HelpTOCNode Title="Max Method (INumExpr[])" Url="html/M_ILOG_CP_CP_Max_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="79ee2158-a916-43c9-8a97-3b501219b89e" Title="Maximize Method " Url="html/Overload_ILOG_CP_CP_Maximize.htm">
+            <HelpTOCNode Title="Maximize Method (IIntExpr)" Url="html/M_ILOG_CP_CP_Maximize.htm" />
+            <HelpTOCNode Title="Maximize Method (IMultiCriterionExpr)" Url="html/M_ILOG_CP_CP_Maximize_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5d7b52ff-6a35-4808-8b41-e81c743bdd4e" Title="Min Method " Url="html/Overload_ILOG_CP_CP_Min.htm">
+            <HelpTOCNode Title="Min Method (IIntExpr[])" Url="html/M_ILOG_CP_CP_Min.htm" />
+            <HelpTOCNode Title="Min Method (INumExpr[])" Url="html/M_ILOG_CP_CP_Min_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="f4569fcf-6222-438f-9d26-b20dd7df3112" Title="Minimize Method " Url="html/Overload_ILOG_CP_CP_Minimize.htm">
+            <HelpTOCNode Title="Minimize Method (IIntExpr)" Url="html/M_ILOG_CP_CP_Minimize.htm" />
+            <HelpTOCNode Title="Minimize Method (IMultiCriterionExpr)" Url="html/M_ILOG_CP_CP_Minimize_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Model Method " Url="html/M_ILOG_CP_CP_Model.htm" />
+          <HelpTOCNode Title="Modulo Method " Url="html/M_ILOG_CP_CP_Modulo.htm" />
+          <HelpTOCNode Id="01bdf58c-6001-47a5-8247-641c2ba52121" Title="Neq Method " Url="html/Overload_ILOG_CP_CP_Neq.htm">
+            <HelpTOCNode Title="Neq Method (Int32, IIntExpr)" Url="html/M_ILOG_CP_CP_Neq_3.htm" />
+            <HelpTOCNode Title="Neq Method (IConstraint, IConstraint)" Url="html/M_ILOG_CP_CP_Neq.htm" />
+            <HelpTOCNode Title="Neq Method (IIntExpr, IIntExpr)" Url="html/M_ILOG_CP_CP_Neq_1.htm" />
+            <HelpTOCNode Title="Neq Method (IIntExpr, Int32)" Url="html/M_ILOG_CP_CP_Neq_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Next Method " Url="html/M_ILOG_CP_CP_Next.htm" />
+          <HelpTOCNode Id="5619ebdd-754f-4f1f-9b51-631b75e0d1ad" Title="NoOverlap Method " Url="html/Overload_ILOG_CP_CP_NoOverlap.htm">
+            <HelpTOCNode Title="NoOverlap Method (IIntervalSequenceVar)" Url="html/M_ILOG_CP_CP_NoOverlap.htm" />
+            <HelpTOCNode Title="NoOverlap Method (IIntervalVar[])" Url="html/M_ILOG_CP_CP_NoOverlap_5.htm" />
+            <HelpTOCNode Title="NoOverlap Method (IIntervalSequenceVar, ITransitionDistance)" Url="html/M_ILOG_CP_CP_NoOverlap_1.htm" />
+            <HelpTOCNode Title="NoOverlap Method (IIntervalVar[], String)" Url="html/M_ILOG_CP_CP_NoOverlap_6.htm" />
+            <HelpTOCNode Title="NoOverlap Method (IIntervalSequenceVar, ITransitionDistance, Boolean)" Url="html/M_ILOG_CP_CP_NoOverlap_2.htm" />
+            <HelpTOCNode Title="NoOverlap Method (IIntervalSequenceVar, ITransitionDistance, String)" Url="html/M_ILOG_CP_CP_NoOverlap_4.htm" />
+            <HelpTOCNode Title="NoOverlap Method (IIntervalSequenceVar, ITransitionDistance, Boolean, String)" Url="html/M_ILOG_CP_CP_NoOverlap_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="NumExprArray Method " Url="html/M_ILOG_CP_CP_NumExprArray.htm" />
+          <HelpTOCNode Id="35332449-b9d5-4bb6-905a-34f47cc207a8" Title="NumToNumSegmentFunction Method " Url="html/Overload_ILOG_CP_CP_NumToNumSegmentFunction.htm">
+            <HelpTOCNode Title="NumToNumSegmentFunction Method " Url="html/M_ILOG_CP_CP_NumToNumSegmentFunction.htm" />
+            <HelpTOCNode Title="NumToNumSegmentFunction Method (Double[], Double[])" Url="html/M_ILOG_CP_CP_NumToNumSegmentFunction_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="NumToNumSegmentFunctionCursor Method " Url="html/M_ILOG_CP_CP_NumToNumSegmentFunctionCursor.htm" />
+          <HelpTOCNode Title="NumToNumStepFunction Method " Url="html/M_ILOG_CP_CP_NumToNumStepFunction.htm" />
+          <HelpTOCNode Title="NumToNumStepFunctionCursor Method " Url="html/M_ILOG_CP_CP_NumToNumStepFunctionCursor.htm" />
+          <HelpTOCNode Title="Output Method " Url="html/M_ILOG_CP_CP_Output.htm" />
+          <HelpTOCNode Id="432436af-3f1a-4c1a-9986-6225c38000d0" Title="OverlapLength Method " Url="html/Overload_ILOG_CP_CP_OverlapLength.htm">
+            <HelpTOCNode Title="OverlapLength Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_OverlapLength.htm" />
+            <HelpTOCNode Title="OverlapLength Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_OverlapLength_1.htm" />
+            <HelpTOCNode Title="OverlapLength Method (IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_OverlapLength_2.htm" />
+            <HelpTOCNode Title="OverlapLength Method (IIntervalVar, Int32, Int32, Int32)" Url="html/M_ILOG_CP_CP_OverlapLength_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="7c961f22-4fe6-4270-9d8e-afdd19458f90" Title="Pack Method " Url="html/Overload_ILOG_CP_CP_Pack.htm">
+            <HelpTOCNode Title="Pack Method (IIntExpr[], IIntExpr[], Int32[])" Url="html/M_ILOG_CP_CP_Pack.htm" />
+            <HelpTOCNode Title="Pack Method (IIntExpr[], IIntExpr[], Int32[], IIntExpr)" Url="html/M_ILOG_CP_CP_Pack_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="695c8040-ae4a-40db-8ec5-c9d65133afdb" Title="PiecewiseLinear Method " Url="html/Overload_ILOG_CP_CP_PiecewiseLinear.htm">
+            <HelpTOCNode Title="PiecewiseLinear Method (INumExpr, Double, Double[], Double[], Double)" Url="html/M_ILOG_CP_CP_PiecewiseLinear.htm" />
+            <HelpTOCNode Title="PiecewiseLinear Method (INumExpr, Double[], Double[], Double, Double)" Url="html/M_ILOG_CP_CP_PiecewiseLinear_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="9902783a-a7bd-4f6a-baf3-24fe8a5773f8" Title="PiecewiseLinearFunction Method " Url="html/Overload_ILOG_CP_CP_PiecewiseLinearFunction.htm">
+            <HelpTOCNode Title="PiecewiseLinearFunction Method (Double[], Double[], Double, Double)" Url="html/M_ILOG_CP_CP_PiecewiseLinearFunction.htm" />
+            <HelpTOCNode Title="PiecewiseLinearFunction Method (Double[], Double[], Double, Double, String)" Url="html/M_ILOG_CP_CP_PiecewiseLinearFunction_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="986fa513-3b2a-4df7-b18f-f9fa5e3a57db" Title="Power Method " Url="html/Overload_ILOG_CP_CP_Power.htm">
+            <HelpTOCNode Title="Power Method (Double, INumExpr)" Url="html/M_ILOG_CP_CP_Power_2.htm" />
+            <HelpTOCNode Title="Power Method (INumExpr, INumExpr)" Url="html/M_ILOG_CP_CP_Power.htm" />
+            <HelpTOCNode Title="Power Method (INumExpr, Int32)" Url="html/M_ILOG_CP_CP_Power_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="PresenceOf Method " Url="html/M_ILOG_CP_CP_PresenceOf.htm" />
+          <HelpTOCNode Title="Previous Method " Url="html/M_ILOG_CP_CP_Previous.htm" />
+          <HelpTOCNode Id="4cf51dd7-fe45-42b5-b429-a5421534bb3c" Title="PrintInformation Method " Url="html/Overload_ILOG_CP_CP_PrintInformation.htm">
+            <HelpTOCNode Title="PrintInformation Method " Url="html/M_ILOG_CP_CP_PrintInformation.htm" />
+            <HelpTOCNode Title="PrintInformation Method (TextWriter)" Url="html/M_ILOG_CP_CP_PrintInformation_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="f0da188e-9d29-4447-8ee8-38d24b874caf" Title="Prod Method " Url="html/Overload_ILOG_CP_CP_Prod.htm">
+            <HelpTOCNode Title="Prod Method (Double[], INumExpr[])" Url="html/M_ILOG_CP_CP_Prod_4.htm" />
+            <HelpTOCNode Title="Prod Method (Int32[], IIntExpr[])" Url="html/M_ILOG_CP_CP_Prod_5.htm" />
+            <HelpTOCNode Title="Prod Method (IIntExpr[], IIntExpr[])" Url="html/M_ILOG_CP_CP_Prod.htm" />
+            <HelpTOCNode Title="Prod Method (IIntExpr[], Int32[])" Url="html/M_ILOG_CP_CP_Prod_1.htm" />
+            <HelpTOCNode Title="Prod Method (INumExpr[], INumExpr[])" Url="html/M_ILOG_CP_CP_Prod_2.htm" />
+            <HelpTOCNode Title="Prod Method (INumExpr[], Double[])" Url="html/M_ILOG_CP_CP_Prod_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="a04de84f-e3eb-4394-9ee4-ebae4cae425c" Title="Propagate Method " Url="html/Overload_ILOG_CP_CP_Propagate.htm">
+            <HelpTOCNode Title="Propagate Method " Url="html/M_ILOG_CP_CP_Propagate.htm" />
+            <HelpTOCNode Title="Propagate Method (IConstraint)" Url="html/M_ILOG_CP_CP_Propagate_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="d2dcfb03-5b95-4cff-aff8-615ba343d7a1" Title="Pulse Method " Url="html/Overload_ILOG_CP_CP_Pulse.htm">
+            <HelpTOCNode Title="Pulse Method (IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_Pulse.htm" />
+            <HelpTOCNode Title="Pulse Method (Int32, Int32, Int32)" Url="html/M_ILOG_CP_CP_Pulse_2.htm" />
+            <HelpTOCNode Title="Pulse Method (IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_Pulse_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="407c1795-efd4-443b-9d03-de84c8113e11" Title="Quot Method " Url="html/Overload_ILOG_CP_CP_Quot.htm">
+            <HelpTOCNode Title="Quot Method (Double, INumExpr)" Url="html/M_ILOG_CP_CP_Quot_2.htm" />
+            <HelpTOCNode Title="Quot Method (INumExpr, INumExpr)" Url="html/M_ILOG_CP_CP_Quot.htm" />
+            <HelpTOCNode Title="Quot Method (INumExpr, Double)" Url="html/M_ILOG_CP_CP_Quot_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Range Method " Url="html/M_ILOG_CP_CP_Range.htm" />
+          <HelpTOCNode Id="edae46fd-c348-43ff-8ce6-ace15b6a191f" Title="RefineConflict Method " Url="html/Overload_ILOG_CP_CP_RefineConflict.htm">
+            <HelpTOCNode Title="RefineConflict Method " Url="html/M_ILOG_CP_CP_RefineConflict.htm" />
+            <HelpTOCNode Title="RefineConflict Method (IConstraint[])" Url="html/M_ILOG_CP_CP_RefineConflict_1.htm" />
+            <HelpTOCNode Title="RefineConflict Method (IConstraint[], Double[])" Url="html/M_ILOG_CP_CP_RefineConflict_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Restore Method " Url="html/M_ILOG_CP_CP_Restore.htm" />
+          <HelpTOCNode Id="2fda2159-ba41-4f64-b732-5de73078b482" Title="SameCommonSubsequence Method " Url="html/Overload_ILOG_CP_CP_SameCommonSubsequence.htm">
+            <HelpTOCNode Title="SameCommonSubsequence Method (IIntervalSequenceVar, IIntervalSequenceVar)" Url="html/M_ILOG_CP_CP_SameCommonSubsequence.htm" />
+            <HelpTOCNode Title="SameCommonSubsequence Method (IIntervalSequenceVar, IIntervalSequenceVar, String)" Url="html/M_ILOG_CP_CP_SameCommonSubsequence_3.htm" />
+            <HelpTOCNode Title="SameCommonSubsequence Method (IIntervalSequenceVar, IIntervalSequenceVar, IIntervalVar[], IIntervalVar[])" Url="html/M_ILOG_CP_CP_SameCommonSubsequence_1.htm" />
+            <HelpTOCNode Title="SameCommonSubsequence Method (IIntervalSequenceVar, IIntervalSequenceVar, IIntervalVar[], IIntervalVar[], String)" Url="html/M_ILOG_CP_CP_SameCommonSubsequence_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="b8ed9e20-285a-46e0-8f38-f6a362fad04b" Title="SameSequence Method " Url="html/Overload_ILOG_CP_CP_SameSequence.htm">
+            <HelpTOCNode Title="SameSequence Method (IIntervalSequenceVar, IIntervalSequenceVar)" Url="html/M_ILOG_CP_CP_SameSequence.htm" />
+            <HelpTOCNode Title="SameSequence Method (IIntervalSequenceVar, IIntervalSequenceVar, String)" Url="html/M_ILOG_CP_CP_SameSequence_3.htm" />
+            <HelpTOCNode Title="SameSequence Method (IIntervalSequenceVar, IIntervalSequenceVar, IIntervalVar[], IIntervalVar[])" Url="html/M_ILOG_CP_CP_SameSequence_1.htm" />
+            <HelpTOCNode Title="SameSequence Method (IIntervalSequenceVar, IIntervalSequenceVar, IIntervalVar[], IIntervalVar[], String)" Url="html/M_ILOG_CP_CP_SameSequence_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="219cd6f7-8828-4679-9181-2afc2802322e" Title="SearchPhase Method " Url="html/Overload_ILOG_CP_CP_SearchPhase.htm">
+            <HelpTOCNode Title="SearchPhase Method (IIntervalSequenceVar[])" Url="html/M_ILOG_CP_CP_SearchPhase.htm" />
+            <HelpTOCNode Title="SearchPhase Method (IIntervalVar[])" Url="html/M_ILOG_CP_CP_SearchPhase_1.htm" />
+            <HelpTOCNode Title="SearchPhase Method (IIntVar[])" Url="html/M_ILOG_CP_CP_SearchPhase_2.htm" />
+            <HelpTOCNode Title="SearchPhase Method (IIntVarChooser, IIntValueChooser)" Url="html/M_ILOG_CP_CP_SearchPhase_4.htm" />
+            <HelpTOCNode Title="SearchPhase Method (IIntVar[], IIntVarChooser, IIntValueChooser)" Url="html/M_ILOG_CP_CP_SearchPhase_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5071fe86-041e-41bd-b44b-a384e0342c33" Title="SelectLargest Method " Url="html/Overload_ILOG_CP_CP_SelectLargest.htm">
+            <HelpTOCNode Title="SelectLargest Method (IIntValueEval)" Url="html/M_ILOG_CP_CP_SelectLargest.htm" />
+            <HelpTOCNode Title="SelectLargest Method (IIntVarEval)" Url="html/M_ILOG_CP_CP_SelectLargest_2.htm" />
+            <HelpTOCNode Title="SelectLargest Method (Double, IIntValueEval)" Url="html/M_ILOG_CP_CP_SelectLargest_4.htm" />
+            <HelpTOCNode Title="SelectLargest Method (Double, IIntVarEval)" Url="html/M_ILOG_CP_CP_SelectLargest_5.htm" />
+            <HelpTOCNode Title="SelectLargest Method (IIntValueEval, Double)" Url="html/M_ILOG_CP_CP_SelectLargest_1.htm" />
+            <HelpTOCNode Title="SelectLargest Method (IIntVarEval, Double)" Url="html/M_ILOG_CP_CP_SelectLargest_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="SelectRandomValue Method " Url="html/M_ILOG_CP_CP_SelectRandomValue.htm" />
+          <HelpTOCNode Title="SelectRandomVar Method " Url="html/M_ILOG_CP_CP_SelectRandomVar.htm" />
+          <HelpTOCNode Id="1abd3529-5757-4250-9b13-1cc5f7d73c70" Title="SelectSmallest Method " Url="html/Overload_ILOG_CP_CP_SelectSmallest.htm">
+            <HelpTOCNode Title="SelectSmallest Method (IIntValueEval)" Url="html/M_ILOG_CP_CP_SelectSmallest.htm" />
+            <HelpTOCNode Title="SelectSmallest Method (IIntVarEval)" Url="html/M_ILOG_CP_CP_SelectSmallest_2.htm" />
+            <HelpTOCNode Title="SelectSmallest Method (Double, IIntValueEval)" Url="html/M_ILOG_CP_CP_SelectSmallest_4.htm" />
+            <HelpTOCNode Title="SelectSmallest Method (Double, IIntVarEval)" Url="html/M_ILOG_CP_CP_SelectSmallest_5.htm" />
+            <HelpTOCNode Title="SelectSmallest Method (IIntValueEval, Double)" Url="html/M_ILOG_CP_CP_SelectSmallest_1.htm" />
+            <HelpTOCNode Title="SelectSmallest Method (IIntVarEval, Double)" Url="html/M_ILOG_CP_CP_SelectSmallest_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="SetError Method " Url="html/M_ILOG_CP_CP_SetError.htm" />
+          <HelpTOCNode Title="SetOut Method " Url="html/M_ILOG_CP_CP_SetOut.htm" />
+          <HelpTOCNode Id="753c75ff-3cb4-46e9-bd8c-1ae8ad20b392" Title="SetParameter Method " Url="html/Overload_ILOG_CP_CP_SetParameter.htm">
+            <HelpTOCNode Title="SetParameter Method (CP.DoubleParam, CP.ParameterValues)" Url="html/M_ILOG_CP_CP_SetParameter.htm" />
+            <HelpTOCNode Title="SetParameter Method (CP.DoubleParam, Double)" Url="html/M_ILOG_CP_CP_SetParameter_1.htm" />
+            <HelpTOCNode Title="SetParameter Method (CP.IntParam, CP.ParameterValues)" Url="html/M_ILOG_CP_CP_SetParameter_2.htm" />
+            <HelpTOCNode Title="SetParameter Method (CP.IntParam, Int32)" Url="html/M_ILOG_CP_CP_SetParameter_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="cba6016e-2825-4fac-b356-4754a55ab2f0" Title="SetSearchPhases Method " Url="html/Overload_ILOG_CP_CP_SetSearchPhases.htm">
+            <HelpTOCNode Title="SetSearchPhases Method " Url="html/M_ILOG_CP_CP_SetSearchPhases.htm" />
+            <HelpTOCNode Title="SetSearchPhases Method (ISearchPhase)" Url="html/M_ILOG_CP_CP_SetSearchPhases_1.htm" />
+            <HelpTOCNode Title="SetSearchPhases Method (ISearchPhase[])" Url="html/M_ILOG_CP_CP_SetSearchPhases_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="SetStartingPoint Method " Url="html/M_ILOG_CP_CP_SetStartingPoint.htm" />
+          <HelpTOCNode Title="SetWarning Method " Url="html/M_ILOG_CP_CP_SetWarning.htm" />
+          <HelpTOCNode Id="8a2ba4fc-a628-4fb5-8c6a-1e5e31988d4f" Title="SizeEval Method " Url="html/Overload_ILOG_CP_CP_SizeEval.htm">
+            <HelpTOCNode Title="SizeEval Method (IIntervalVar, INumToNumSegmentFunction)" Url="html/M_ILOG_CP_CP_SizeEval.htm" />
+            <HelpTOCNode Title="SizeEval Method (IIntervalVar, INumToNumSegmentFunction, Double)" Url="html/M_ILOG_CP_CP_SizeEval_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="61bedf1a-0ac8-4470-a1df-fc8ce908cb34" Title="SizeOf Method " Url="html/Overload_ILOG_CP_CP_SizeOf.htm">
+            <HelpTOCNode Title="SizeOf Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_SizeOf.htm" />
+            <HelpTOCNode Title="SizeOf Method (IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_SizeOf_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="d7a3514b-b2d8-48c7-a166-037125040e45" Title="SizeOfNext Method " Url="html/Overload_ILOG_CP_CP_SizeOfNext.htm">
+            <HelpTOCNode Title="SizeOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_SizeOfNext.htm" />
+            <HelpTOCNode Title="SizeOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_SizeOfNext_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="c5635360-7d6b-4cbe-9645-7be231d5f909" Title="SizeOfPrevious Method " Url="html/Overload_ILOG_CP_CP_SizeOfPrevious.htm">
+            <HelpTOCNode Title="SizeOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_SizeOfPrevious.htm" />
+            <HelpTOCNode Title="SizeOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_SizeOfPrevious_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Solution Method " Url="html/M_ILOG_CP_CP_Solution.htm" />
+          <HelpTOCNode Title="Solve Method " Url="html/M_ILOG_CP_CP_Solve.htm" />
+          <HelpTOCNode Id="fd2b96c0-97dd-4e81-ba84-a25fe34531ad" Title="Span Method " Url="html/Overload_ILOG_CP_CP_Span.htm">
+            <HelpTOCNode Title="Span Method (IIntervalVar, IIntervalVar[])" Url="html/M_ILOG_CP_CP_Span.htm" />
+            <HelpTOCNode Title="Span Method (IIntervalVar, IIntervalVar[], String)" Url="html/M_ILOG_CP_CP_Span_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="9eaa3f15-66da-48b4-a17d-480039654710" Title="StandardDeviation Method " Url="html/Overload_ILOG_CP_CP_StandardDeviation.htm">
+            <HelpTOCNode Title="StandardDeviation Method (IIntExpr[])" Url="html/M_ILOG_CP_CP_StandardDeviation.htm" />
+            <HelpTOCNode Title="StandardDeviation Method (IIntExpr[], Double, Double)" Url="html/M_ILOG_CP_CP_StandardDeviation_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="cff61b59-763d-4b43-aaee-317dacadcbe1" Title="StartAtEnd Method " Url="html/Overload_ILOG_CP_CP_StartAtEnd.htm">
+            <HelpTOCNode Title="StartAtEnd Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_StartAtEnd.htm" />
+            <HelpTOCNode Title="StartAtEnd Method (IIntervalVar, IIntervalVar, IIntExpr)" Url="html/M_ILOG_CP_CP_StartAtEnd_1.htm" />
+            <HelpTOCNode Title="StartAtEnd Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StartAtEnd_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="bb96f9fd-abf8-4c32-86ba-b380737a5626" Title="StartAtStart Method " Url="html/Overload_ILOG_CP_CP_StartAtStart.htm">
+            <HelpTOCNode Title="StartAtStart Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_StartAtStart.htm" />
+            <HelpTOCNode Title="StartAtStart Method (IIntervalVar, IIntervalVar, IIntExpr)" Url="html/M_ILOG_CP_CP_StartAtStart_1.htm" />
+            <HelpTOCNode Title="StartAtStart Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StartAtStart_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="4067ff1f-ec44-4e4f-95be-d4ed415e22dc" Title="StartBeforeEnd Method " Url="html/Overload_ILOG_CP_CP_StartBeforeEnd.htm">
+            <HelpTOCNode Title="StartBeforeEnd Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_StartBeforeEnd.htm" />
+            <HelpTOCNode Title="StartBeforeEnd Method (IIntervalVar, IIntervalVar, IIntExpr)" Url="html/M_ILOG_CP_CP_StartBeforeEnd_1.htm" />
+            <HelpTOCNode Title="StartBeforeEnd Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StartBeforeEnd_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="35ab189e-3fc1-46cf-85e4-3dba75323bea" Title="StartBeforeStart Method " Url="html/Overload_ILOG_CP_CP_StartBeforeStart.htm">
+            <HelpTOCNode Title="StartBeforeStart Method (IIntervalVar, IIntervalVar)" Url="html/M_ILOG_CP_CP_StartBeforeStart.htm" />
+            <HelpTOCNode Title="StartBeforeStart Method (IIntervalVar, IIntervalVar, IIntExpr)" Url="html/M_ILOG_CP_CP_StartBeforeStart_1.htm" />
+            <HelpTOCNode Title="StartBeforeStart Method (IIntervalVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StartBeforeStart_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="5d724ebd-364e-49e8-9a3c-7e684733313f" Title="StartEval Method " Url="html/Overload_ILOG_CP_CP_StartEval.htm">
+            <HelpTOCNode Title="StartEval Method (IIntervalVar, INumToNumSegmentFunction)" Url="html/M_ILOG_CP_CP_StartEval.htm" />
+            <HelpTOCNode Title="StartEval Method (IIntervalVar, INumToNumSegmentFunction, Double)" Url="html/M_ILOG_CP_CP_StartEval_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="StartNewSearch Method " Url="html/M_ILOG_CP_CP_StartNewSearch.htm" />
+          <HelpTOCNode Id="2b9f1f1f-ddc8-48c0-9917-e927259bacb7" Title="StartOf Method " Url="html/Overload_ILOG_CP_CP_StartOf.htm">
+            <HelpTOCNode Title="StartOf Method (IIntervalVar)" Url="html/M_ILOG_CP_CP_StartOf.htm" />
+            <HelpTOCNode Title="StartOf Method (IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StartOf_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="82ba7cfd-6714-4f64-ae0b-45e1039b2ba7" Title="StartOfNext Method " Url="html/Overload_ILOG_CP_CP_StartOfNext.htm">
+            <HelpTOCNode Title="StartOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StartOfNext.htm" />
+            <HelpTOCNode Title="StartOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_StartOfNext_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="74f86475-2a6d-42e2-a954-acb93cdabd51" Title="StartOfPrevious Method " Url="html/Overload_ILOG_CP_CP_StartOfPrevious.htm">
+            <HelpTOCNode Title="StartOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StartOfPrevious.htm" />
+            <HelpTOCNode Title="StartOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_StartOfPrevious_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="cef4463c-b189-4305-a186-0f1c937479bd" Title="StateFunction Method " Url="html/Overload_ILOG_CP_CP_StateFunction.htm">
+            <HelpTOCNode Title="StateFunction Method " Url="html/M_ILOG_CP_CP_StateFunction.htm" />
+            <HelpTOCNode Title="StateFunction Method (String)" Url="html/M_ILOG_CP_CP_StateFunction_3.htm" />
+            <HelpTOCNode Title="StateFunction Method (ITransitionDistance)" Url="html/M_ILOG_CP_CP_StateFunction_1.htm" />
+            <HelpTOCNode Title="StateFunction Method (ITransitionDistance, String)" Url="html/M_ILOG_CP_CP_StateFunction_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="615d9f02-5faa-44dc-8238-fac5ecbabb82" Title="StaticLex Method " Url="html/Overload_ILOG_CP_CP_StaticLex.htm">
+            <HelpTOCNode Title="StaticLex Method (INumExpr)" Url="html/M_ILOG_CP_CP_StaticLex.htm" />
+            <HelpTOCNode Title="StaticLex Method (INumExpr[])" Url="html/M_ILOG_CP_CP_StaticLex_4.htm" />
+            <HelpTOCNode Title="StaticLex Method (INumExpr, INumExpr)" Url="html/M_ILOG_CP_CP_StaticLex_1.htm" />
+            <HelpTOCNode Title="StaticLex Method (INumExpr[], String)" Url="html/M_ILOG_CP_CP_StaticLex_5.htm" />
+            <HelpTOCNode Title="StaticLex Method (INumExpr, INumExpr, INumExpr)" Url="html/M_ILOG_CP_CP_StaticLex_2.htm" />
+            <HelpTOCNode Title="StaticLex Method (INumExpr, INumExpr, INumExpr, INumExpr)" Url="html/M_ILOG_CP_CP_StaticLex_3.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Step Method " Url="html/M_ILOG_CP_CP_Step.htm" />
+          <HelpTOCNode Id="7867063f-a192-4963-95e7-ef6f578880bc" Title="StepAtEnd Method " Url="html/Overload_ILOG_CP_CP_StepAtEnd.htm">
+            <HelpTOCNode Title="StepAtEnd Method (IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StepAtEnd.htm" />
+            <HelpTOCNode Title="StepAtEnd Method (IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_StepAtEnd_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="8cebd6f5-2260-4bf7-a73d-db646e8a5eee" Title="StepAtStart Method " Url="html/Overload_ILOG_CP_CP_StepAtStart.htm">
+            <HelpTOCNode Title="StepAtStart Method (IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_StepAtStart.htm" />
+            <HelpTOCNode Title="StepAtStart Method (IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_StepAtStart_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Store Method " Url="html/M_ILOG_CP_CP_Store.htm" />
+          <HelpTOCNode Title="Strong Method " Url="html/M_ILOG_CP_CP_Strong.htm" />
+          <HelpTOCNode Id="a22a90eb-bb38-4d4c-9e72-18c024e0c0c0" Title="Sum Method " Url="html/Overload_ILOG_CP_CP_Sum.htm">
+            <HelpTOCNode Title="Sum Method (IIntExpr[])" Url="html/M_ILOG_CP_CP_Sum_1.htm" />
+            <HelpTOCNode Title="Sum Method (INumExpr[])" Url="html/M_ILOG_CP_CP_Sum_2.htm" />
+            <HelpTOCNode Title="Sum Method (ICumulFunctionExpr, ICumulFunctionExpr)" Url="html/M_ILOG_CP_CP_Sum.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="2b853d65-a5be-4365-8886-cc3b412d21a8" Title="Synchronize Method " Url="html/Overload_ILOG_CP_CP_Synchronize.htm">
+            <HelpTOCNode Title="Synchronize Method (IIntervalVar, IIntervalVar[])" Url="html/M_ILOG_CP_CP_Synchronize.htm" />
+            <HelpTOCNode Title="Synchronize Method (IIntervalVar, IIntervalVar[], String)" Url="html/M_ILOG_CP_CP_Synchronize_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="87e1f92d-f8ba-4845-af6c-e11099cfab94" Title="TransitionDistance Method " Url="html/Overload_ILOG_CP_CP_TransitionDistance.htm">
+            <HelpTOCNode Title="TransitionDistance Method (Int32)" Url="html/M_ILOG_CP_CP_TransitionDistance.htm" />
+            <HelpTOCNode Title="TransitionDistance Method (Int32, String)" Url="html/M_ILOG_CP_CP_TransitionDistance_1.htm" />
+            <HelpTOCNode Title="TransitionDistance Method (Int32[][], String)" Url="html/M_ILOG_CP_CP_TransitionDistance_2.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="TrueConstraint Method " Url="html/M_ILOG_CP_CP_TrueConstraint.htm" />
+          <HelpTOCNode Id="dabdd102-b6ae-409b-bb5a-bbbd4a8d449a" Title="TypeOfNext Method " Url="html/Overload_ILOG_CP_CP_TypeOfNext.htm">
+            <HelpTOCNode Title="TypeOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_TypeOfNext.htm" />
+            <HelpTOCNode Title="TypeOfNext Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_TypeOfNext_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="0687f56f-cf4b-43d0-a930-7aeb9a7f9707" Title="TypeOfPrevious Method " Url="html/Overload_ILOG_CP_CP_TypeOfPrevious.htm">
+            <HelpTOCNode Title="TypeOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32)" Url="html/M_ILOG_CP_CP_TypeOfPrevious.htm" />
+            <HelpTOCNode Title="TypeOfPrevious Method (IIntervalSequenceVar, IIntervalVar, Int32, Int32)" Url="html/M_ILOG_CP_CP_TypeOfPrevious_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="Value Method " Url="html/M_ILOG_CP_CP_Value.htm" />
+          <HelpTOCNode Title="ValueImpact Method " Url="html/M_ILOG_CP_CP_ValueImpact.htm" />
+          <HelpTOCNode Id="b073e66b-fe69-476e-ad53-7d7941632c97" Title="ValueIndex Method " Url="html/Overload_ILOG_CP_CP_ValueIndex.htm">
+            <HelpTOCNode Title="ValueIndex Method (Int32[])" Url="html/M_ILOG_CP_CP_ValueIndex.htm" />
+            <HelpTOCNode Title="ValueIndex Method (Int32[], Int32)" Url="html/M_ILOG_CP_CP_ValueIndex_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="ValueSuccessRate Method " Url="html/M_ILOG_CP_CP_ValueSuccessRate.htm" />
+          <HelpTOCNode Title="VarImpact Method " Url="html/M_ILOG_CP_CP_VarImpact.htm" />
+          <HelpTOCNode Id="061cf07e-940e-4558-a13e-0248c2ff2060" Title="VarIndex Method " Url="html/Overload_ILOG_CP_CP_VarIndex.htm">
+            <HelpTOCNode Title="VarIndex Method (IIntVar[])" Url="html/M_ILOG_CP_CP_VarIndex.htm" />
+            <HelpTOCNode Title="VarIndex Method (IIntVar[], Int32)" Url="html/M_ILOG_CP_CP_VarIndex_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Id="dfee871f-8035-427b-b87c-2472be7a7007" Title="VarLocalImpact Method " Url="html/Overload_ILOG_CP_CP_VarLocalImpact.htm">
+            <HelpTOCNode Title="VarLocalImpact Method " Url="html/M_ILOG_CP_CP_VarLocalImpact.htm" />
+            <HelpTOCNode Title="VarLocalImpact Method (Int32)" Url="html/M_ILOG_CP_CP_VarLocalImpact_1.htm" />
+          </HelpTOCNode>
+          <HelpTOCNode Title="VarSuccessRate Method " Url="html/M_ILOG_CP_CP_VarSuccessRate.htm" />
+          <HelpTOCNode Title="Warning Method " Url="html/M_ILOG_CP_CP_Warning.htm" />
+          <HelpTOCNode Id="98be08c3-b288-475c-8bf6-999a64879b45" Title="WriteConflict Method " Url="html/Overload_ILOG_CP_CP_WriteConflict.htm">
+            <HelpTOCNode Title="WriteConflict Method " Url="html/M_ILOG_CP_CP_WriteConflict.htm" />
+            <HelpTOCNode Title="WriteConflict Method (TextWriter)" Url="html/M_ILOG_CP_CP_WriteConflict_1.htm" />
+          </HelpTOCNode>
+        </HelpTOCNode>
+        <HelpTOCNode Id="3c14584e-2414-4364-91db-0dd549801ec5" Title="CP Properties" Url="html/Properties_T_ILOG_CP_CP.htm">
+          <HelpTOCNode Title="ObjBound Property " Url="html/P_ILOG_CP_CP_ObjBound.htm" />
+          <HelpTOCNode Title="ObjGap Property " Url="html/P_ILOG_CP_CP_ObjGap.htm" />
+          <HelpTOCNode Title="ObjValue Property " Url="html/P_ILOG_CP_CP_ObjValue.htm" />
+          <HelpTOCNode Title="RandomNum Property " Url="html/P_ILOG_CP_CP_RandomNum.htm" />
+          <HelpTOCNode Title="Version Property " Url="html/P_ILOG_CP_CP_Version.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="CP.ConflictStatus Enumeration" Url="html/T_ILOG_CP_CP_ConflictStatus.htm" />
+      <HelpTOCNode Id="cec9662d-d316-4db5-9997-faf390ab8f64" Title="CP.DoubleInfo Class" Url="html/T_ILOG_CP_CP_DoubleInfo.htm">
+        <HelpTOCNode Title="CP.DoubleInfo Members" Url="html/AllMembers_T_ILOG_CP_CP_DoubleInfo.htm" />
+        <HelpTOCNode Title="CP.DoubleInfo Constructor " Url="html/M_ILOG_CP_CP_DoubleInfo__ctor.htm" />
+        <HelpTOCNode Id="f0fe9ca3-4de5-4725-9d5f-8e3bc799c11b" Title="CP.DoubleInfo Fields" Url="html/Fields_T_ILOG_CP_CP_DoubleInfo.htm">
+          <HelpTOCNode Title="EffectiveOptimalityTolerance Field" Url="html/F_ILOG_CP_CP_DoubleInfo_EffectiveOptimalityTolerance.htm" />
+          <HelpTOCNode Title="ExtractionTime Field" Url="html/F_ILOG_CP_CP_DoubleInfo_ExtractionTime.htm" />
+          <HelpTOCNode Title="SolveTime Field" Url="html/F_ILOG_CP_CP_DoubleInfo_SolveTime.htm" />
+          <HelpTOCNode Title="TotalTime Field" Url="html/F_ILOG_CP_CP_DoubleInfo_TotalTime.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CP.DoubleInfo Methods" Url="html/Methods_T_ILOG_CP_CP_DoubleInfo.htm" />
+        <HelpTOCNode Id="78e72661-0b71-4ec8-a66d-f6ecfdb2562a" Title="CP.DoubleInfo Properties" Url="html/Properties_T_ILOG_CP_CP_DoubleInfo.htm">
+          <HelpTOCNode Title="Value Property " Url="html/P_ILOG_CP_CP_DoubleInfo_Value.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="7f467f4c-8b4b-488a-bc43-19bfd2f81eef" Title="CP.DoubleParam Class" Url="html/T_ILOG_CP_CP_DoubleParam.htm">
+        <HelpTOCNode Title="CP.DoubleParam Members" Url="html/AllMembers_T_ILOG_CP_CP_DoubleParam.htm" />
+        <HelpTOCNode Title="CP.DoubleParam Constructor " Url="html/M_ILOG_CP_CP_DoubleParam__ctor.htm" />
+        <HelpTOCNode Id="547e0cab-9418-47f4-bdf0-49187c07dcba" Title="CP.DoubleParam Fields" Url="html/Fields_T_ILOG_CP_CP_DoubleParam.htm">
+          <HelpTOCNode Title="ConflictRefinerTimeLimit Field" Url="html/F_ILOG_CP_CP_DoubleParam_ConflictRefinerTimeLimit.htm" />
+          <HelpTOCNode Title="DynamicProbingStrength Field" Url="html/F_ILOG_CP_CP_DoubleParam_DynamicProbingStrength.htm" />
+          <HelpTOCNode Title="FailureDirectedSearchEmphasis Field" Url="html/F_ILOG_CP_CP_DoubleParam_FailureDirectedSearchEmphasis.htm" />
+          <HelpTOCNode Title="OptimalityTolerance Field" Url="html/F_ILOG_CP_CP_DoubleParam_OptimalityTolerance.htm" />
+          <HelpTOCNode Title="RelativeOptimalityTolerance Field" Url="html/F_ILOG_CP_CP_DoubleParam_RelativeOptimalityTolerance.htm" />
+          <HelpTOCNode Title="RestartGrowthFactor Field" Url="html/F_ILOG_CP_CP_DoubleParam_RestartGrowthFactor.htm" />
+          <HelpTOCNode Title="TimeLimit Field" Url="html/F_ILOG_CP_CP_DoubleParam_TimeLimit.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CP.DoubleParam Methods" Url="html/Methods_T_ILOG_CP_CP_DoubleParam.htm" />
+        <HelpTOCNode Id="763a649c-7852-47d8-a9c6-cd813ef34b16" Title="CP.DoubleParam Properties" Url="html/Properties_T_ILOG_CP_CP_DoubleParam.htm">
+          <HelpTOCNode Title="Value Property " Url="html/P_ILOG_CP_CP_DoubleParam_Value.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="a584e12b-97e6-4d2e-9d92-7cbce12d2eb9" Title="CP.IntInfo Class" Url="html/T_ILOG_CP_CP_IntInfo.htm">
+        <HelpTOCNode Title="CP.IntInfo Members" Url="html/AllMembers_T_ILOG_CP_CP_IntInfo.htm" />
+        <HelpTOCNode Title="CP.IntInfo Constructor " Url="html/M_ILOG_CP_CP_IntInfo__ctor.htm" />
+        <HelpTOCNode Id="c2def207-4657-4eaf-a4e5-c7b1fcd2dd0a" Title="CP.IntInfo Fields" Url="html/Fields_T_ILOG_CP_CP_IntInfo.htm">
+          <HelpTOCNode Title="EffectiveWorkers Field" Url="html/F_ILOG_CP_CP_IntInfo_EffectiveWorkers.htm" />
+          <HelpTOCNode Title="FailStatus Field" Url="html/F_ILOG_CP_CP_IntInfo_FailStatus.htm" />
+          <HelpTOCNode Title="MemoryUsage Field" Url="html/F_ILOG_CP_CP_IntInfo_MemoryUsage.htm" />
+          <HelpTOCNode Title="NumberOfAuxiliaryVariables Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfAuxiliaryVariables.htm" />
+          <HelpTOCNode Title="NumberOfBranches Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfBranches.htm" />
+          <HelpTOCNode Title="NumberOfChoicePoints Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfChoicePoints.htm" />
+          <HelpTOCNode Title="NumberOfConstraints Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfConstraints.htm" />
+          <HelpTOCNode Title="NumberOfConstraintsAggregated Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfConstraintsAggregated.htm" />
+          <HelpTOCNode Title="NumberOfConstraintsGenerated Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfConstraintsGenerated.htm" />
+          <HelpTOCNode Title="NumberOfCriteria Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfCriteria.htm" />
+          <HelpTOCNode Title="NumberOfEngineConstraints Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfEngineConstraints.htm" />
+          <HelpTOCNode Title="NumberOfEngineVariables Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfEngineVariables.htm" />
+          <HelpTOCNode Title="NumberOfFails Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfFails.htm" />
+          <HelpTOCNode Title="NumberOfIntegerVariables Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfIntegerVariables.htm" />
+          <HelpTOCNode Title="NumberOfIntervalVariables Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfIntervalVariables.htm" />
+          <HelpTOCNode Title="NumberOfModelVariables Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfModelVariables.htm" />
+          <HelpTOCNode Title="NumberOfSequenceVariables Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfSequenceVariables.htm" />
+          <HelpTOCNode Title="NumberOfSolutions Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfSolutions.htm" />
+          <HelpTOCNode Title="NumberOfVariables Field" Url="html/F_ILOG_CP_CP_IntInfo_NumberOfVariables.htm" />
+          <HelpTOCNode Title="SearchStatus Field" Url="html/F_ILOG_CP_CP_IntInfo_SearchStatus.htm" />
+          <HelpTOCNode Title="SearchStopCause Field" Url="html/F_ILOG_CP_CP_IntInfo_SearchStopCause.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CP.IntInfo Methods" Url="html/Methods_T_ILOG_CP_CP_IntInfo.htm" />
+        <HelpTOCNode Id="a76e450c-f895-4e64-980d-b93f5478ee9f" Title="CP.IntInfo Properties" Url="html/Properties_T_ILOG_CP_CP_IntInfo.htm">
+          <HelpTOCNode Title="Value Property " Url="html/P_ILOG_CP_CP_IntInfo_Value.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="d3bd63e3-d270-4208-a76b-f82eb46f039c" Title="CP.IntParam Class" Url="html/T_ILOG_CP_CP_IntParam.htm">
+        <HelpTOCNode Title="CP.IntParam Members" Url="html/AllMembers_T_ILOG_CP_CP_IntParam.htm" />
+        <HelpTOCNode Title="CP.IntParam Constructor " Url="html/M_ILOG_CP_CP_IntParam__ctor.htm" />
+        <HelpTOCNode Id="06c4be32-eae8-43f6-a728-a5444dcb92ee" Title="CP.IntParam Fields" Url="html/Fields_T_ILOG_CP_CP_IntParam.htm">
+          <HelpTOCNode Title="AllDiffInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_AllDiffInferenceLevel.htm" />
+          <HelpTOCNode Title="AllMinDistanceInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_AllMinDistanceInferenceLevel.htm" />
+          <HelpTOCNode Title="AutomaticReplay Field" Url="html/F_ILOG_CP_CP_IntParam_AutomaticReplay.htm" />
+          <HelpTOCNode Title="BranchLimit Field" Url="html/F_ILOG_CP_CP_IntParam_BranchLimit.htm" />
+          <HelpTOCNode Title="ChoicePointLimit Field" Url="html/F_ILOG_CP_CP_IntParam_ChoicePointLimit.htm" />
+          <HelpTOCNode Title="ConflictRefinerBranchLimit Field" Url="html/F_ILOG_CP_CP_IntParam_ConflictRefinerBranchLimit.htm" />
+          <HelpTOCNode Title="ConflictRefinerFailLimit Field" Url="html/F_ILOG_CP_CP_IntParam_ConflictRefinerFailLimit.htm" />
+          <HelpTOCNode Title="ConflictRefinerIterationLimit Field" Url="html/F_ILOG_CP_CP_IntParam_ConflictRefinerIterationLimit.htm" />
+          <HelpTOCNode Title="ConflictRefinerOnVariables Field" Url="html/F_ILOG_CP_CP_IntParam_ConflictRefinerOnVariables.htm" />
+          <HelpTOCNode Title="CountDifferentInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_CountDifferentInferenceLevel.htm" />
+          <HelpTOCNode Title="CountInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_CountInferenceLevel.htm" />
+          <HelpTOCNode Title="CumulFunctionInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_CumulFunctionInferenceLevel.htm" />
+          <HelpTOCNode Title="DefaultInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_DefaultInferenceLevel.htm" />
+          <HelpTOCNode Title="DistributeInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_DistributeInferenceLevel.htm" />
+          <HelpTOCNode Title="DynamicProbing Field" Url="html/F_ILOG_CP_CP_IntParam_DynamicProbing.htm" />
+          <HelpTOCNode Title="ElementInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_ElementInferenceLevel.htm" />
+          <HelpTOCNode Title="FailLimit Field" Url="html/F_ILOG_CP_CP_IntParam_FailLimit.htm" />
+          <HelpTOCNode Title="FailureDirectedSearch Field" Url="html/F_ILOG_CP_CP_IntParam_FailureDirectedSearch.htm" />
+          <HelpTOCNode Title="FailureDirectedSearchMaxMemory Field" Url="html/F_ILOG_CP_CP_IntParam_FailureDirectedSearchMaxMemory.htm" />
+          <HelpTOCNode Title="IntervalSequenceInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_IntervalSequenceInferenceLevel.htm" />
+          <HelpTOCNode Title="LogPeriod Field" Url="html/F_ILOG_CP_CP_IntParam_LogPeriod.htm" />
+          <HelpTOCNode Title="LogSearchTags Field" Url="html/F_ILOG_CP_CP_IntParam_LogSearchTags.htm" />
+          <HelpTOCNode Title="LogVerbosity Field" Url="html/F_ILOG_CP_CP_IntParam_LogVerbosity.htm" />
+          <HelpTOCNode Title="MaxNoGoods Field" Url="html/F_ILOG_CP_CP_IntParam_MaxNoGoods.htm" />
+          <HelpTOCNode Title="ModelAnonymizer Field" Url="html/F_ILOG_CP_CP_IntParam_ModelAnonymizer.htm" />
+          <HelpTOCNode Title="MultiPointNumberOfSearchPoints Field" Url="html/F_ILOG_CP_CP_IntParam_MultiPointNumberOfSearchPoints.htm" />
+          <HelpTOCNode Title="NoOverlapInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_NoOverlapInferenceLevel.htm" />
+          <HelpTOCNode Title="PrecedenceInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_PrecedenceInferenceLevel.htm" />
+          <HelpTOCNode Title="Presolve Field" Url="html/F_ILOG_CP_CP_IntParam_Presolve.htm" />
+          <HelpTOCNode Title="PrintModelDetailsInMessages Field" Url="html/F_ILOG_CP_CP_IntParam_PrintModelDetailsInMessages.htm" />
+          <HelpTOCNode Title="RandomSeed Field" Url="html/F_ILOG_CP_CP_IntParam_RandomSeed.htm" />
+          <HelpTOCNode Title="RestartFailLimit Field" Url="html/F_ILOG_CP_CP_IntParam_RestartFailLimit.htm" />
+          <HelpTOCNode Title="SearchType Field" Url="html/F_ILOG_CP_CP_IntParam_SearchType.htm" />
+          <HelpTOCNode Title="SequenceInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_SequenceInferenceLevel.htm" />
+          <HelpTOCNode Title="SolutionLimit Field" Url="html/F_ILOG_CP_CP_IntParam_SolutionLimit.htm" />
+          <HelpTOCNode Title="StateFunctionInferenceLevel Field" Url="html/F_ILOG_CP_CP_IntParam_StateFunctionInferenceLevel.htm" />
+          <HelpTOCNode Title="TemporalRelaxation Field" Url="html/F_ILOG_CP_CP_IntParam_TemporalRelaxation.htm" />
+          <HelpTOCNode Title="TimeDisplay Field" Url="html/F_ILOG_CP_CP_IntParam_TimeDisplay.htm" />
+          <HelpTOCNode Title="TimeMode Field" Url="html/F_ILOG_CP_CP_IntParam_TimeMode.htm" />
+          <HelpTOCNode Title="UseFileLocations Field" Url="html/F_ILOG_CP_CP_IntParam_UseFileLocations.htm" />
+          <HelpTOCNode Title="WarningLevel Field" Url="html/F_ILOG_CP_CP_IntParam_WarningLevel.htm" />
+          <HelpTOCNode Title="Workers Field" Url="html/F_ILOG_CP_CP_IntParam_Workers.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CP.IntParam Methods" Url="html/Methods_T_ILOG_CP_CP_IntParam.htm" />
+        <HelpTOCNode Id="2bdf3dca-05af-4c6c-b4c8-dd117d7c44db" Title="CP.IntParam Properties" Url="html/Properties_T_ILOG_CP_CP_IntParam.htm">
+          <HelpTOCNode Title="Value Property " Url="html/P_ILOG_CP_CP_IntParam_Value.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="7764cdda-d6c2-4c95-a9dc-9473e9dfd5cc" Title="CP.ParameterValues Class" Url="html/T_ILOG_CP_CP_ParameterValues.htm">
+        <HelpTOCNode Title="CP.ParameterValues Members" Url="html/AllMembers_T_ILOG_CP_CP_ParameterValues.htm" />
+        <HelpTOCNode Title="CP.ParameterValues Constructor " Url="html/M_ILOG_CP_CP_ParameterValues__ctor.htm" />
+        <HelpTOCNode Id="01ee0518-2db5-4a2e-9c32-c5fc441b1bcf" Title="CP.ParameterValues Fields" Url="html/Fields_T_ILOG_CP_CP_ParameterValues.htm">
+          <HelpTOCNode Title="Auto Field" Url="html/F_ILOG_CP_CP_ParameterValues_Auto.htm" />
+          <HelpTOCNode Title="Basic Field" Url="html/F_ILOG_CP_CP_ParameterValues_Basic.htm" />
+          <HelpTOCNode Title="CPUTime Field" Url="html/F_ILOG_CP_CP_ParameterValues_CPUTime.htm" />
+          <HelpTOCNode Title="Default Field" Url="html/F_ILOG_CP_CP_ParameterValues_Default.htm" />
+          <HelpTOCNode Title="DepthFirst Field" Url="html/F_ILOG_CP_CP_ParameterValues_DepthFirst.htm" />
+          <HelpTOCNode Title="Diverse Field" Url="html/F_ILOG_CP_CP_ParameterValues_Diverse.htm" />
+          <HelpTOCNode Title="ElapsedTime Field" Url="html/F_ILOG_CP_CP_ParameterValues_ElapsedTime.htm" />
+          <HelpTOCNode Title="Extended Field" Url="html/F_ILOG_CP_CP_ParameterValues_Extended.htm" />
+          <HelpTOCNode Title="Focused Field" Url="html/F_ILOG_CP_CP_ParameterValues_Focused.htm" />
+          <HelpTOCNode Title="Intensive Field" Url="html/F_ILOG_CP_CP_ParameterValues_Intensive.htm" />
+          <HelpTOCNode Title="Low Field" Url="html/F_ILOG_CP_CP_ParameterValues_Low.htm" />
+          <HelpTOCNode Title="Medium Field" Url="html/F_ILOG_CP_CP_ParameterValues_Medium.htm" />
+          <HelpTOCNode Title="MultiPoint Field" Url="html/F_ILOG_CP_CP_ParameterValues_MultiPoint.htm" />
+          <HelpTOCNode Title="Normal Field" Url="html/F_ILOG_CP_CP_ParameterValues_Normal.htm" />
+          <HelpTOCNode Title="Off Field" Url="html/F_ILOG_CP_CP_ParameterValues_Off.htm" />
+          <HelpTOCNode Title="On Field" Url="html/F_ILOG_CP_CP_ParameterValues_On.htm" />
+          <HelpTOCNode Title="Quiet Field" Url="html/F_ILOG_CP_CP_ParameterValues_Quiet.htm" />
+          <HelpTOCNode Title="Restart Field" Url="html/F_ILOG_CP_CP_ParameterValues_Restart.htm" />
+          <HelpTOCNode Title="SearchCompleted Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchCompleted.htm" />
+          <HelpTOCNode Title="SearchHasFailedNormally Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchHasFailedNormally.htm" />
+          <HelpTOCNode Title="SearchHasNotBeenStopped Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchHasNotBeenStopped.htm" />
+          <HelpTOCNode Title="SearchHasNotFailed Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchHasNotFailed.htm" />
+          <HelpTOCNode Title="SearchNotStarted Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchNotStarted.htm" />
+          <HelpTOCNode Title="SearchOngoing Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchOngoing.htm" />
+          <HelpTOCNode Title="SearchStopped Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchStopped.htm" />
+          <HelpTOCNode Title="SearchStoppedByAbort Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchStoppedByAbort.htm" />
+          <HelpTOCNode Title="SearchStoppedByException Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchStoppedByException.htm" />
+          <HelpTOCNode Title="SearchStoppedByExit Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchStoppedByExit.htm" />
+          <HelpTOCNode Title="SearchStoppedByLabel Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchStoppedByLabel.htm" />
+          <HelpTOCNode Title="SearchStoppedByLimit Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchStoppedByLimit.htm" />
+          <HelpTOCNode Title="SearchStoppedByUnknownCause Field" Url="html/F_ILOG_CP_CP_ParameterValues_SearchStoppedByUnknownCause.htm" />
+          <HelpTOCNode Title="Terse Field" Url="html/F_ILOG_CP_CP_ParameterValues_Terse.htm" />
+          <HelpTOCNode Title="UnknownFailureStatus Field" Url="html/F_ILOG_CP_CP_ParameterValues_UnknownFailureStatus.htm" />
+          <HelpTOCNode Title="Verbose Field" Url="html/F_ILOG_CP_CP_ParameterValues_Verbose.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="CP.ParameterValues Methods" Url="html/Methods_T_ILOG_CP_CP_ParameterValues.htm" />
+        <HelpTOCNode Id="294f150f-3a0f-4447-a435-230601723899" Title="CP.ParameterValues Properties" Url="html/Properties_T_ILOG_CP_CP_ParameterValues.htm">
+          <HelpTOCNode Title="Value Property " Url="html/P_ILOG_CP_CP_ParameterValues_Value.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="41bfa056-2e55-48a5-a1e8-62c51bf09b04" Title="IIntValueChooser Interface" Url="html/T_ILOG_CP_IIntValueChooser.htm">
+        <HelpTOCNode Title="IIntValueChooser Members" Url="html/AllMembers_T_ILOG_CP_IIntValueChooser.htm" />
+        <HelpTOCNode Id="da1c5c7e-0e61-4a1c-bc5f-5f5b058ddedb" Title="IIntValueChooser Methods" Url="html/Methods_T_ILOG_CP_IIntValueChooser.htm">
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_CP_IIntValueChooser_End.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="ec7a867c-4f17-4074-9efe-2393733e256d" Title="IIntValueEval Interface" Url="html/T_ILOG_CP_IIntValueEval.htm">
+        <HelpTOCNode Title="IIntValueEval Members" Url="html/AllMembers_T_ILOG_CP_IIntValueEval.htm" />
+        <HelpTOCNode Id="c870a1f7-4228-4173-80d9-1ed9b3d01437" Title="IIntValueEval Methods" Url="html/Methods_T_ILOG_CP_IIntValueEval.htm">
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_CP_IIntValueEval_End.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="e7c1b611-e9ae-4383-9fdf-8680ab73dcb6" Title="IIntVarChooser Interface" Url="html/T_ILOG_CP_IIntVarChooser.htm">
+        <HelpTOCNode Title="IIntVarChooser Members" Url="html/AllMembers_T_ILOG_CP_IIntVarChooser.htm" />
+        <HelpTOCNode Id="dce667c9-c015-4c0c-b4eb-06be0646c771" Title="IIntVarChooser Methods" Url="html/Methods_T_ILOG_CP_IIntVarChooser.htm">
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_CP_IIntVarChooser_End.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="f0ccc2ec-64a6-4d32-8690-e9e10beab6df" Title="IIntVarEval Interface" Url="html/T_ILOG_CP_IIntVarEval.htm">
+        <HelpTOCNode Title="IIntVarEval Members" Url="html/AllMembers_T_ILOG_CP_IIntVarEval.htm" />
+        <HelpTOCNode Id="1ae00416-88cf-4154-8486-30d94c3df24d" Title="IIntVarEval Methods" Url="html/Methods_T_ILOG_CP_IIntVarEval.htm">
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_CP_IIntVarEval_End.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="d7b7b89e-3612-440f-8a7b-7c2b4e034ea7" Title="ISearchPhase Interface" Url="html/T_ILOG_CP_ISearchPhase.htm">
+        <HelpTOCNode Title="ISearchPhase Members" Url="html/AllMembers_T_ILOG_CP_ISearchPhase.htm" />
+        <HelpTOCNode Id="a4b05aa1-a63e-4d83-8f63-085876e05f03" Title="ISearchPhase Methods" Url="html/Methods_T_ILOG_CP_ISearchPhase.htm">
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_CP_ISearchPhase_End.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="6780104f-46ec-46d4-a99b-63e2dd463c11" Title="IValueSelector Interface" Url="html/T_ILOG_CP_IValueSelector.htm">
+        <HelpTOCNode Title="IValueSelector Members" Url="html/AllMembers_T_ILOG_CP_IValueSelector.htm" />
+        <HelpTOCNode Id="5e197a4d-b5b2-4d13-8f23-ded709ca501d" Title="IValueSelector Methods" Url="html/Methods_T_ILOG_CP_IValueSelector.htm">
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_CP_IValueSelector_End.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Id="3d614835-508c-44af-b610-5a0d3e7a04b5" Title="IVarSelector Interface" Url="html/T_ILOG_CP_IVarSelector.htm">
+        <HelpTOCNode Title="IVarSelector Members" Url="html/AllMembers_T_ILOG_CP_IVarSelector.htm" />
+        <HelpTOCNode Id="7ea9a30d-0c3d-4a72-b229-d60b01c938cd" Title="IVarSelector Methods" Url="html/Methods_T_ILOG_CP_IVarSelector.htm">
+          <HelpTOCNode Title="End Method " Url="html/M_ILOG_CP_IVarSelector_End.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

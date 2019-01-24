@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="New features in the Java API of CPLEX V12.8" />
+<meta name="abstract" content="These release notes highlight new features in the Java API of in IBM CPLEX V12.8." />
+<meta name="Description" content="These release notes highlight new features in the Java API of in IBM CPLEX V12.8." />
+<meta name="DC.subject" content="Java API, CPLEX V12.8 release notes, callback, CPLEX V12.8 release notes (Java API)" />
+<meta name="keywords" content="Java API, CPLEX V12.8 release notes, callback, CPLEX V12.8 release notes (Java API)" />
+<meta name="DC.Relation" scheme="URI" content="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="CPLEXReleaseNotesV128newJavaAPI" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" />
+<title>New features in the Java API of CPLEX V12.8</title>
+</head>
+<body id="CPLEXReleaseNotesV128newJavaAPI"><div role="main">
+<h1 class="title topictitle1">New features in the Java API of CPLEX V12.8 </h1>
+<div class="body"><p class="shortdesc">These release notes highlight new features in the Java API of 
+in IBM CPLEX V12.8. </p>
+<p class="p">In the Java API of CPLEX V12.8, the new implementation of <strong class="ph b">generic callbacks</strong> 
+offers these new classes, interfaces, methods, and 
+and enumerations (<samp class="ph codeph">enum</samp>). They are documented in the
+reference manual of the Java API of CPLEX.</p>
+<div class="section"><h2 class="title sectiontitle">Classes and interfaces for the generic callback</h2> 
+ 
+<ul class="ul"><li class="li"><samp class="ph codeph">IloCplex.Callback.Context</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.Id</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.Info</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.SolutionStrategy</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Function</samp></li>
+</ul>
+</div>
+<div class="section"><h2 class="title sectiontitle">Methods for the generic callback</h2>
+<ul class="ul"><li class="li"><samp class="ph codeph">IloCplex.Callback.Context.abort</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.addUserCut</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.addUserCuts</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getCandidateObjective</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getCandidatePoint</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getCandidateRay</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getCandidateValue</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getCplex</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getDoubleInfo</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getGlobalLB</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getGlobalUB</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getId</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getIntInfo</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getLongInfo</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getIncumbent</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getIncumbentObjective</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getIncumbentValue</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getLocalLB</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getLocalUB</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getRelaxationPoint</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getRelaxationObjective</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.getRelaxationValue</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.inFeasible</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.inGlobalProgress</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.inLocalProgress</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.inRelaxation</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.inThreadDown</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.inThreadUp</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.isCandidateIncumbent</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.isCandidateRay</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.postHeuristicSolution</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Context.rejectCandidate</samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Callback.Function.invoke</samp></li>
+</ul>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/new.html" title="These release notes highlight new features in IBM CPLEX V12.8.0.">New features in CPLEX V12.8.0</a></div>
+</div>
+</div></div></body>
+</html>

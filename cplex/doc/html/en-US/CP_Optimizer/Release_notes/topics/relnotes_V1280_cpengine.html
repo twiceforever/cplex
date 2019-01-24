@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="New feature: API changes for extension engine classes" />
+<meta name="abstract" content="Describes the API changes for CP Optimizer." />
+<meta name="Description" content="Describes the API changes for CP Optimizer." />
+<meta name="DC.subject" content="IloCPEngine" />
+<meta name="keywords" content="IloCPEngine" />
+<meta name="DC.Relation" scheme="URI" content="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="changes-cpengine" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" />
+<title>New feature: API changes for extension engine classes</title>
+</head>
+<body id="changes-cpengine"><div role="main">
+<h1 class="title topictitle1">New feature: API changes for extension engine classes</h1>
+<div class="body"><p class="shortdesc">Describes the API changes for CP Optimizer.</p>
+<p class="p">For V12.8.0, the C++ interface of CP Optimizer has undergone some API changes which you
+need to know about, especially if you sub-class any of CP Optimizer's classes to modify 
+its behavior, or if you access any object of a type prefixed by <samp class="ph codeph">Ilc</samp>. 
+The main principle of the change is to cleanly separate the services that are
+available at the top level outside the search process (such as extracting a model, 
+getting a solution, and changing parameters) from those services available in search on objects such as goals, constraints, propagators, choosers, and evaluators.</p>
+<div class="section"><h2 class="title sectiontitle">Background</h2>
+<p class="p">CP Optimizer works as follows: when asked to perform a solve, the <strong class="ph b">master</strong> object, 
+an instance of <samp class="ph codeph">IloCP</samp>, will create a number of workers (as specified by
+the <samp class="ph codeph">IloCP::Workers</samp> parameter) to perform the solution search.
+In most cases, the operation of these workers is hidden.  However, if you have extended 
+CP Optimizer with your own code (by subclassing goals, constraints, propagators, choosers, or evaluators), then 
+when your code gets called, you have access to a <strong class="ph b">worker engine</strong> object, unique to the worker that called your code.  
+In CP Optimizer V12.7.1, this worker engine object is an instance of <samp class="ph codeph">IloCP</samp>, just like the <strong class="ph b">master</strong>, 
+but operating in a different <strong class="ph b">worker</strong> mode.  This creates some confusion, because
+the <samp class="ph codeph">IloCP</samp> class contains two sets of APIs: one set
+which makes sense to use when the <samp class="ph codeph">IloCP</samp> object is the master, and another set which makes sense to use 
+when the <samp class="ph codeph">IloCP</samp> object is a worker engine.  So, at the top (master) level, the "in-search" services on 
+<samp class="ph codeph">IloCP</samp> are illegal, and, likewise inside search, the top-level services cannot be used.</p>
+
+<p class="p">With V12.8.0, the two groups of services have been logically separated: the top-level 
+master services stay with the <samp class="ph codeph">IloCP</samp> object, with the in-search services being 
+moved to a new <strong class="ph b">worker engine</strong> class, <samp class="ph codeph">IloCPEngine</samp>.
+The <samp class="ph codeph">IloCPEngine</samp> class manages objects created through "Ilc" APIs, 
+such as objects of type <samp class="ph codeph">IlcConstraintI</samp>, <samp class="ph codeph">IlcRevInt</samp>, 
+<samp class="ph codeph">IlcGoalI</samp> (which take <samp class="ph codeph">IloCPEngine</samp> in their constructors), 
+as well as objects such as <samp class="ph codeph">IloIntVarEvalI</samp> and 
+<samp class="ph codeph">IloIntVarChooserI</samp>, related to evaluators and choosers.  
+<samp class="ph codeph">IloCPEngine</samp> provides services such as getting the reversible heap 
+(<samp class="ph codeph">IloCPEngine::getHeap</samp>), adding a reversible action 
+(<samp class="ph codeph">IloCPEngine::addReversibleAction</samp>), or performing
+a local solve in a depth-first search manner (<samp class="ph codeph">IloCPEngine::solve</samp>).  
+<samp class="ph codeph">IloCPEngine</samp> also provides methods to access the current domains of Concert Technology 
+variables inside the current worker (for example
+<samp class="ph codeph">IloCPEngine::getMin(IloIntVar)</samp>), and a way to get statistics on the local worker 
+(like number of branches taken)
+through the <samp class="ph codeph">IloCPEngine::getInfo</samp> member function.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Code impact for the C++ API</h2>
+<p class="p">If you do not subclass any CP Optimizer classes in your code, the impact on your
+code should be minimal.  The most evident change is that
+accessors to <samp class="ph codeph">Ilc</samp> variables are no longer available on the 
+<samp class="ph codeph">IloCP</samp> object in C++.
+Let's assume your code does the following:</p>
+
+<pre class="pre codeblock"><code>IloIntVarArray x(env, 100, 0, 1);
+IloModel model(env);
+// ... create model ..
+IloCP cp(model);
+cp.solve();
+IloInt total = 0; 
+for (IloInt i = 0; i &lt; 100; i++)
+    total += cp.getIntVar(x[i]).getValue();</code></pre>
+
+<p class="p">Here, you only need to update the last line of the code, using the direct accessor, 
+<samp class="ph codeph">cp.getValue(x[i])</samp> instead of getting the <samp class="ph codeph">IlcIntVar</samp> object:</p>
+
+<pre class="pre codeblock"><code>    total += cp.getValue(x[i]);  </code></pre>
+
+<p class="p">There are accessors available to get the values or domains of
+variables directly on the <samp class="ph codeph">IloCP</samp> object.  For example, after calling 
+<samp class="ph codeph">cp.propagate()</samp>,
+the following incomplete list can be useful to get back domains.</p>
+
+<pre class="pre codeblock"><code>IloCP::getMin(IloIntVar y)
+IloCP::getMax(IloIntVar y)
+IloCP::IntVarIterator IloCP::iterator(IloIntVar y)
+IloCP::getStartMin(IloIntervalVar itv)
+IloCP::getEndMax(IloIntervalVar itv)
+IloCP::isPresent(IloIntervalVar itv)</code></pre>
+
+<p class="p">Domains can be printed easily too.  Instead of writing:</p>
+
+<pre class="pre codeblock"><code>cout &lt;&lt; cp.getIntVar(x[0]) &lt;&lt; endl;</code></pre>
+
+<p class="p">you can write:</p>
+
+<pre class="pre codeblock"><code>cout &lt;&lt; cp.domain(x[0]) &lt;&lt; endl;</code></pre>
+
+
+<p class="p">If you write your own goals, there are also some small
+changes to make.  Let's examine the following code:</p>
+
+<pre class="pre codeblock"><code>ILCGOAL1(MyInst, IlcIntVar, var) {
+   if (var.isFixed()) return 0;
+   IlcInt v = var.getMin();
+   return IlcOr(var == v, IlcAnd(var != v, this));
+}
+
+ILCGOAL1(MyGen, IlcIntVarArray, x) {
+   IloCP cp = getCP();
+   IlcInt choice = IlcChooseFirstUnboundInt(x);
+   if (choice &lt; 0) return 0;
+   return IlcAnd(MyInst(cp, x[choice]), this);
+}
+
+ILOCPGOALWRAPPER1(MyGoal, cp, IloIntVarArray, x) {
+   return MyGen(cp, cp.getIntVarArray(x)); // 'cp' is of type IloCP here
+}
+
+IloEnv env;
+IloIntVarArray x(env, 10, 0, 1);
+IloModel mdl(env);
+mdl.add(x);
+IloCP cp(mdl);
+cp.solve(MyGoal(env, x));
+cout &lt;&lt; cp.domain(x) &lt;&lt; endl;</code></pre>
+
+<p class="p">This code creates a model with 10 variables with domains {0,1}
+and creates a simple goal to fix their values.  Of interest to
+us here are the <samp class="ph codeph">ILCGOAL MyGen</samp> and the goal wrapper <samp class="ph codeph">MyGoal</samp>.
+In version 12.7.1, goals are allocated on the local <strong class="ph b">worker engine</strong> <samp class="ph codeph">IloCP</samp> object. Likewise,
+the goal wrapper that converts an <samp class="ph codeph">IloGoal</samp> to an <samp class="ph codeph">IlcGoal MyGoal</samp>
+takes a second parameter <samp class="ph codeph">cp</samp> for the <samp class="ph codeph">ILOCPGOALWRAPPER</samp> macro.
+In the body following the macro, the <samp class="ph codeph">cp</samp> variable has type <samp class="ph codeph">IloCP</samp>.
+In CP Optimizer V12.8.0, we would write:</p>
+
+<pre class="pre codeblock"><code>ILCGOAL1(MyGen, IlcIntVarArray, x) {
+   IlcCPEngine cp = getCPEngine(); // &lt;-- Change here...
+   IlcInt choice = IlcChooseMinSizeInt(x);
+   if (choice &lt; 0) return 0;
+   return IlcAnd(MyInst(cp, x[choice]), this);
+}
+
+ILOCPGOALWRAPPER1(MyGoal, cp, IloIntVarArray, x) {
+   return MyGen(cp, cp.getIntVarArray(x)); // &lt;-- cp is of type IloCPEngine here
+}</code></pre>
+
+<p class="p">Note that in <samp class="ph codeph">MyGen</samp>, <samp class="ph codeph">IloCP cp = getCP();</samp> has been replaced by
+<samp class="ph codeph">IlcCPEngine cp = getCP();</samp>.  Normally, this is the only change
+you would have to make in a typical goal.  All the API relevant
+to goals which was on <samp class="ph codeph">IloCP</samp> prior to version 12.8.0 is now available
+on <samp class="ph codeph">IlcCPEngine</samp>, so the remainder of your code should compile and
+work correctly.  When we call the subgoal <samp class="ph codeph">MyInst</samp>, note that we
+now pass an object of type <samp class="ph codeph">IlcCPEngine</samp> instead of <samp class="ph codeph">IloCP</samp>.
+The actual code of the goal wrapper <samp class="ph codeph">MyGoal</samp> remains unchanged, but
+we duplicate here to note that the type of the <samp class="ph codeph">cp</samp> parameter is
+now of <samp class="ph codeph">IloCPEngine</samp>.  </p>
+<p class="p">The pattern for classes <samp class="ph codeph">IlcConstraintI</samp> and <samp class="ph codeph">IlcDemonI</samp> (with or without
+macros <samp class="ph codeph">ILCDEMON</samp> or <samp class="ph codeph">ILCCTDEMON)</samp> are very similar.  Both of these
+classes now accept an object of type <samp class="ph codeph">IlcCPEngine</samp> in their constructor
+and instead of <samp class="ph codeph">getCP()</samp> in the body, one should instead use
+<samp class="ph codeph">getCPEngine()</samp>.</p>
+<p class="p">The pattern for macro <samp class="ph codeph">ILCPCONSTRAINTWRAPPER</samp> is very similar to that
+of <samp class="ph codeph">ILOCPGOALWRAPPER </samp>- essentially the macro's second parameter, which
+is the name of the engine, is now of type <samp class="ph codeph">IloCPEngine</samp> instead of <samp class="ph codeph">IloCP</samp>.</p>
+<div class="p">If you subclass any of the following:
+<ul class="ul"><li class="li"><samp class="ph codeph">IloIntVarChooserI</samp></li>
+<li class="li"><samp class="ph codeph">IloIntValueChooserI</samp></li>
+<li class="li"><samp class="ph codeph">IloIntVarEvalI</samp></li>
+<li class="li"><samp class="ph codeph">IloIntValueEvalI</samp></li>
+</ul>
+</div>
+<div class="p">then you will need to make a small change to your code.  Specifically, some
+signatures have changed in the following way:
+
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="A two column table listing changes." class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Table 1. Changes in choosers and evaluators</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry thleft thbot" valign="bottom" id="d499863e312">Before V12.8.0</th>
+<th class="entry thleft thbot" valign="bottom" id="d499863e314">V12.8.0 and later</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d499863e312 ">IloIntVarChooserI::choose(IloCP, IloIntVarArray)</td>
+<td class="entry" valign="top" headers="d499863e314 ">IloIntVarChooserI::choose(IloCPEngine, IloIntVarArray)</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d499863e312 ">IloIntValueChooserI::choose(IloCP, IloIntVarArray, IloInt)</td>
+<td class="entry" valign="top" headers="d499863e314 ">IloIntValueChooserI::choose(IloCPEngine, IloIntVarArray, IloInt)</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d499863e312 ">IloIntVarEvalI::eval(IloCP, IloIntVar)</td>
+<td class="entry" valign="top" headers="d499863e314 ">IloIntVarEval::eval(IloCPEngine, IloIntVar)</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d499863e312 ">IloIntValueEvalI::eval(IloCP, IloIntVar, IloInt)</td>
+<td class="entry" valign="top" headers="d499863e314 ">IloIntValueEval::eval(IloCPEngine, IloIntVar, IloInt)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+Since all relevant API from <samp class="ph codeph">IloCP</samp> is now present on <samp class="ph codeph">IloCPEngine</samp>, the body
+of the remainder of your "choose" or "eval" functions should be largely unchanged.</div>
+
+<p class="p">One technical point you should be aware of, which should not affect you in practice, 
+is that some of the functionality of <samp class="ph codeph">IloCPEngine</samp> is made available
+through its base case <samp class="ph codeph">IlcCPEngine</samp>.  You may use
+<samp class="ph codeph">IloCPEngine</samp> everywhere without worry, but keep in mind that you will 
+find documentation for some of the functionality that <samp class="ph codeph">IloCPEngine</samp> 
+provides on the <samp class="ph codeph">IlcCPEngine</samp> class.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Displaced methods</h2>
+<p class="p">The following is a comprehensive list of methods that are no longer available
+for the <samp class="ph codeph">IloCP</samp> object in C++ because of the split in services between <samp class="ph codeph">IloCP</samp>
+and the new <samp class="ph codeph">IloCPEngine</samp> class. They have been moved to <samp class="ph codeph">IloCPEngine</samp>.
+</p>
+
+<pre class="pre codeblock"><code>IloCP::getHeap() const
+IloCP::getCumulElement(const IloCumulFunction) const
+IloCP::getFloatArray(const IloNumArray) const
+IloCP::getIntArray(const IloIntArray) const
+IloCP::getIntervalSequence(const IloIntervalSequenceVar) const
+IloCP::getInterval(const IloIntervalVar) const
+IloCP::getIntTupleSet(const IloIntTupleSet) const
+IloCP::getIntVarArray(const IloIntVarArray) const
+IloCP::IlcIntVar getIntVar(const IloNumVar) const
+IloCP::add(const IlcConstraint) const
+IloCP::add(const IlcConstraintArray) const
+IloCP::addReversibleAction(const IlcGoal goal) const
+IloCP::exitSearch() const
+IloCP::fail(IloAny label=0) const
+IloCP::startNewSearch(const IlcGoal) const</code></pre>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" title="Describes the changes for the release of the CP Optimizer feature of CPLEX Optimization Studio V12.8.0.">Changes since CP Optimizer V12.7.1</a></div>
+</div>
+</div></div></body>
+</html>

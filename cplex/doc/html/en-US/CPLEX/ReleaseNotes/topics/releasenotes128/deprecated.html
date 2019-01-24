@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Deprecated features CPLEX V12.8.0" />
+<meta name="abstract" content="These release notes announce deprecated features in IBM CPLEX V12.8.0. These deprecated features will be removed in a future release." />
+<meta name="Description" content="These release notes announce deprecated features in IBM CPLEX V12.8.0. These deprecated features will be removed in a future release." />
+<meta name="DC.Relation" scheme="URI" content="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/home.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="CPLEXReleaseNotesV128deprecated" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/home.html" />
+<title>Deprecated features CPLEX V12.8.0</title>
+</head>
+<body id="CPLEXReleaseNotesV128deprecated"><div role="main">
+<h1 class="title topictitle1">Deprecated features CPLEX V12.8.0 </h1>
+<div class="body"><p class="shortdesc">These release notes announce <strong class="ph b">deprecated</strong> features
+in IBM CPLEX V12.8.0. These deprecated features will be removed in a future release. </p>
+<div class="section"><h2 class="title sectiontitle">Parameters</h2> 
+
+<p class="p">The parameter 
+<a class="xref" href="../../../Parameters/topics/SubMIPNodeLim.html" title="Deprecated: See limit on nodes explored when CPLEX solves a subMIP to limit the number of nodes explored when CPLEX solves a subMIP.">limit on nodes explored when CPLEX solves a subMIP</a> 
+has been <strong class="ph b">deprecated</strong>. It will be removed in a future release. Use instead the new parameter 
+<a class="xref" href="../../../Parameters/topics/SubMIPNodeLimit.html" title="Limits the number of nodes explored when CPLEX solves a subMIP.">limit on nodes explored when CPLEX solves a subMIP</a>. </p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Interactive Optimizer </h2> 
+ 
+<div class="p">The following commands of the Interactive Optimizer have been <strong class="ph b">deprecated</strong>. 
+They will be removed from a future release.
+<ul class="ul"><li class="li"><samp class="ph codeph">set output dialog</samp></li>
+<li class="li"><samp class="ph codeph">set output errors</samp></li>
+<li class="li"><samp class="ph codeph">set output logonly</samp></li>
+<li class="li"><samp class="ph codeph">set output results</samp></li>
+<li class="li"><samp class="ph codeph">set output warnings</samp></li>
+<li class="li"><samp class="ph codeph">set mip limits submipnodelim</samp> <p class="p">Use <samp class="ph codeph">set mip submip nodelimit</samp> instead.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="section"><h2 class="title sectiontitle">Callable Library (C API)</h2> 
+ 
+<p class="p"><strong class="ph b">Deprecated error codes</strong></p>
+ 
+<p class="p">The error code <a class="xref" href="../../../../refcallablelibrary/macros/CPXERR_CHILD_OF_CHILD.html" title="1019 Cannot clone a cloned environment">CPXERR_CHILD_OF_CHILD</a> 
+has been <strong class="ph b">deprecated</strong>.</p>
+
+<p class="p">The error code <a class="xref" href="../../../../refcallablelibrary/macros/CPXERR_CANT_CLOSE_CHILD.html" title="1021 Cannot close a child environment">CPXERR_CANT_CLOSE_CHILD</a> 
+has been <strong class="ph b">deprecated</strong>. </p>
+
+<p class="p">The only routine that triggered these two errors, 
+<samp class="ph codeph">CPXfreeparenv</samp>, has been removed, so these errors cannot occur in the future.</p>
+ 
+<p class="p"><strong class="ph b">Deprecated routines</strong></p>
+
+<div class="p">The following routines have been <strong class="ph b">deprecated</strong> in CPLEX V12.8. 
+They will be removed in a future release.
+<ul class="ul"><li class="li"><samp class="ph codeph">CPXXsetlogfile/CPXsetlogfile</samp>  <p class="p">Instead, use  
+<a class="xref" href="../../../../refcallablelibrary/cpxapi/setlogfilename.html" title="Sets and opens the log file.">CPXXsetlogfilename and CPXsetlogfilename</a>.</p>
+</li>
+<li class="li"><samp class="ph codeph">CPXXfopen/CPXfopen</samp></li>
+<li class="li"><samp class="ph codeph">CPXXfclose/CPXfclose</samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddfpdest/CPXaddfpdest</samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelfpdest/CPXdelfpdest</samp></li>
+<li class="li"><samp class="ph codeph">CPXXfputs/CPXfputs</samp></li>
+</ul>
+</div>
+
+<p class="p">For example, these lines of code have been deprecated:</p>
+ 
+<pre class="pre codeblock"><code> 
+FILE *out = CPXfopen(...);   //deprecated
+CPXaddfpdest(env, channel, out); //deprecated</code></pre>
+ 
+<p class="p">Replace such deprecated code with lines like these instead:</p>
+ 
+<pre class="pre codeblock"><code> 
+                   static void CPXPUBLIC
+                   msgfun (void file, char const *text) { fputs(text, file); }
+                   FILE *out = fopen(...);
+                   CPXaddfuncdest(env, channel, out, msgfun); </code></pre>
+ </div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/home.html" title="These release notes highlight improvements and new features in IBM CPLEX V12.8.0. Please review these notes before using IBM CPLEX V12.8.0.">Release notes for CPLEX V12.8.0</a></div>
+</div>
+</div></div></body>
+</html>

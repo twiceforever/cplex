@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Changes for Java users" />
+<meta name="abstract" content="" />
+<meta name="Description" content="" />
+<meta name="DC.subject" content="java" />
+<meta name="keywords" content="java" />
+<meta name="DC.Relation" scheme="URI" content="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="changes-api-java" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" />
+<title>Changes for Java users</title>
+</head>
+<body id="changes-api-java"><div role="main">
+<h1 class="title topictitle1">Changes for Java users</h1>
+<div class="body"><p class="shortdesc"></p>
+<div class="section"><h2 class="title sectiontitle">Changes in the API for extension engine classes in Java</h2>
+<p class="p">For V12.8.0, the Java™ interface of CP Optimizer has
+undergone some minor API changes which you need to know about if you sub-class any of 
+CP Optimizer's classes to modify its default behavior.  The main principle of the change
+is to cleanly separate the services that are available at the top level outside the search 
+process (such as extracting a model, getting a solution, and changing parameters) from those services available in search on objects such as choosers
+and evaluators.  If you do not subclass any of the classes 
+<samp class="ph codeph">IloCustomIntVarChooser</samp>, <samp class="ph codeph">IloCustomIntVarEval</samp>, 
+<samp class="ph codeph">IloCustomIntValueChooser</samp> or <samp class="ph codeph">IloCustomIntValueEval</samp>, you can skip this section.</p>
+
+
+<p class="p">CP Optimizer works as follows. When asked to perform a solve, the <strong class="ph b">master</strong> object, 
+an instance of <samp class="ph codeph">IloCP</samp>, creates a number of workers (as specified by the
+<samp class="ph codeph">IloCP.IloIntParam.Workers</samp> parameter) to perform the solution search.
+In most cases, the operation of these workers is hidden.  However, if you have extended 
+CP Optimizer with your own code (by subclassing choosers or evaluators), then when your code gets called, you will have access to a <strong class="ph b">worker engine</strong> object, unique to the
+worker that called your code.  In CP Optimizer V12.7.1, this worker engine object is an instance of 
+<samp class="ph codeph">IloCP</samp>, like the master, but operating in a different 
+<strong class="ph b">worker</strong> mode.  This may create some confusion, sine the <samp class="ph codeph">IloCP</samp> class
+contains two sets of APIs: one set which should be used when the <samp class="ph codeph">IloCP</samp>
+object is the master, and another set which should be used when the <samp class="ph codeph">IloCP</samp>
+object is a worker engine.  So, at the top (master) level, the "in-search" services on <samp class="ph codeph">IloCP</samp> 
+are illegal, and likewise inside search, the top-level
+services cannot be used.</p>
+
+
+<p class="p">With version 12.8.0, the two groups of services have been logically separated. The 
+top-level master services stay with the <samp class="ph codeph">IloCP</samp> object, with the search-level services have been moved to a new <strong class="ph b">worker engine</strong> class, 
+<samp class="ph codeph">IloCPEngine</samp>.
+The <samp class="ph codeph">IloCPEngine</samp> object provides methods to access the current domains of the Concert Technology variables inside the current worker (for example 
+<samp class="ph codeph">IloCPEngine.getMin(IloIntVar)</samp>), and a way to get statistics on the local worker (such as the number of branches taken) through the 
+<samp class="ph codeph">IloCPEngine.getInfo</samp> member.</p>
+
+
+<p class="p">This table shows how the chooser and evaluator APIs have changed.</p>
+
+
+<div class="tablenoborder"><table cellpadding="4" cellspacing="0" summary="A two column table listing changes." class="table" rules="all" frame="border" border="1"><caption><span class="tablecap">Table 1. Changes in choosers and evaluators</span></caption><thead class="thead" align="left"><tr class="row" valign="bottom"><th class="entry thleft thbot" valign="bottom" id="d499334e103">Before V12.8.0</th>
+<th class="entry thleft thbot" valign="bottom" id="d499334e105">V12.8.0 and later</th>
+</tr>
+</thead>
+<tbody class="tbody"><tr class="row"><td class="entry" valign="top" headers="d499334e103 ">IloCustomIntVarChooser.choose(IloCP, IloIntVar[])</td>
+<td class="entry" valign="top" headers="d499334e105 ">IloCustomIntVarChooser.choose(IloCPEngine, IloIntVar[])</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d499334e103 ">IloCustomIntValueChooser.choose(IloCP, IloIntVar[], int)</td>
+<td class="entry" valign="top" headers="d499334e105 ">IloCustomIntValueChooser.choose(IloCPEngine, IloIntVar[], int)</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d499334e103 ">IloCustomIntVarEval.eval(IloCP, IloIntVar)</td>
+<td class="entry" valign="top" headers="d499334e105 ">IloCustomIntVarEval.eval(IloCPEngine, IloIntVar)</td>
+</tr>
+<tr class="row"><td class="entry" valign="top" headers="d499334e103 ">IloCustomIntValueEval.eval(IloCP, IloIntVar, int)</td>
+<td class="entry" valign="top" headers="d499334e105 ">IloCustomIntValueEval.eval(IloCPEngine, IloIntVar, int)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<p class="p">Since all of the relevant APIs from <samp class="ph codeph">IloCP</samp> is now present on 
+<samp class="ph codeph">IloCPEngine</samp>, the body of the remainder of your "choose" or
+"eval" functions should be mostly unchanged.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">New feature: Bound on the objective</h2>
+<p class="p">CP Optimizer now maintains a bound on the objective (a lower bound for minimization problems and an upper bound for
+maximization problems). This bound is displayed in the log when a new bound is found, along with the optimality
+gap when an improving solution has been found. At the end of the search, the best bound and gap are displayed.
+The methods <samp class="ph codeph">IloCP.getObjBound()</samp> and <samp class="ph codeph">IloCP.getObjGap()</samp> give access to the bound and the 
+gap. Multi-criterion versions of these are also available through <samp class="ph codeph">IloCP.getObjBounds()</samp> and
+<samp class="ph codeph">IloCP.getObjGaps()</samp>.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">New termination status:</h2>
+<p class="p">A new information field has been added, obtainable from 
+<samp class="ph codeph">IloCP.getInfo(IloCP.IntParam.SearchStatus)</samp>.
+This information can indicate that the search has not been started, is ongoing, has completed, or has been stopped.
+If the search has been stopped, then second new information field, 
+<samp class="ph codeph">IloCP.IntParam.SearchStopCause</samp>
+will deliver the cause of the search prematurely stopping.  The information field 
+<samp class="ph codeph">IloCP.IntParam.FailStatus</samp> is now deprecated and replaced by 
+<samp class="ph codeph">IloCP.IntParam.SearchStatus</samp> and <samp class="ph codeph">IloCP.IntParam.SearchStopCause</samp>.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Deprecated items</h2>
+<p class="p">The <samp class="ph codeph">IloCP.IntParam.AutomaticReplay</samp> parameter is now redundant and has been deprecated. 
+Search goals are now
+never replayed, but domains are stored when the search exits and are available to you as usual. Any setting
+of this parameter can be safely removed from your code.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Removal of deprecated items</h2>
+<p class="p">The methods <samp class="ph codeph">IloCP.solve(IloSearchPhase[])</samp> and 
+<samp class="ph codeph">IloCP.startNewSearch(IloSearchPhase[])</samp>, 
+deprecated since V12.7.0 have now been removed. Please now use
+<samp class="ph codeph">IloCP.setSearchPhases(IloSearchPhase[])</samp> then either 
+<samp class="ph codeph">IloCP.solve()</samp> or <samp class="ph codeph">IloCP.startNewSearch()</samp>.</p>
+
+<p class="p">The parameter <samp class="ph codeph">IloCP.IntParam.PropagationLog</samp>, deprecated since V12.6.0, has been removed.
+There is no direct replacement. For debugging, we suggest:</p>
+
+<ul class="ul"><li class="li">the use of the CP Optimizer log, with the period set to 1 (parameter 
+<samp class="ph codeph">IloCP.IntParam.LogPeriod)</samp>,</li>
+<li class="li">the use of the conflict refiner for detecting inconsistencies via member function 
+<samp class="ph codeph">IloCP.refineConflict</samp>, and</li>
+<li class="li">for problems with interval variables, the use of failure conflict analysis via the member
+function <samp class="ph codeph">IloCP.explainFailure</samp>.</li>
+</ul>
+
+
+<p class="p">The <samp class="ph codeph">IloCP.IntParam.ConstraintAggregation</samp> parameter, deprecated in V12.5.0, has been removed.  It is now
+part of CP Optimizer presolve, controlled with parameter <samp class="ph codeph">IloCP.IntParam.Presolve</samp>.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" title="Describes the changes for the release of the CP Optimizer feature of CPLEX Optimization Studio V12.8.0.">Changes since CP Optimizer V12.7.1</a></div>
+</div>
+</div></div></body>
+</html>

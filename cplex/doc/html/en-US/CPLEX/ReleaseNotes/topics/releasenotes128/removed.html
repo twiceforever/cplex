@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Removed features CPLEX V12.8.0" />
+<meta name="abstract" content="These release notes announce features that were deprecated in a previous release and have been removed from IBM CPLEX V12.8.0." />
+<meta name="Description" content="These release notes announce features that were deprecated in a previous release and have been removed from IBM CPLEX V12.8.0." />
+<meta name="DC.Relation" scheme="URI" content="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/home.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="CPLEXReleaseNotesV128removed" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/home.html" />
+<title>Removed features CPLEX V12.8.0</title>
+</head>
+<body id="CPLEXReleaseNotesV128removed"><div role="main">
+<h1 class="title topictitle1">Removed features CPLEX V12.8.0 </h1>
+<div class="body"><p class="shortdesc">These release notes announce features that were deprecated in a previous 
+release and have been <strong class="ph b">removed</strong> from IBM CPLEX V12.8.0. </p>
+<div class="section"><h2 class="title sectiontitle">Utility to convert file formats removed</h2> 
+ 
+<p class="p">Previous versions of CPLEX distributed <samp class="ph codeph">convert</samp>, 
+a utility to convert fixed-format MPS, BAS, or ORD files into a format 
+that CPLEX supports even when the file lacked names of bounds or righthand sides, 
+or when the file contained blank space within a name, blank lines, or uncommented characters. 
+The <samp class="ph codeph">convert</samp> utility was deprecated in CPLEX V12.6.3. 
+It has now been removed.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Java API</h2> 
+<div class="p">These methods were deprecated in a previous release. 
+They have been <strong class="ph b">removed</strong> from CPLEX V12.8.
+<ul class="ul"><li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNcliques </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNcovers </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNflowCovers </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNflowPaths </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNGUBCovers </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNfractionalCuts </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNdisjunctiveCuts </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNMIRs </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNimpliedBounds </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNzeroHalfCuts </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.MIPInfoCallback.getNMCFCuts </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.UserCutCallback.add(IloRange, boolean) </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNcliques </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNcovers </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNflowCovers </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNflowPaths </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNGUBcovers </samp></li>
+<li class="li"><samp class="ph codeph">Ilocplex.Goal.getNfractionalCuts </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNdisjunctiveCuts </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNMIRs </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNimpliedBounds </samp></li>
+<li class="li"><samp class="ph codeph">IloCplex.Goal.getNzeroHalfCuts </samp></li>
+</ul>
+</div>
+</div>
+<div class="section"><h2 class="title sectiontitle">.NET API</h2> 
+<div class="p">These methods were deprecated in a previous release. They have been <strong class="ph b">removed</strong> from 
+CPLEX V12.8.
+<ul class="ul"><li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNcliques </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNcovers </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNflowCovers </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNflowPaths </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNGUBCovers </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNfractionalCuts </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNdisjunctiveCuts </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNMIRs </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNimpliedBounds </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNzeroHalfCuts </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.MIPInfoCallback.GetNMCFCuts </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.UserCutCallback.Add(IloRange, boolean) </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNcliques </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNcovers </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNflowCovers </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNflowPaths </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNGUBcovers </samp></li>
+<li class="li"><samp class="ph codeph">Ilocplex.Goal.GetNfractionalCuts </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNdisjunctiveCuts </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNMIRs </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNimpliedBounds </samp></li>
+<li class="li"><samp class="ph codeph">Cplex.Goal.GetNzeroHalfCuts </samp></li>
+</ul>
+</div>
+</div>
+<div class="section"><h2 class="title sectiontitle">Python API</h2>
+<p class="p">The method <samp class="ph codeph">cplex.terminate</samp> has been removed. That method 
+was deprecated in CPLEX V12.7.1 in favor of the <samp class="ph codeph">Aborter</samp> class.  
+For an example that uses an instance of the <samp class="ph codeph">Aborter</samp> class instead 
+of the method <samp class="ph codeph">cplex.terminate</samp>, see <span class="ph filepath">mipex4.py</span>, 
+distributed with the product.</p>
+ 
+<p class="p"> 
+The class <samp class="ph codeph">PresolveCallback</samp> was deprecated in a previous release (CPLEX V12.7.1), 
+and it has been <strong class="ph b">removed</strong> from CPLEX V12.8.</p>
+
+<div class="p">The following methods were deprecated in a previous release (CPLEX V12.7.1), and they have been 
+<strong class="ph b">removed</strong> from CPLEX V12.8:
+<ul class="ul"><li class="li"><samp class="ph codeph">Cplex.solution.basis.get_col_basis</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.solution.basis.get_row_basis</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.solution.start.set_basis</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.linear_constraints.advanced.add_lazy_cuts</samp></li>
+<li class="li"><samp class="ph codeph">Cplex.linear_constraints.advanced.free_lazy_cuts</samp></li>
+<li class="li"><samp class="ph codeph">SolveCallback.set_vectors</samp></li>
+</ul>
+</div>
+
+</div>
+<div class="section"><h2 class="title sectiontitle">Callable Library (C API)</h2> 
+ 
+<p class="p">The deprecated error code <samp class="ph codeph">CPXERR_NULL_NAME</samp> has been removed.</p>
+ 
+
+<p class="p">The undocumented and deprecated string constant <samp class="ph codeph">CPX_VERSIONSTRING</samp> 
+has been removed. Instead, use the routine 
+<a class="xref" href="../../../../refcallablelibrary/cpxapi/version.html" title="The routine CPXXversion/CPXversion returns a pointer to a string specifying the version of the CPLEX library linked with the application.">CPXXversion and CPXversion</a>. </p>
+
+
+<div class="p">These routines to support the remote object of the Callable Library (C API) were 
+deprecated in CPLEX V12.7.0.  They have been removed from CPLEX V12.8. 
+<ul class="ul"><li class="li">A</li>
+<li class="li"><samp class="ph codeph">CPXXaddcols_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddcols_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddindconstr_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddindconstr_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddlazyconstraints_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddlazyconstraints_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddmipstarts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddmipstarts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddqconstr_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddqconstr_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddrows_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddrows_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddsolnpooldivfilter_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddsolnpooldivfilter_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddsolnpoolrngfilter_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddsolnpoolrngfilter_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddsos_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddsos_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddusercuts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXaddusercuts_join </samp></li>
+<li class="li">B</li>
+<li class="li"><samp class="ph codeph">CPXXbinvacol_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbinvacol_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbinvarow_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbinvarow_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbinvcol_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbinvcol_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbinvrow_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbinvrow_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXboundsa_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXboundsa_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbtran_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXbtran_join </samp></li>
+<li class="li">C</li>
+<li class="li"><samp class="ph codeph">CPXXcheckdfeas_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcheckdfeas_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcheckpfeas_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcheckpfeas_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchecksoln_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchecksoln_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgbds_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgbds_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgcoef_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgcoef_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgcoeflist_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgcoeflist_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgcolname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgcolname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgctype_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgctype_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgmipstarts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgmipstarts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgobj_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgobj_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgobjoffset_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgobjoffset_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgobjsen_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgobjsen_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgprobname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgprobname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgprobtype_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgprobtype_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgprobtypesolnpool_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgprobtypesolnpool_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgqpcoef_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgqpcoef_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgrhs_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgrhs_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgrngval_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgrngval_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgrowname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgrowname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgsense_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXchgsense_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcleanup_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcleanup_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXclpwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXclpwrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXclpwrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcompletelp_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcompletelp_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopybase_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopybasednorms_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopybasednorms_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopybase_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyctype_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyctype_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopydnorms_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopydnorms_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopylp_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopylp_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopylpwnames_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyobjname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyobjname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyorder_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyorder_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopypartialbase_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopypartialbase_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopypnorms_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopypnorms_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyprotected_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyprotected_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyqpsep_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyqpsep_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyquad_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopyquad_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopysos_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopysos_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopystart_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcopystart_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcrushform_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcrushform_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcrushpi_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcrushpi_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcrushx_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXcrushx_join </samp></li>
+<li class="li">D</li>
+<li class="li"><samp class="ph codeph">CPXXdelcols_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelcols_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelindconstrs_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelindconstrs_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelmipstarts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelmipstarts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelnames_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelnames_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelqconstrs_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelqconstrs_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelrows_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelrows_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetcols_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetcols_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetmipstarts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetmipstarts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetrows_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetrows_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetsolnpoolfilters_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetsolnpoolfilters_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetsolnpoolsolns_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetsolnpoolsolns_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetsos_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsetsos_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsolnpoolfilters_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsolnpoolfilters_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsolnpoolsolns_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsolnpoolsolns_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsos_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdelsos_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdjfrompi_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdjfrompi_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdperwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdperwrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdperwrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdratio_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdratio_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdualfarkas_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdualfarkas_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdualwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXdualwrite_join </samp></li>
+<li class="li">E,F</li>
+<li class="li"><samp class="ph codeph">CPXXembwrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfltwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfltwrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfltwrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfreelazyconstraints_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfreelazyconstraints_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfreepresolve_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfreepresolve_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfreeusercuts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXfreeusercuts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXftran_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXftran_join </samp></li>
+<li class="li">G</li>
+<li class="li"><samp class="ph codeph">CPXXgetax_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetax_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetbase_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetbasednorms_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetbasednorms_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetbase_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetbestobjval_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetbestobjval_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetbhead_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetbhead_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetchgparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetchgparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcoef_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcoef_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcolindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcolindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcolinfeas_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcolinfeas_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcolname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcolname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcols_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcols_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetconflictext_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetconflictext_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetctype_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetctype_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcutoff_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetcutoff_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdblparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdblparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdblquality_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdblquality_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdettime_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdettime_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdj_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdj_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdnorms_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetdnorms_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetgrad_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetgrad_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetijdiv_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetijdiv_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetijrow_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetijrow_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstr_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstrindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstrindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstrinfeas_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstrinfeas_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstr_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstrname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstrname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstrslack_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetindconstrslack_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetintparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetintparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetintquality_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetintquality_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetlb_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetlb_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetlongparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetlongparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetmiprelgap_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetmiprelgap_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetmipstartindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetmipstartindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetmipstartname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetmipstartname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetmipstarts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetmipstarts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetnumcores_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetnumcores_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetnumcuts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetnumcuts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetobj_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetobj_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetobjname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetobjname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetobjoffset_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetobjoffset_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetobjval_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetobjval_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetorder_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetorder_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetparamname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetparamname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetparamnum_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetparamnum_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetparamtype_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetparamtype_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetpi_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetpi_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetpnorms_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetpnorms_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetprestat_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetprestat_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetprobname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetprobname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetprotected_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetprotected_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstr_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrdslack_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrdslack_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrinfeas_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrinfeas_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstr_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrslack_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqconstrslack_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqpcoef_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetqpcoef_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetquad_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetquad_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetray_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetray_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrhs_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrhs_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrngval_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrngval_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrowindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrowindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrowinfeas_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrowinfeas_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrowname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrowname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrows_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetrows_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsense_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsense_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetslack_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetslack_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpooldblquality_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpooldblquality_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpooldivfilter_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpooldivfilter_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolfilterindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolfilterindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolfiltername_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolfiltername_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolfiltertype_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolfiltertype_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolintquality_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolintquality_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolmeanobjval_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolmeanobjval_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolobjval_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolobjval_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolqconstrslack_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolqconstrslack_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolrngfilter_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolrngfilter_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolslack_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolslack_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolsolnindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolsolnindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolsolnname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolsolnname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolx_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsolnpoolx_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsos_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsosindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsosindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsosinfeas_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsosinfeas_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsos_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsosname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetsosname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgettime_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgettime_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetub_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetub_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetx_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetx_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetxqxax_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXgetxqxax_join </samp></li>
+<li class="li">I, K, L</li>
+<li class="li"><samp class="ph codeph">CPXXindconstrslackfromx_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXindconstrslackfromx_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXinfodblparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXinfodblparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXinfointparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXinfointparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXinfolongparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXinfolongparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXkilldnorms_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXkilldnorms_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXkillpnorms_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXkillpnorms_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXlprewrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXlprewrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXlprewrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXlpwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXlpwrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXlpwrite_multicast </samp></li>
+<li class="li">M</li>
+<li class="li"><samp class="ph codeph">CPXXmbasewrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmbasewrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmbasewrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmdleave_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmdleave_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmpsrewrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmpsrewrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmpsrewrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmpswrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmpswrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXmpswrite_multicast </samp></li>
+<li class="li">NET</li>
+<li class="li"><samp class="ph codeph">CPXXNETaddarcs_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETaddarcs_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETaddnodes_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETaddnodes_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETbasewrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETbasewrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETbasewrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgarcname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgarcname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgarcnodes_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgarcnodes_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgbds_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgbds_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgnodename_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgnodename_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgobj_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgobj_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgobjsen_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgobjsen_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgsupply_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETchgsupply_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETcopybase_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETcopybase_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETcopynet_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETcopynet_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETdelarcs_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETdelarcs_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETdelnodes_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETdelnodes_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETdelset_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETdelset_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETextract_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETextract_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetarcindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetarcindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetarcname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetarcname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetarcnodes_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetarcnodes_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetbase_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetbase_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetdj_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetdj_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetlb_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetlb_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetnodearcs_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetnodearcs_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetnodeindex_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetnodeindex_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetnodename_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetnodename_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetobj_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetobj_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetobjval_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetobjval_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetpi_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetpi_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetprobname_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetprobname_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetslack_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetslack_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetsupply_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetsupply_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetub_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetub_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetx_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETgetx_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETreadcopybase_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETreadcopybase_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETreadcopyprob_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETreadcopyprob_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETsolninfo_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETsolninfo_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETsolution_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETsolution_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETwriteprob_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETwriteprob_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXNETwriteprob_multicast </samp></li>
+<li class="li">N, O, P, Q</li>
+<li class="li"><samp class="ph codeph">CPXXnewcols_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXnewcols_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXnewrows_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXnewrows_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXobjsa_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXobjsa_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXordread_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXordread_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXordwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXordwrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXordwrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpivot_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpivot_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpperwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpperwrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpperwrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpratio_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpratio_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpreaddrows_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXpreaddrows_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXprechgobj_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXprechgobj_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXqconstrslackfromx_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXqconstrslackfromx_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXqpdjfrompi_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXqpdjfrompi_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXqpuncrushpi_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXqpuncrushpi_join </samp></li>
+<li class="li">R</li>
+<li class="li"><samp class="ph codeph">CPXXreadcopybase_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopybase_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopymipstarts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopymipstarts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopyorder_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopyorder_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopyparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopyparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopyprob_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopyprob_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopysol_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopysol_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopysolnpoolfilters_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXreadcopysolnpoolfilters_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXrhssa_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXrhssa_join </samp></li>
+<li class="li">S</li>
+<li class="li"><samp class="ph codeph">CPXXsavwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsavwrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsavwrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetdblparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetdblparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetdefaults_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetdefaults_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetintparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetintparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetlongparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetlongparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetlongparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetphase2_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetphase2_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetphase2_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsetphase2_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXslackfromx_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXslackfromx_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolninfo_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolninfo_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolution_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolution_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwrite_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwrite_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwrite_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwritesolnpoolall_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwritesolnpoolall_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwritesolnpoolall_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwritesolnpool_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwritesolnpool_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXsolwritesolnpool_multicast </samp></li>
+<li class="li">T, U, W</li>
+<li class="li"><samp class="ph codeph">CPXXtightenbds_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXtightenbds_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXuncrushpi_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXuncrushpi_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXuncrushx_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXuncrushx_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXunscaleprob_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXunscaleprob_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwritemipstarts_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwritemipstarts_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwritemipstarts_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwriteparam_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwriteparam_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwriteparam_multicast </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwriteprob_async </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwriteprob_join </samp></li>
+<li class="li"><samp class="ph codeph">CPXXwriteprob_multicast </samp></li>
+</ul>
+</div>
+
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../../CPLEX/ReleaseNotes/topics/releasenotes128/home.html" title="These release notes highlight improvements and new features in IBM CPLEX V12.8.0. Please review these notes before using IBM CPLEX V12.8.0.">Release notes for CPLEX V12.8.0</a></div>
+</div>
+</div></div></body>
+</html>

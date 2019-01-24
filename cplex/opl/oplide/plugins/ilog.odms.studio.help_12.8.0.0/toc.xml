@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+<!--© Copyright IBM Corporation 2017-->
+<toc label="IBM ILOG CPLEX Optimization Studio V12.8.0"
+     topic="Optimization_Studio/topics/COS_home.html">
+   <criteria name="prodname" value="ilog.odms.studio.help"/>
+   <criteria name="version" value="12"/>
+   <topic label="Legal terms" href="Optimization_Studio/topics/legalterms.html">
+      <topic label="Copyright notice" href="Copyright/topics/td_copyright.html"/>
+   </topic>
+   <topic label="Orientation Guide"
+          href="Optimization_Studio/orientation_guide/topics/orientation_intro.html">
+      <topic label="Completely new to CPLEX Optimization Studio?"
+             href="Optimization_Studio/orientation_guide/topics/new_to_cos.html">
+         <topic label="Who this document is for"
+                href="Optimization_Studio/orientation_guide/topics/intended_audience.html"/>
+         <topic label="Brief overview of CPLEX Optimization Studio"
+                href="Optimization_Studio/orientation_guide/topics/overview_cos.html"/>
+         <topic label="Analyzing a simple OPL model"
+                href="Optimization_Studio/orientation_guide/topics/analyze_model.html"/>
+         <topic label="First steps with the IDE"
+                href="Optimization_Studio/orientation_guide/topics/firststeps_ide.html"/>
+         <topic label="Running a model in the IDE"
+                href="Optimization_Studio/orientation_guide/topics/run_model.html"/>
+      </topic>
+      <topic label="Discovering CPLEX Optimization Studio"
+             href="Optimization_Studio/orientation_guide/topics/discovering_cos.html"/>
+      <topic label="Becoming familiar with CPLEX Optimization Studio"
+             href="Optimization_Studio/orientation_guide/topics/familiar_with_cos.html"/>
+      <topic label="Advanced features"
+             href="Optimization_Studio/orientation_guide/topics/advanced_features.html"/>
+   </topic>
+   <topic label="Introducing IBM ILOG CPLEX Optimization Studio V12.8.0"
+          href="Optimization_Studio/topics/COS_relnotes_intro.html">
+      <topic label="Introduction" href="Optimization_Studio/topics/COS_intro_features.html"/>
+      <topic label="Release notes for IDE and OPL V12.8.0"
+             href="OPL_Studio/oplrelnotes/topics/opl_relnotes_128.html"/>
+      <topic label="Release notes for DOcplex Python API"
+             href="DOcplex/topics/DOcplex_relnotes.html"/>
+      <topic label="Release notes for CPLEX V12.8.0"
+             href="CPLEX/ReleaseNotes/topics/releasenotes128/home.html">
+         <topic label="New features in CPLEX V12.8.0"
+                href="CPLEX/ReleaseNotes/topics/releasenotes128/new.html">
+            <topic label="New parameters in CPLEX V12.8.0"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newParameters.html"/>
+            <topic label="Improved linear dependency checker in CPLEX V12.8.0"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newLinearDependencyChecker.html"/>
+            <topic label="New callback design in CPLEX V12.8.0"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newCallbacks.html"/>
+            <topic label="New modeling assistance features in CPLEX V12.8.0"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newModelingAsstSameCoeff.html"/>
+            <topic label="New warning in CPLEX V12.8.0"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newWarning.html"/>
+            <topic label="New error codes in CPLEX V12.8.0"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newErrorCodes.html"/>
+            <topic label="New features in the Callable Library (C API) of CPLEX V12.8"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newCapi.html"/>
+            <topic label="New features in the C++ API of CPLEX V12.8.0"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newCplusplusAPI.html"/>
+            <topic label="New features in the Java API of CPLEX V12.8"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newJavaAPI.html"/>
+            <topic label="New features in the .NET API of CPLEX V12.8"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newDotNetAPI.html"/>
+            <topic label="New features in the Python API of CPLEX V12.8"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/newPythonAPI.html"/>
+         </topic>
+         <topic label="Conversion notes for CPLEX V12.8.0"
+                href="CPLEX/ReleaseNotes/topics/releasenotes128/convert.html">
+            <topic label="C++ API conversion notes for CPLEX V12.8.0"
+                   href="CPLEX/ReleaseNotes/topics/releasenotes128/convertCplusplusAPI.html"/>
+         </topic>
+         <topic label="Deprecated features CPLEX V12.8.0"
+                href="CPLEX/ReleaseNotes/topics/releasenotes128/deprecated.html"/>
+         <topic label="Removed features CPLEX V12.8.0"
+                href="CPLEX/ReleaseNotes/topics/releasenotes128/removed.html"/>
+      </topic>
+      <topic label="Release notes for CP Optimizer V12.8.0"
+             href="CP_Optimizer/Release_notes/topics/relnotes_V1280.html">
+         <topic label="Notes for users"
+                href="CP_Optimizer/Release_notes/topics/relnotes_V1280_notes.html">
+            <topic label="Limitations of the Java API"
+                   href="CP_Optimizer/Release_notes/topics/relnotes_V1280_notes_java.html"/>
+            <topic label="Limitations of the Microsoft .NET API"
+                   href="CP_Optimizer/Release_notes/topics/relnotes_V1280_notes_dotnet.html"/>
+         </topic>
+         <topic label="Changes since CP Optimizer V12.7.1"
+                href="CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html">
+            <topic label="DOcplex modeling in Python"
+                   href="CP_Optimizer/Release_notes/topics/relnotes_V1280_docplex.html"/>
+            <topic label="New feature: API changes for extension engine classes"
+                   href="CP_Optimizer/Release_notes/topics/relnotes_V1280_cpengine.html"/>
+            <topic label="New feature: Bound on the objective"
+                   href="CP_Optimizer/Release_notes/topics/relnotes_V1280_changes_bounds.html"/>
+            <topic label="Other changes to the API"
+                   href="CP_Optimizer/Release_notes/topics/relnotes_V1280_changes_api.html"/>
+            <topic label="Changes for Java users"
+                   href="CP_Optimizer/Release_notes/topics/relnotes_V1280_changes_java.html"/>
+            <topic label="Changes for .NET users"
+                   href="CP_Optimizer/Release_notes/topics/relnotes_V1280_changes_dotnet.html"/>
+         </topic>
+      </topic>
+      <topic label="Previous release notes"
+             href="Optimization_Studio/topics/COS_previous_relnotes.html"/>
+      <topic label="License metrics"
+             href="Optimization_Studio/topics/COS_license_metrics.html"/>
+      <topic label="Installing CPLEX Optimization Studio"
+             href="Optimization_Studio/topics/COS_installing.html"/>
+      <topic label="Installing in another language"
+             href="Optimization_Studio/topics/COS_installinginanotherlanguage.html"/>
+      <topic label="Silent installation of CPLEX Optimization Studio"
+             href="Optimization_Studio/topics/td_silent_install.html"/>
+      <topic label="Uninstalling CPLEX Optimization Studio"
+             href="Optimization_Studio/topics/td_uninstall.html"/>
+      <topic label="Accessibility in the online IBM Knowledge Center documentation"
+             href="Optimization_Studio/topics/COS_infocenter_accessibility.html"/>
+      <topic label="CPLEX Optimization Studio accessibility"
+             href="Optimization_Studio/topics/COS_accessibility.html"/>
+   </topic>
+</toc>

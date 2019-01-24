@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Changes for .NET users" />
+<meta name="abstract" content="" />
+<meta name="Description" content="" />
+<meta name="DC.subject" content=".NET" />
+<meta name="keywords" content=".NET" />
+<meta name="DC.Relation" scheme="URI" content="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="changes-api" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" />
+<title>Changes for .NET users</title>
+</head>
+<body id="changes-api"><div role="main">
+<h1 class="title topictitle1">Changes for .NET users</h1>
+<div class="body"><p class="shortdesc"></p>
+<div class="section"><h2 class="title sectiontitle">Changes in the API for extension engine classes in .NET</h2>
+<p class="p">The new release introduces some new changes for users of the .NET interface.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">New feature: Bound on the objective</h2>
+<p class="p">  CP Optimizer now maintains a bound on the objective (a lower bound for minimization
+problems and an upper bound for maximization problems). This bound is displayed in the log 
+when a new bound is found, along with the optimality gap when an improving solution has
+been found. At the end of the search, the best bound and gap are displayed.
+The methods <samp class="ph codeph">CP.GetObjBound()</samp> and <samp class="ph codeph">CP.GetObjGap()</samp> 
+give access to the bound and the gap. Multi-criterion versions of these are also 
+available through <samp class="ph codeph">CP.GetObjBounds()</samp> and 
+<samp class="ph codeph">CP.GetObjGaps()</samp>.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">New termination status</h2>
+<p class="p">A new information field has been added, obtainable from 
+<samp class="ph codeph">CP.GetInfo(CP.IntParam.SearchStatus)</samp>. This information indicates whether 
+the search has not been started, is ongoing, has completed, or has been stopped.
+  If the search has been stopped, then the second new information field,
+<samp class="ph codeph">CP.IntParam.SearchStopCause</samp>
+  delivers the reason for the premature stop of the search.  The information field
+<samp class="ph codeph">CP.IntParam.FailStatus</samp> is deprecated and is replaced by <samp class="ph codeph">CP.IntParam.SearchStatus</samp> 
+and <samp class="ph codeph">CP.IntParam.SearchStopCause</samp>.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Deprecated items</h2>
+<p class="p"> The <samp class="ph codeph">CP.IntParam.AutomaticReplay</samp> parameter is now redundant and has 
+been deprecated. Search goals are now never replayed, but domains are stored when the
+search exits and are available to you as usual. Any setting  of this parameter can be safely removed from your code.</p>
+</div>
+<div class="section"><h2 class="title sectiontitle">Removal of deprecated items</h2>
+<p class="p">The methods <samp class="ph codeph">CP.Solve(ISearchPhase[])</samp> and
+<samp class="ph codeph">CP.StartNewSearch(ISearchPhase[])</samp>, 
+deprecated since V12.7.0 have now been removed. Instead. use
+<samp class="ph codeph">CP.SetSearchPhases(ISearchPhase[])</samp> then either 
+<samp class="ph codeph">CP.Solve()</samp> or <samp class="ph codeph">CP.StartNewSearch()</samp>.</p>
+
+<p class="p">The parameter <samp class="ph codeph">CP.IntParam.PropagationLog</samp>, deprecated since V12.6.0, has been removed.
+  There is no direct replacement. For debugging, we suggest:</p>
+
+<ul class="ul"><li class="li">the use of the CP Optimizer log, with the period set to 1 (parameter <samp class="ph codeph">CP.IntParam.LogPeriod</samp>),</li>
+<li class="li"> the use of the conflict refiner for detecting inconsistencies via member function 
+<samp class="ph codeph">CP.RefineConflict</samp>, and</li>
+<li class="li">for problems with interval variables, the use of failure conflict analysis via the member
+    function <samp class="ph codeph">CP.ExplainFailure</samp>.</li>
+</ul>
+
+<p class="p">  The <samp class="ph codeph">CP.IntParam.ConstraintAggregation</samp> parameter, deprecated in 
+V12.5.0, has been removed.  It is now  part of CP Optimizer presolve, controlled with the parameter 
+<samp class="ph codeph">CP.IntParam.Presolve</samp>.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../CP_Optimizer/Release_notes/topics/relnotes_V1280_changes.html" title="Describes the changes for the release of the CP Optimizer feature of CPLEX Optimization Studio V12.8.0.">Changes since CP Optimizer V12.7.1</a></div>
+</div>
+</div></div></body>
+</html>

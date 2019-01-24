@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="copyright" content="© Copyright IBM Corporation 2017" />
+<meta name="DC.Rights.Owner" content="© Copyright IBM Corporation 2017" />
+<meta name="security" content="public" />
+<meta name="Robots" content="index,follow" />
+<meta name="DC.Type" content="topic" />
+<meta name="DC.Title" content="Portability" />
+<meta name="abstract" content="Describes coding conventions of the C API to make portable applications." />
+<meta name="Description" content="Describes coding conventions of the C API to make portable applications." />
+<meta name="DC.subject" content="portability (C API)" />
+<meta name="keywords" content="portability (C API)" />
+<meta name="DC.Relation" scheme="URI" content="../../../../../CPLEX/UsrMan/topics/APIs/C/14_progprac_title_synopsis.html" />
+<meta name="DC.Date" scheme="iso8601" content="2017-11-14" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="User_manual.uss_callableLibrary.643882" />
+<meta name="DC.Language" content="en-us" />
+<meta name="IBM.Country" content="ZZ" />
+<!-- Licensed Materials - Property of IBM -->
+<!-- US Government Users Restricted Rights -->
+<!-- Use, duplication or disclosure restricted by -->
+<!-- GSA ADP Schedule Contract with IBM Corp. -->
+<link rel="stylesheet" type="text/css" href="../../../../.././ibmdita.css" />
+<link rel="stylesheet" type="text/css" href="../../../../.././swg_info_common_opti.css" />
+<link rel="Start" href="../../../../../CPLEX/UsrMan/topics/APIs/C/14_progprac_title_synopsis.html" />
+<title>Portability</title>
+</head>
+<body id="User_manual.uss_callableLibrary.643882"><div role="main">
+<h1 class="title topictitle1">Portability</h1>
+<div class="body"><p class="shortdesc">Describes coding conventions of the C API to make portable
+applications.</p>
+<p class="p">CPLEX contains a number of features to help you create Callable
+Library applications that can be easily ported between 
+platforms. </p>
+<div class="section" id="User_manual.uss_callableLibrary.643882__User_manual.uss_callableLibrary.643894"><h2 class="title sectiontitle">File pointers</h2> 
+ 
+ 
+ 
+<p class="p">File pointer arguments for Callable Library
+routines should be declared with the type <samp class="ph codeph">CPXFILEptr</samp> .
+On UNIX platforms, this practice is equivalent to using the file pointer
+type. On Windows platforms, the file pointers declared this way will
+correspond to the environment of the CPLEX DLL.
+<a class="xref" href="../../progr_consid/input_output/manageIO_msg_ch_Capi.html" title="Describes routines to control message channels in the C API.">Callable Library routines for message channels</a> discusses
+this programming issue.</p>
+ 
+<div class="note tip"><span class="tiptitle">Tip:</span>  
+<samp class="ph codeph"><a class="xref" href="../../../../../refcallablelibrary/cpxapi/setlogfilename.html" title="Sets and opens the log file.">CPXXsetlogfilename</a></samp>
+accepts the name of a file (rather than a file pointer) as an argument. It replaces the 
+<strong class="ph b">deprecated</strong> routine <samp class="ph codeph">CPXXsetlogfile</samp> (which accepted a file pointer) 
+and consequently can be a better choice.</div>
+</div>
+<div class="section" id="User_manual.uss_callableLibrary.643882__User_manual.uss_callableLibrary.643896"><h2 class="title sectiontitle">String functions</h2> 
+ 
+ 
+
+<p class="p"> 
+<samp class="ph codeph"><a class="xref" href="../../../../../refcallablelibrary/cpxapi/msgstr.html" title="The routine CPXXmsgstr/CPXmsgstr sends a character string to a CPLEX message channel.">CPXmsgstr</a></samp> 
+ in the Callable Library makes
+it easier to work with strings. This routine is helpful when you
+are writing applications in a language, such as Visual Basic, that
+does not allow you to de-reference a pointer. </p>
+ </div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../../../../../CPLEX/UsrMan/topics/APIs/C/14_progprac_title_synopsis.html" title="Lists some of the programming practices the CPLEX team observes in developing and maintaining the Callable Library (C API).">CPLEX programming practices</a></div>
+</div>
+</div></div></body>
+</html>
